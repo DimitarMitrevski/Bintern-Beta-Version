@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Кориснички панел</title>
+    <link rel="icon" type="image/gif/png" href="../../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bintern11.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-functions.js"></script>
+    <script src="../../jquery.js"></script>
+
+
+</head>
+
+<body>
+    <!--TO DO Implement framing for showing candidates profile and CV-->
+    <!-- <button class="iframe-button btn btn-outline-primary">
+        Назад
+    </button> -->
+    <iframe id="myIFrame" name="frame" width="100%" height="765" hidden>
+    </iframe>
+    </div>
+    <!-- Login dialog -->
+    <dialog id="loginDialog" class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Најави се</h4>
+        <div class="mdl-dialog__content">
+            <p id="loginError"></p>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="loginEmail" onkeyup="inputKeyUp(event)">
+                <label class="mdl-textfield__label" for="sample3">Е-маил...</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="loginPassword" onkeyup="inputKeyUp1(event)">
+                <label class="mdl-textfield__label" for="sample3">Лозинка...</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button id="loginBtn"
+                class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Најава
+            </button>
+            <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+    </dialog>
+
+    <div class="login-cover">
+        <h3 id="msg" style="display: none;">За да се најавите користете Google Chrome</h3>
+        <div class="page-loader mdl-spinner mdl-js-spinner is-active" id="spiner"></div>
+
+    </div>
+    <!-- <div class="login-cover">
+        <div class="loader">
+        </div>
+    </div> -->
+    <div id="wrapper">
+        <div id="vector"></div>
+        <header>
+            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="objavi" href="../profile.html">Вашиот Профил</a>
+                <a id="najava">Одјави се</a>
+            </nav>
+        </header>
+        <h1 id="korisnicki">Кориснички панел</h1>
+        <div class="navigacija">
+            <a href="view.html">
+                <div id="nav">
+                    <h3 id="centar">Преглед</h3>
+                </div>
+            </a>
+            <a href="myAds.html">
+                <div id="nav1">
+                    <h3 id="centar">Огласи</h3>
+                </div>
+            </a>
+            <a href="candidates.html">
+                <div id="nav2">
+                    <h3 id="centar">Кандидати</h3>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div id="nav3">
+                    <h3 id="centar">Пораки</h3>
+                </div>
+            </a>
+        </div>
+        <hr id="hr">
+        <div class="aktivni">
+            <img id="slikata1" src="dashboard.PNG">
+            <h3 id="akoglasi">Мои огласи:<span id="brOglasi"> </span></h3>
+            <hr id="hr1">
+            <h5 id="marketer"><span id="eden">1</span><span id="dva">2</span><span id="tri">3</span><span
+                    id="cetiri">4</span><span id="pet">5</span></h5>
+            <button id="button" type="button">Следна страна</button>
+        </div>
+        <div class="kreiraj">
+            <h2 id="besplaten">Креирај<br>Бесплатен Оглас</h2>
+            <p id="para">Објавете оглас за практиканство<br> и пронајдете го вашиот иден вработен.Со среќа!</p>
+            <a href="../createAd.html"><button id="button2" type="button">+</button></a>
+        </div>
+        <div class="kreiraj2">
+            <h2 id="besplaten">Пребарувај<br>Кандидати</h2>
+            <p id="para">Пребарувајте низ нашата база од Кандидати и пронајдете го вашиот иден вработен.Со среќа!</p>
+            <a href="candidates.html"><button id="button2" type="button"><img src="lupa.png" width="30px"
+                        height="30px"></button></a>
+        </div>
+        <div class="kreiraj3">
+            <h2 id="besplaten">Промовирај<br>Оглас</h2>
+            <p id="para">Промовирајте го вашиот оглас за да добиете повеќе апликанти!</p>
+            <button id="button2" type="button"><img src="upgrade.png" width="30px" height="30px"></button>
+        </div>
+        <div class="kreiraj4">
+            <h2 id="besplaten4"></h2>
+            <p id="para4"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti0"></h5>
+            <button id="button211" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj5">
+            <h2 id="besplaten5"></h2>
+            <p id="para5"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti1"></h5>
+            <button id="button212" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj6">
+            <h2 id="besplaten6"></h2>
+            <p id="para6"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti2"></h5>
+            <button id="button213" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj7">
+            <h2 id="besplaten7"></h2>
+            <p id="para7"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti3"></h5>
+            <button id="button214" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj8">
+            <h2 id="besplaten8"></h2>
+            <p id="para8"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti4"></h5>
+            <button id="button215" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj9">
+            <h2 id="besplaten9"></h2>
+            <p id="para9"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti5"></h5>
+            <button id="button216" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj10">
+            <h2 id="besplaten10"></h2>
+            <p id="para10"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti6"></h5>
+            <button id="button217" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div class="kreiraj11">
+            <h2 id="besplaten11"></h2>
+            <p id="para11"></p>
+            <label id="brAplikanti">Број на апликанти:</label>
+            <h5 id="brojAplikanti7"></h5>
+            <button id="button218" type="button"><img src="eye.png" width="20px" height="20px"></button>
+        </div>
+        <div id="vector1" class="animate__animated animate__zoomIn">
+            <div id="search">
+                <form>
+                    <label id="element1" for="text">Покани други кандидати</label>
+                    <input id="element2" type="text" name="text" placeholder="Дигитален маркетер">
+                    <a href="bintern12.html"><button id="buttonsearch" type="button">Пребарај</button></a>
+                </form>
+            </div>
+            <h5 id="kandidati">Кандидати кои аплицираа на вашиот оглас</h5>
+            <h6 id="zapozicija">за позицијата</h6>
+            <h5 id="digitalen">Дигитален маркетер</h5>
+            <div id="row" class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-10 nazad">
+                    <button id="nazad1" type="button">Назад</button>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper1">
+            <div id="slikata">
+                <img id="img1" src="man.png" width="153px" height="153">
+            </div>
+            <a id="top"></a>
+            <h3 id="pokanet">Кандидатот е поканет на интервју</h3>
+            <button id="pokani" type="button">Покани на интервју</button>
+            <h2 id="imeDefault">Име и Презиме</h2>
+            <h2 id="imeto"></h2>
+            <p id="para1"></p>
+            <p id="paragrafot">Јас сум Марин Електроинженеров, фокусиран на тестирање на бизнис идеи и
+                креирање на спринт процеси за компании кои сакаат да ја креираат бизнис
+                идејата на нивниот живот.</p>
+
+            <h2 id="praksa">Каква пракса барам</h2>
+
+            <p id="para2">Барам пракса во областа на
+                дигиталниот маркетинг, сакам да се надоградам и да станам професионалец.</p>
+
+            <h2 id="kontaktInfo">Контакт информации</h2>
+            <h4 id="kontaktTel">Телефон:<span id="kontakt">0723232</span></h4>
+            <h4 id="kontaktEmail">Е-маил:<span id="kontaktMail">dimitarmitrevski5@gmail.com</span></h4>
+            <h2 id="osnovni">Основни информации</h2>
+            <div class="informacii">
+                <h5 id="univerzitet">Универзитет</h5>
+                <h5 id="kiril"></h5>
+            </div>
+            <div class="informacii2">
+                <h5 id="univerzitet">Факултет</h5>
+                <h5 id="fakultet1">Економски Факултет</h5>
+            </div>
+            <div class="informacii3">
+                <h5 id="univerzitet">Година на студии</h5>
+                <h5 id="godina"></h5>
+            </div>
+            <div class="informacii4">
+                <h5 id="univerzitet">Град</h5>
+                <h5 id="gradce">Скопје</h5>
+            </div>
+            <div class="vestini">
+                <h3 id="vestinT">Вештини</h3>
+                <div id="predmet">
+                    <h6 id="imepre"></h6>
+                    <p id="imepre1"></p>
+
+                </div>
+
+            </div>
+            <div class="moite">
+                <h5 id="proekti">Моите проекти</h5>
+                <p id="paragraf">Robert B. Parker's The Bitterest Pill. ...<br>
+                    The Titanic Secret. Jack Du Brul and Clive Cussler.<br>
+                    The Testaments. Margaret Atwood.</p>
+                <p id="paragraf1"></p>
+            </div>
+            <div class="ostvareni">
+                <h5 id="opraksi">Остварени пракси</h5>
+                <div id="praksata">
+                    <h5 id="nemaPraksa" style="display: none;">Нема</h5>
+                    <h5 id="kakva1"><span id="digitalen1"></span><span id="vo">во</span><span id="kade1"></span></h5>
+                    <h5 id="kakva2"><span id="digitalen2"></span><span id="vo">во</span><span id="kade2"></span></h5>
+                    <h5 id="kakva3"><span id="digitalen3"></span><span id="vo">во</span><span id="kade3"></span></h5>
+                    <h5 id="kakva4"><span id="digitalen4"></span><span id="vo">во</span><span id="kade4"></span></h5>
+                </div>
+
+            </div>
+            <div class="knigi">
+                <h3 id="kniga">Книги кои ми се допаѓаат</h3>
+                <p id="para3">Robert B. Parker's The Bitterest Pill. ...<br>
+                    The Titanic Secret. Jack Du Brul and Clive Cussler.<br>
+                    The Testaments. Margaret Atwood.<br>
+                    The Unkindest Tide. Seanan McGuire.<br>
+                    Dark Illusion. Christine Feehan.<br>
+                    The Secrets We Kept. Lara Prescott.<br>
+                    Quichotte. Salman Rushdie.<br>
+                    The Girl Who Lived Twice. David Lagercrantz.</p>
+                <p id="para33"></p>
+            </div>
+            <h2 id="preporaka">Препораки<span id="nemaPreporaki">Кандидатот нема сеуште препораки. Напиште
+                    препорака!</span>
+            </h2>
+            <div id="preporaka1">
+                <h4 id="prof">проф.ИмеПрезиме</h4>
+                <p id="paragraf5">Покажа одлични комуникациски и лидерски вештини при работењето
+                    на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                    би сакала да го има во својот тим!
+                </p>
+            </div>
+            <div id="preporaka2">
+                <h4 id="prof">проф.ИмеПрезиме</h4>
+                <p id="paragraf5">Покажа одлични комуникациски и лидерски вештини при работењето
+                    на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                    би сакала да го има во својот тим!
+                </p>
+            </div>
+            <div id="preporaka3">
+                <h4 id="prof">проф.ИмеПрезиме</h4>
+                <p id="paragraf5">Покажа одлични комуникациски и лидерски вештини при работењето
+                    на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                    би сакала да го има во својот тим!
+                </p>
+            </div>
+            <div id="preporaka4">
+                <h4 id="prof">проф.ИмеПрезиме</h4>
+                <p id="paragraf5">Покажа одлични комуникациски и лидерски вештини при работењето
+                    на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                    би сакала да го има во својот тим!
+                </p>
+            </div>
+            <div id="preporaka5">
+                <h4 id="prof">проф.ИмеПрезиме</h4>
+                <p id="paragraf5">Покажа одлични комуникациски и лидерски вештини при работењето
+                    на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                    би сакала да го има во својот тим!
+                </p>
+            </div>
+            <button id="kopce" type="button" disabled>Напиши препорака</button>
+            <label id="poraka">Оваа можност сеуште не е достапна</label>
+            <a href="#top"><button id="kopce1" type="button">Покани на интервју</button></a>
+            <button id="kopce2">Назад кон апликантите</button>
+        </div>
+    </div>
+    </div>
+    <script src="../../firebase1.js"></script>
+    <script src="bintern11.js"></script>
+</body>
+
+</html>

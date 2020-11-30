@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Кориснички панел</title>
+    <link rel="icon" type="image/gif/png" href="../../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="bintern10.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="../../jquery.js"></script>
+</head>
+
+<body>
+    <div class="login-cover">
+        <div class="loader">
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="vector"></div>
+        <header>
+            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="objavi" href="../profile.html">Вашиот Профил</a>
+                <a id="najava">Одјави се</a>
+            </nav>
+        </header>
+        <h1 id="korisnicki">Кориснички панел</h1>
+        <div class="navigacija">
+            <a href="view.html">
+                <div id="nav">
+                    <h3 id="centar">Преглед</h3>
+                </div>
+            </a>
+            <a href="myAds.html">
+                <div id="nav1">
+                    <h3 id="centar">Огласи</h3>
+                </div>
+            </a>
+            <a href="candidates.html">
+                <div id="nav2">
+                    <h3 id="centar">Кандидати</h3>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div id="nav3">
+                    <h3 id="centar">Пораки</h3>
+                </div>
+            </a>
+        </div>
+        <hr id="hr">
+        <div class="aktivni">
+            <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Мои огласи:<span id="brMoiOglasi"></span></h3>
+            <hr id="hr1">
+            <h5 id="marketer" class="animate__animated animate__zoomIn animate__slow">Видете ги
+                вашите огласи и
+                проверете дали
+                имате апликанти</h5>
+            <hr id="hr2">
+            <button id="button" type="button">Види апликанти</button>
+            <a href="myAds.html"><label id="site">Сите огласи></label></a>
+        </div>
+        <div class="aktivni1">
+            <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Непрочитани пораки</h3>
+            <hr id="hr1">
+            <h5 id="marketer1">Немате непрочитани пораки</h5>
+            <hr id="hr2">
+            <a href="messages.html"><label id="site">Сите пораки></label></a>
+        </div>
+        <div class="aktivni2">
+            <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Сите Кандидати</h3>
+            <hr id="hr1">
+            <h5 id="marketer1">Немате непрочитани пораки</h5>
+            <hr id="hr2">
+            <a href="candidates.html"><label id="site">Сите Кандидати></label></a>
+        </div>
+        <div id="divaider"><a id="zakon" href="../../Zakon-za-praktikanstvo-21-05-2019.pdf" target="_blank">
+                Закон за практиканство
+            </a>
+        </div>
+        <div id="divaider1">
+            <a id="zakon" href="https://binternblog.com" target="_blank">
+                Новости за пракса и вработување
+            </a>
+        </div>
+    </div>
+    <script src="../../firebase.js"></script>
+    <script src="bintern10.js"></script>
+</body>
+
+</html>

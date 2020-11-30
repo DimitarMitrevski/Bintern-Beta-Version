@@ -1,0 +1,514 @@
+#wrapper{
+    position: relative;
+width: 1400px;
+height: 900px;
+margin:0 auto;
+background: #F7F7F7;
+display: none;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+header{
+    position: absolute;
+    width: 1400px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 106.67%;
+    /* or 15px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    
+    
+    color: #000000;
+    
+    }
+    nav{
+        position: absolute;
+    width: 568.14px;
+    height: 54px;
+    left: 900px;
+    top: 60px;
+    border-spacing: 10px;
+   
+    }
+    #logoto{
+      position: absolute;
+      top:20px; 
+      left:60px;
+      transition: 0.5s;
+    }
+    #logoto:hover{
+       top:10px;
+     width:188px; 
+     height:70px;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+
+ }
+    #firmite{
+        position: absolute;
+        width: 142.03px;
+        height: 0px;
+        left: -300px;
+        top: 0px;
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        color: #000000;
+         text-decoration: none;
+        }
+        
+        #praktikanti{
+            position: absolute;
+            width: 142.03px;
+            height: 0px;
+            left: -150px;
+            top: 0px;
+            font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        color: #000000;
+        text-decoration: none;
+            }
+            #objavi{
+                position: absolute;
+                width: 142.03px;
+                height: 0px;
+                left: 0px;
+                top: 0px;
+                font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        color: #000000;
+        text-decoration: none;
+                }
+                #najava{
+                    position: absolute;
+                    width: 142.03px;
+                    height: 0px;
+                    left: 190px;
+                    top: 0px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 106.67%;
+                    /* or 15px */
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.03em;
+                    
+                    color: #000000;
+                    text-decoration: none;
+                }
+                #vector1{
+                    position: absolute;
+                    width: 1400px;
+                    height: 100%;
+                    left: 0px;
+                    top: 120px;
+                    background: linear-gradient(246.95deg, #F47A61 -3.69%, #F15F61 80.97%);
+                    }
+                    #vector2{
+                        position: absolute;
+                        width: 400px;
+                        height: 400px;
+                        left: 500px;
+                        top: 10%;
+                        background: #59C7D6;
+                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                     border-radius: 12px;
+                     align-items: center;
+                     padding-top: 15px;
+                        }
+                        #najavise {
+                        
+                          font-family: Century Gothic;
+                          font-style: normal;
+                          font-weight: bold;
+                          font-size: 29px;
+                          line-height: 106.67%;
+                         
+                          text-align: center;
+                          letter-spacing: -0.03em;
+                          margin-top: 30px;
+                      }
+                      .btn-outline-danger {
+                        color: #f7f7f7;
+                      }
+ #element3{
+    position: absolute;
+    left: 120px;
+     top: 100px;
+    font-family: Century Gothic;
+ font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+ line-height: 106.67%;
+/* or 26px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.03em;
+ }
+ #element4{
+    position: absolute;
+    width: 300px;
+    height: 38px;
+    left: 50px;
+     top: 150px;
+     background: #EBEBEB;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+
+ }
+ #element5{
+    position: absolute;
+    left: 160px;
+     top: 210px;
+    font-family: Century Gothic;
+ font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+ line-height: 106.67%;
+/* or 26px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.03em;
+
+ }
+ #element6{
+    position: absolute;
+    width: 300px;
+    height: 38px;
+    left: 50px;
+     top: 260px;
+     background: #EBEBEB;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 12px;
+ }
+ #najavi {
+  width: 180px;
+  height: 49px;
+  background: linear-gradient(246.95deg, #F47A61 -3.69%, #F15F61 80.97%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 106.67%;
+  margin: 38px 28%;
+}
+    #registracija {
+      position: absolute;
+      top: 192px;
+      width: 100%;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      color: #FFFFFF;
+      text-align: center;
+  }
+  
+  a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+  }
+  #najavi1 {
+    width: 180px;
+    height: 49px;
+    background: linear-gradient(246.95deg, #F47A61 -3.69%, #F15F61 80.97%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 106.67%;
+    margin: 37px 28%;
+}
+#registracija1 {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 319px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 106.67%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#najavi1:hover{
+  cursor:pointer;
+  background:#FFFFFF;
+  color:salmon;
+}
+#najavi:hover{
+  cursor:pointer;
+  background:#FFFFFF;
+  color:salmon;
+}
+#kontakt1 {
+  position: absolute;
+  top: -7px;
+  left: -86%;
+  text-decoration: none;
+  color: black;
+  font-family: Century MONOSPACE;
+  font-size: 17px;
+  font-weight: bold;
+}
+.img1{display: none;}
+.navbar{
+  display:none;
+}
+@media screen and (max-width: 430px) {
+  #logoto{
+    position: absolute;
+    top:-10px;
+    left: 87px;
+    display:none;
+}
+nav{
+  all:unset;
+}
+.navbar{
+  position:fixed;
+  width: -webkit-fill-available;
+  display: flex;
+  top: 0;
+
+}
+.navigation{
+  position: absolute;
+  top:50px;
+  left: 0px;
+  width: 430px;
+  height: 30px;
+  background-color:#59C7D6;
+  cursor:pointer;
+  display: block;
+}
+#horzNav{
+  all:unset;
+  position: absolute;
+  top: 49px;
+  left: 0px;
+  width: 436px;
+  height: 254px;
+  background-color:#59C7D6;
+  overflow-wrap: normal;
+  display: none;
+}
+#izlezi {
+  all: unset;
+  position: absolute;
+  width: 829px;
+  top: 11px;
+  left: 10px;
+  left: -398px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+}
+#izlezi:hover{
+  color:#FFFFFF;
+}
+#firmite{
+  position:absolute;
+  width:425px;
+  top:50px;
+  left: 0px;
+    padding-left: 10px;
+    padding-bottom: 17px;
+  border-bottom: 1px solid black;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  color:black;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  }
+  #firmite:hover{
+      color:#FFFFFF;
+  }
+  
+  #praktikanti{
+      position:absolute;
+      width:425px;
+      top: 94px;
+      left: 0px;
+    padding-left: 10px;
+    padding-bottom: 17px;
+      border-bottom: 1px solid black;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      color:black;
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+      }
+      #praktikanti:hover{
+          color:#FFFFFF;
+      }
+   
+      #objavi{
+          position:absolute;
+          width:425px;
+          top: 137px;
+          left: 0px;
+          padding-left: 10px;
+          padding-bottom: 17px;
+          border-bottom: 1px solid black;
+          font-family: Century Gothic;
+          font-style: normal;
+          font-weight: bold;
+          color:black;
+          text-decoration: none;
+          font-size: 18px;
+          cursor: pointer;
+          }
+          #objavi:hover{
+              color:#FFFFFF;
+
+          }
+          #najava{
+              position:absolute;
+              width:425px;
+              top: 177px;
+              left: 0px;
+              padding-left: 10px;
+              padding-bottom: 17px;
+              border-bottom: 1px solid black;
+              font-family: Century Gothic;
+              font-style: normal;
+              font-weight: bold;
+              color:black;
+              text-decoration: none;
+              font-size: 18px;
+              cursor: pointer;
+              }
+              #najava:hover{
+                  color:#FFFFFF;
+
+              }
+              #kontakt1 {
+                position: absolute;
+                width: 729px;
+                top: 209px;
+                left: -293px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid black;
+                font-family: Century MONOSPACE;
+                font-style: normal;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                cursor: pointer;
+                display: block;
+            }
+            #kontakt1:hover{
+              color:#FFFFFF;
+            }
+            #vector1{
+              top:90px;
+              height: 117%;
+              align-items: center;
+              width: 100%;
+              padding: 3%;
+              padding-top: 13%;
+            }
+            #vector2 {
+              width: 100%;
+              position: initial;
+              padding: 4% 23%;
+          }
+            #najavise{
+              left:auto;
+              right:30%;
+            }
+       #najavi1{
+         left:auto;
+        right: 25%;
+        margin: auto;
+        margin-top: 20px;
+       }
+       #najavi{
+        left:auto;
+       right: 25%;
+       margin:auto;
+       margin-top: 60px;
+      }
+      #registracija {
+        top: 173px;
+        left: 0px;
+    }
+    #registracija1 {
+      top: 281px;
+  }
+      #wrapper{
+        height:620px;
+        width: 100%;
+      }
+      header{
+        width: 100%;
+      }
+
+}

@@ -1,0 +1,987 @@
+#wrapper{
+    position: relative;
+width: 1400px;
+height: 926px;
+margin:0 auto;
+background: #F7F7F7;
+display:none;
+}
+body{
+    margin:0;
+}
+header{
+    position: absolute;
+    width: 1400px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 106.67%;
+    /* or 15px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    
+    
+    color: #000000;
+    
+    }
+    nav{
+        position: absolute;
+    width: 568.14px;
+    height: 54px;
+    left: 900px;
+    top: 60px;
+    border-spacing: 10px;
+   
+    }
+    #logoto{
+        position: absolute;
+        top:20px;
+         left:60px;
+         transition: 0.5s;
+        }
+        #logoto:hover{
+           top:10px;
+         width:188px; 
+         height:70px;
+         -webkit-box-shadow: 0 10px 6px -6px #777;
+         -moz-box-shadow: 0 10px 6px -6px #777;
+              box-shadow: 0 10px 6px -6px #777;
+   
+     }
+    #firmite{
+        position: absolute;
+        width: fit-content;
+        height: 0px;
+        left: -300px;
+        top: 0px;
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        color: #000000;
+         text-decoration: none;
+        }
+        
+        #praktikanti{
+            position: absolute;
+            width: fit-content;
+            height: 0px;
+            left: -150px;
+            top: 0px;
+            font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        color: #000000;
+        text-decoration: none;
+            }
+            #objavi{
+                position: absolute;
+                width: 142.03px;
+                height: 0px;
+                left: 0px;
+                top: 0px;
+                font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        color: #000000;
+        text-decoration: none;
+                }
+                .spinner-border{
+                    border-color:salmon;
+                    border-right-color: transparent;
+                }
+                #najava{
+                    position: absolute;
+                    width: 142.03px;
+                    height: 0px;
+                    left: 190px;
+                    top: 0px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 106.67%;
+                    /* or 15px */
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.03em;
+                    
+                    color: #000000;
+                    text-decoration: none;
+                }
+                #firmite,#kontakt1,#praktikanti,#objavi,#najava{
+                    transition: 0.5s;
+                
+                }
+            #vector1{
+            position: absolute;
+            width: 1400px;
+            height: 600px;
+            left: 0px;
+            top: 120px;
+            background: #ffffff;
+            }
+            #registriraj {
+                position: absolute;
+                height: 164px;
+                left: 480px;
+                top: -33px;
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 106.67%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: -0.03em;
+                color: #000000;
+            }
+#registrationform{
+position: absolute;
+width: 700px;
+height: 500px;
+left: 323px;
+top: 223px;
+
+} 
+#singup-form{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    left: 0px;
+    top: -60px;
+    
+    }            
+#label1{
+    position: absolute;
+width: 506px;
+height: 65px;
+left: 50px;
+top: -50px;
+
+} 
+#element1{
+ position: absolute;
+width: 198px;
+height: 46px;
+left: 220px;
+top: -25px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #9C9999;
+
+}
+.login-cover{
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 800;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+  }
+#name{
+position: absolute;
+width: 506px;
+height: 38px;
+left: 60px;
+top: 0px;
+
+background: #EBEBEB;
+}
+
+#element3{
+    position: absolute;
+   width: 198px;
+   height: 46px;
+   left: 120px;
+   top: 5px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 100%;
+   /* or 14px */
+   
+   text-align: center;
+   letter-spacing: -0.03em;
+   
+   color: #9C9999;
+   
+   }
+   #singup-email{
+    position: absolute;
+    width: 243px;
+    height: 38px;
+    left: 107px;
+    top: 25px;
+    
+    background: #EBEBEB;
+    }
+    #element5{
+        position: absolute;
+       width: 198px;
+       height: 46px;
+       left: 390px;
+       top: 5px;
+       font-family: Century Gothic;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 14px;
+       line-height: 100%;
+       /* or 14px */
+       
+       text-align: center;
+       letter-spacing: -0.03em;
+       
+       color: #9C9999;
+       
+       }
+       .navbar{
+           display:none;
+       }
+       #singup-password{
+        position: absolute;
+        width: 243px;
+        height: 38px;
+        left: 370px;
+        top: 25px;
+        
+        background: #EBEBEB;
+        }
+
+        #element7{
+            position: absolute;
+           width: 198px;
+           height: 46px;
+           left: 270px;
+           top: 100px;
+           font-family: Century Gothic;
+           font-style: normal;
+           font-weight: normal;
+           font-size: 14px;
+           line-height: 100%;
+           /* or 14px */
+           
+           text-align: center;
+           letter-spacing: -0.03em;
+           
+           color: #9C9999;
+           
+           }
+           #text{
+            position: absolute;
+            width: 506px;
+            height: 90px;
+            left: 107px;
+            top: 120px;
+            
+            background: #EBEBEB;
+            }
+        
+            #element9{
+                position: absolute;
+               width: 198px;
+               height: 46px;
+               left: 270px;
+               top: 325px;
+               font-family: Century Gothic;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 14px;
+               line-height: 100%;
+               /* or 14px */
+               
+               text-align: center;
+               letter-spacing: -0.03em;
+               
+               color: #9C9999;
+               
+               }
+
+               #element10{
+                position: absolute;
+                width: 170px;
+                height: 38px;
+                left: 280px;
+                top: 350px;
+                
+                background: #EBEBEB;
+                }
+                #prikaci{
+
+                    position: absolute;
+                    width: 137px;
+                    height: 44px;
+                    left: 375px;
+                    top: 270px;
+                    
+                    background: #9C9999;
+                    font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+letter-spacing: -0.03em;
+
+color: #FFFFFF;
+
+                }
+                #element11{
+                    position: absolute;
+                    width: 500px;
+                    height: 46px;
+                    left: 80px;
+                    top: 410px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    text-align: center;
+                    letter-spacing: -0.03em;
+                    
+                    color: #9C9999;
+                    
+                    }
+
+                    #element12 {
+                        position: absolute;
+                        left: 572px;
+                        top: 408px;
+                        height: 20px;
+                        width: 20px;
+                    }
+#element13{
+position: absolute;
+width: 204px;
+height: 65px;
+left: 250px;
+top: 540px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+                }
+                .alert{
+                    position: absolute;
+                    width: 600px;
+                    height: 426px;
+                    left: 340px;
+                    top: 220px;
+                    padding-top: 200px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    background:#FFFFFF;
+                    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                     display: none;
+                     font-family: Century Gothic;
+                   font-style: normal;
+                   font-weight: bold;
+                    font-size: 24px;
+                
+                }
+                .cover{
+        
+                    position: absolute;
+                    width: 1400px;
+                    height: 850px;
+                    left: -1px;
+                    top: 98px;
+                    background:#FFFFFF;
+                    opacity: 0.9;
+                    filter: blur(9px);
+                    display: none;
+                        }
+                        #uspesna{
+                            position: absolute;
+                            left: 130px;
+                            top: 100px;
+                        }
+  #nazad{
+ position: absolute;
+width: 150.76px;
+height: 49px;
+right: 10px;
+bottom:20px;
+background: #ffffff;
+border: 1px solid #59C7D6;
+box-sizing: border-box;
+border-radius: 12px;
+font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 106.67%;
+    /* or 15px */
+    
+    
+    letter-spacing: -0.03em;
+    
+    color: #59C7D6;
+  
+                    }
+               
+    .g-recaptcha{
+        position: absolute;
+        bottom: -25px;
+        left: 190px;
+
+    }
+    #g-recaptcha-error{
+        position: absolute;
+        bottom:10px;
+        left: -12px;
+        font-size: 18px;
+    }
+    #firmite:hover{
+        width: 85px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid salmon;
+    }
+    #praktikanti:hover{
+        width: 105px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid salmon;
+    }
+    #objavi:hover{
+        top: -10px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid salmon;
+    }
+    #najava:hover{
+        top: -10px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid salmon;
+    }
+#izlezi{
+    display:none;
+}
+#firmite1{
+    display:none;
+}
+
+#praktikanti1{
+    display:none;
+}
+#objavi1{
+    display:none;
+}
+#najava1{
+    display:none;
+}
+body{
+    overflow-x: hidden; 
+    /* overflow-y: hidden;  */
+}
+.img1{
+    display: none;
+}
+#element22{
+    position: absolute;
+   width: 198px;
+   height: 46px;
+   left: 128px;
+   top: 230px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 100%;
+   /* or 14px */
+   
+   text-align: center;
+   letter-spacing: -0.03em;
+   
+   color: #9C9999;
+   
+   }
+   #industrija {
+    position: absolute;
+    width: 243px;
+    height: 38px;
+    left: 108px;
+    top: 255px;
+    background: #EBEBEB;
+}
+#element23{
+    position: absolute;
+   width: 198px;
+   height: 46px;
+   left: 397px;
+   top: 230px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 100%;
+   /* or 14px */
+   
+   text-align: center;
+   letter-spacing: -0.03em;
+   
+   color: #9C9999;
+   
+   }
+   #kontaktTelefon {
+    position: absolute;
+    width: 243px;
+    height: 38px;
+    left: 372px;
+    top: 255px;
+    background: #EBEBEB;
+}
+
+    @media screen and (max-width: 430px){
+        #logoto{
+            position: absolute;
+            top: -7px;
+            left: auto;
+            right: 30%;
+        }
+        #label1 {
+            width: 100%;
+            left: 0px;
+            top: 32px;
+            text-align: center;
+            justify-items: center;
+        }
+        .navigation{
+            position: absolute;
+            top:50px;
+            left: 0px;
+            width: 100%;
+            height: 30px;
+            background-color:#59C7D6;
+            cursor:pointer;
+        }
+        header{
+            width: 100%;
+        }
+        #izlezi{
+            position:absolute;
+            width: 96%;
+            left:10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid black;
+            font-family: Century Gothic;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+        }
+        #izlezi:hover{
+            color:#FFFFFF;
+        }
+        #firmite{
+            display: none;
+            }
+             #praktikanti{
+                 display: none;
+             }   
+             #objavi{
+                 display: none;
+             }
+             #najava{
+                 display: none;
+             }
+        #firmite1{
+            position:absolute;
+            width: 96%;
+            top:50px;
+            left:10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            font-family: Century Gothic;
+            font-style: normal;
+            font-weight: bold;
+            color:black;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+            }
+            #firmite1:hover{
+                color:#FFFFFF;
+            }
+            
+            #praktikanti1{
+                position:absolute;
+                width: 96%;
+                top:100px;
+                left:10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid black;
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: bold;
+                color:black;
+                text-decoration: none;
+                font-size: 18px;
+                cursor: pointer;
+                }
+                #praktikanti1:hover{
+                    color:#FFFFFF;
+                }
+             
+                #objavi1{
+                    position:absolute;
+                    width: 96%;
+                    top:150px;
+                    left:10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid black;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: bold;
+                    color:black;
+                    text-decoration: none;
+                    font-size: 18px;
+                    cursor: pointer;
+                    }
+                    #objavi1:hover{
+                        color:#FFFFFF;
+    
+                    }
+                    #najava1{
+                        position:absolute;
+                        width: 96%;
+                        top:200px;
+                        left:10px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid black;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        color:black;
+                        text-decoration: none;
+                        font-size: 18px;
+                        cursor: pointer;
+                        }
+                        #najava1:hover{
+                            color:#FFFFFF;
+        
+                        }
+        #wrapper{
+            position: relative;
+            width: 100%;
+            height: 855px;
+            margin: 0 auto;
+            background: #F7F7F7;
+        }
+        #singup-form {
+            width: 100%;
+            height: 687px;
+            left: 0px;
+            top: 0;
+        }
+       
+        #vector1{
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            width: 100%;
+        }
+        #registriraj {
+            all: unset;
+            position: absolute;
+            width: 100%;
+            height: 39px;
+            left: 0px;
+            top: 22px;
+            font-family: Century Gothic;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 106.67%;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #000000;
+        }
+                        #registrationform {
+                            position: absolute;
+                            width: 100%;
+                            height: 604px;
+                            left: 0px;
+                            top: 55px;
+                        }
+                        #element1 {
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            font-size: 14px;
+                        }
+                        #name {
+                            position: absolute;
+                            width: 78%;
+                            height: 38px;
+                            left: 0px;
+                            top: 0px;
+                            background: #EBEBEB;
+                            margin: 0 11%;
+                        }
+                            #element5 {
+                                position: absolute;
+                                width: 300px;
+                                height: 46px;
+                                left: 0px;
+                                top: 156px;
+                                width: 100%;
+                            }
+                            #element3 {
+                                position: absolute;
+                                left: 0px;
+                                top: 81px;
+                                width: 100%;
+                            }
+                            #singup-email {
+                                position: absolute;
+                                width: 80%;
+                                height: 38px;
+                                left: 0px;
+                                top: 103px;
+                                margin: 0 10%;
+                            }
+                            #singup-password {
+                                position: absolute;
+                                width: 80%;
+                                height: 38px;
+                                left: 0px;
+                                top: 179px;
+                                margin: 0 10%;
+                            }
+                            #element7 {
+                                position: absolute;
+                                width: 100%;
+                                height: 46px;
+                                left: 0px;
+                                top: 230px;
+                            }
+                            #text {
+                                position: absolute;
+                                width: 80%;
+                                height: 90px;
+                                left: 0px;
+                                top: 255px;
+                                margin: 0 10%;
+                            }
+                            #element9 {
+                                position: absolute;
+                                width: 100%;
+                                height: 46px;
+                                left: 0px;
+                                top: 437px;
+                            }
+                            #element10 {
+                                position: absolute;
+                                width: 53%;
+                                height: 38px;
+                                left: 0px;
+                                top: 458px;
+                                margin: 0 25%;
+                            }
+                            #element11 {
+                                position: absolute;
+                                width: 90%;
+                                height: 46px;
+                                left: 0px;
+                                top: auto;
+                                bottom: 124px;
+                                font-size: 12px;
+                                text-align: end;
+                            }
+                            nav{
+                                display: none;
+                            }
+                            #element12 {
+                                position: absolute;
+                                right: 0px;
+                                left: auto;
+                                top: auto;
+                                bottom: 162px;
+                                margin-right: 4%;
+                            }
+                            .g-recaptcha {
+                                position: absolute;
+                                bottom: 60px;
+                                left: 0px;
+                                margin: 0 10%;
+                            }
+                            #g-recaptcha-error {
+                                position: absolute;
+                                bottom: 136px;
+                                left: 155px;
+                                font-size: 18px;
+                                display:block;
+                            }
+                            #element13 {
+                                position: absolute;
+                                width: 48%;
+                                height: 45px;
+                                left: 0;
+                                top: auto;
+                                bottom: 0px;
+                                margin: 0 26%;
+                            }
+                                .cover {
+                                    position: absolute;
+                                    width: 430px;
+                                    height: 800px;
+                                    left: 0px;
+                                    top: 28px;
+                                    
+                                }
+                                .alert {
+                                    position: absolute;
+                                    width: 305px;
+                                    height: 308px;
+                                    left: auto;
+                                    right: 12%;
+                                    top: 404px;
+                                    padding-top: 100px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+
+                                    background: #FFFFFF;
+                                    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+                                    border-radius: 5px;
+                                   
+                                    font-family: Century Gothic;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 17px;
+                                }
+                                #nazad {
+                                    position: absolute;
+                                    width: 150.76px;
+                                    height: 49px;
+                                    left: 100px;
+                                }
+                                #uspesna {
+                                    position: absolute;
+                                    top:20px;
+                                    left: 30px;
+                                }
+                                #industrija {
+                                    width: 39%;
+                                    top: 387px;
+                                    left: 22px;
+                                    
+                                } 
+                                
+                                #element22 {
+                                    left: 0px;
+                                    top: 362px;
+                                }
+                                #kontaktTelefon {
+                                    position: absolute;
+                                    width: 40%;
+                                    height: 31px;
+                                    left: auto;
+                                    right: 26px;
+                                    top: 387px;
+                                }
+                        #element23{
+                            left: auto;
+                            right: 0px;
+                            top: 362px;
+                        }
+                      
+                        #logoto{
+                            display:none;
+                        }  
+                        nav{
+                            all:unset;
+                        }
+                        .navbar{
+                            position:fixed;
+                            width: -webkit-fill-available;
+                            display: flex;
+                        }
+        
+                        
+    }
+    @media screen and (max-width: 335px){
+    body{
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+    #element11 {
+        position: absolute;
+        width: 310px;
+        height: 46px;
+        left: 0px;
+        font-size: 9.5px;
+        text-align: center;
+    }
+    .g-recaptcha {
+        margin: auto;
+        left: 12px;
+    }
+    #g-recaptcha-error{
+        left: 12px;
+    }
+    .alert{
+        right:3%;
+    }
+    }
+                     

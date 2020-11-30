@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern</title>
+    <link rel="icon" type="image/gif/png" href="../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="keywords" content="Internships, Work, Работа, Вработување, Пракса, практична работа">
+    <meta name="description" content="Платформа за вработување и практиканство.">
+    <meta name="author" content="Bintern DOOEL">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- <meta name="viewport" content="width=device-width, inital-scale=1.0"/> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="bintern2.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+    <script src="../jquery.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+</head>
+
+<body>
+    <div class="login-cover">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <header>
+            <a href="../index.html"> <img src="../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="firmite" href="../bintern4.html">За Фирмите</a>
+                <a id="praktikanti" href="../bintern5.html">За практиканти</a>
+                <a id="objavi" href="registration.html">Објави оглас Бесплатно</a>
+                <a id="najava" href="../registrationOrSingIn.html">Најава/Регистрација</a>
+            </nav>
+        </header>
+
+        <div id="vector1">
+            <h1 id="registriraj">Регистрирај компанија</h1>
+            <div id="registrationform">
+                <form id="singup-form" action="" method="" onsubmit="return submitUserForm();">
+
+                    <div id="label1">
+                        <label id="element1" for="imekomp">Име на компанија</label>
+                        <input id="name" type="text" name="imekomp" placeholder="Firma DOO" maxlength="40" required>
+                    </div>
+
+                    <label id="element3" for="email">е-маил адреса:</label>
+                    <input id="singup-email" type="email" name="email" placeholder="user@gmail.com" maxlength="50"
+                        required>
+                    <label id="element5" for="password">лозинка:</label>
+                    <input id="singup-password" type="password" name="password" minlength="8" maxlength="50" required>
+
+                    <label id="element7" for="opis">Опис на компанијата</label>
+                    <textarea id="text" type="text" name="opis" placeholder="До 255 карактери" maxlength="255"
+                        required></textarea>
+
+                    <label id="element9" for="logo">Лого на фирмата</label>
+                    <input onchange="javascript:  var upl = document.getElementById('element10');
+                    if (upl.files[0].size >2097152) {
+                        window.alert('Сликата е преголема ве молиме додадете помала слика до 2MB');
+                        upl.value = '';
+                    }" id="element10" type="file" accept="image/*" name="logo" placeholder="logo.img">
+                    <label id="element22" for="industrija">Индустрија</label>
+                    <!-- <input id="industrija" type="text" name="industrija" placeholder="Информатичка Технологија" maxlength="40" required></input> -->
+                    <select id="industrija" name="industrija" required>
+                        <option value="">Избери Индустрија</option>
+                        <option value="Маркетинг">Маркетинг</option>
+                        <option value="Информатичка Технологија">Информатичка Технологија</option>
+                        <option value="Економија">Економија</option>
+                        <option value="Градежништво">Градежништво</option>
+                        <option value="Угостителство">Угостителство</option>
+                        <option value="Право и правни работи">Право и правни работи</option>
+                        <option value="Техничка Индустрија">Техничка Индустрија</option>
+                        <option value="Трговија">Трговија</option>
+                        <option value="Медицинска Индустрија">Медицинска Индустрија</option>
+                        <option value="Продажба">Продажба</option>
+                        <option value="Друго">Друго</option>
+                    </select>
+                    <label id="element23" for="kontaktTelefon">Контакт телефон</label>
+                    <input id="kontaktTelefon" type="number" name="KontaktTelefon" placeholder="07XXXXXXX"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        maxlength="14" required></input>
+
+                    <label id="element11" for="agree">Се согласувам со условите за користење на БИНТЕРН.</label>
+                    <input id="element12" type="checkbox" name="agree" required>
+                    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LcUP-EUAAAAAOOBNmabH3bmpsAUmwXjbdvjhiF9"
+                        data-callback="verifyCaptcha"></div>
+                    <div id="g-recaptcha-error"></div>
+                    <button id="element13" type="submit" class="btn btn-outline-primary">Зачувај компанија</button>
+            </div>
+        </div>
+        </form>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <a class="navbar-brand" href="#"><img src="../bintern2.png" class="animate__animated animate__backInDown"
+                    id="logoto1" width="168px" height="60px" alt="Here was a photo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Почетна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../kontakt.html">Контактирај нѐ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="companies/registration.html">Објави оглас Бесплатно<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                            <a class="dropdown-item" href="../bintern4.html">За фирмите</a>
+                            <a class="dropdown-item" href="../bintern5.html">За практикании</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../registrationOrSingIn.html">Регистрација/Најава</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="cover"></div>
+        <div class="animate__animated animate__backInDown alert">
+            <h4 id="uspesna">Вашата Регистрација е успешна!</h4>
+            <p>Ви благодариме за регистрацијата на БИНТЕРН.
+                Најавете се и нјдете го вашиот иден вработен.
+            </p>
+            <button id="nazad" type="button">Назад</button>
+        </div>
+        <script src="../firebase.js"></script>
+        <script src="bintern2.js"></script>
+</body>
+
+</html>

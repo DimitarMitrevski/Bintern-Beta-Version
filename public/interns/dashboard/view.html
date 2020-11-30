@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Кориснички панел</title>
+    <link rel="icon" type="image/gif/png" href="../../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bintern19.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-functions.js"></script>
+    <script src="../../jquery.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Login dialog -->
+    <dialog id="loginDialog" class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Најави се</h4>
+        <div class="mdl-dialog__content">
+            <p id="loginError"></p>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="loginEmail" onkeyup="inputKeyUp(event)">
+                <label class="mdl-textfield__label" for="sample3">Е-маил...</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="loginPassword" onkeyup="inputKeyUp1(event)">
+                <label class="mdl-textfield__label" for="sample3">Лозинка...</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button id="loginBtn"
+                class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Најава
+            </button>
+            <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+        <!-- <div id="izvestuvanje">
+            <h4 id="text">Вашата е-маил адреса не е верифицирана, ве молиме проверете го вашиот мејл</h4>
+        </div> -->
+    </dialog>
+    <div class="login-cover">
+        <!-- <h3 id="msg" style="display: none;">За да се најавите користете Google Chrome</h3> -->
+        <div class="page-loader mdl-spinner mdl-js-spinner is-active" id="spiner"></div>
+
+    </div>
+
+    <div id="wrapper">
+        <div id="vector"></div>
+        <header>
+            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="objavi" href="../profile.html">Вашиот Профил</a>
+                <a id="najava">Одјави се</a>
+            </nav>
+        </header>
+        <h1 id="korisnicki">Кориснички панел</h1>
+        <div class="navigacija">
+            <a href="view.html">
+                <div id="nav">
+                    <h3 id="centar">Преглед</h3>
+                </div>
+            </a>
+            <a href="ads.html">
+                <div id="nav1">
+                    <h3 id="centar">Огласи</h3>
+                </div>
+            </a>
+            <a href="companies.html">
+                <div id="nav2">
+                    <h3 id="centar">Компании</h3>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div id="nav3">
+                    <h3 id="centar">Пораки</h3>
+                </div>
+            </a>
+        </div>
+        <div class="aktivni">
+            <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Активни огласи:<span id="brOglasi"></span></h3>
+            <hr id="hr1">
+            <h5 id="marketer">Види ги сите огласи и аплицирај за пракса или вработување</h5>
+            <hr id="hr2">
+            <a href="ads.html"><button id="button" type="button">Види огласи</button></a>
+            <a href="ads.html"><label id="site">Сите огласи></label></a>
+        </div>
+        <div class="aktivni1">
+            <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Покани од Компании:<span id="pokani">0</span></h3>
+            <hr id="hr1">
+            <h5 id="marketer1">Немате непрочитани пораки</h5>
+            <hr id="hr2">
+            <label id="vidiPokani">Види Покани></label>
+        </div>
+        <div class="aktivni2">
+            <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Компании</h3>
+            <hr id="hr1">
+            <h5 id="marketer1">Немате непрочитани пораки</h5>
+            <hr id="hr2">
+            <a href="companies.html"><label id="site">Сите Компании></label></a>
+        </div>
+        <div id="divaider">
+            <a id="zakon" href="../../Zakon-za-praktikanstvo-21-05-2019.pdf" target="_blank">
+                Закон за<br> практиканство
+            </a>
+        </div>
+        <div id="divaider1">
+            <a id="zakon" href="https://binternblog.com" target="_blank">
+                Новости за пракса и вработување
+            </a>
+        </div>
+        <div class="cover">
+            <h3 id="izlezi">Излези</h3>
+            <h2 id="naslov">Погледнте ги сите покани од Компании</h2>
+            <div class="pokana1">
+                <img id="slika1" src="company.png">
+                <h3 id="ime1">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr1">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <button type="button" id="button1">Види огласи</button>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite1">0</span></h6>
+            </div>
+            <div class="pokana2">
+                <img id="slika2" src="company.png">
+                <h3 id="ime2">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr2">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite2">0</span></h6>
+                <button type="button" id="button2">Види огласи</button>
+            </div>
+            <div class="pokana3">
+                <img id="slika3" src="company.png">
+                <h3 id="ime3">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr3">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite3">0</span></h6>
+                <button type="button" id="button3">Види огласи</button>
+            </div>
+            <div class="pokana4">
+                <img id="slika4" src="company.png">
+                <h3 id="ime4">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr4">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite4">0</span></h6>
+                <button type="button" id="button4">Види огласи</button>
+            </div>
+            <div class="pokana5">
+                <img id="slika5" src="company.png">
+                <h3 id="ime5">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr5">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite5">0</span></h6>
+                <button type="button" id="button5">Види огласи</button>
+            </div>
+            <div class="pokana6">
+                <img id="slika6" src="company.png">
+                <h3 id="ime6">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr6">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para6">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite6">0</span></h6>
+                <button type="button" id="button6">Види огласи</button>
+            </div>
+            <div class="pokana7">
+                <img id="slika7" src="company.png">
+                <h3 id="ime7">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr7">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para7">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite7">0</span></h6>
+                <button type="button" id="button7">Види огласи</button>
+            </div>
+            <div class="pokana8">
+                <img id="slika8" src="company.png">
+                <h3 id="ime8">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr8">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para8">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite8">0</span></h6>
+                <button type="button" id="button8">Види огласи</button>
+            </div>
+            <div class="pokana9">
+                <img id="slika9" src="company.png">
+                <h3 id="ime9">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr9">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para9">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite9">0</span></h6>
+                <button type="button" id="button9">Види огласи</button>
+            </div>
+            <div class="pokana10">
+                <img id="slika10" src="company.png">
+                <h3 id="ime10">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr10">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite10">0</span></h6>
+                <button type="button" id="button10">Види огласи</button>
+            </div>
+            <div class="pokana11">
+                <img id="slika11" src="company.png">
+                <h3 id="ime11">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr11">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para11">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite11">0</span></h6>
+                <button type="button" id="button11">Види огласи</button>
+            </div>
+            <div class="pokana12">
+                <img id="slika12" src="company.png">
+                <h3 id="ime12">Бинтерн ДООЕЛ Битола</h3>
+                <h4 id="industrija">Индустрија:<span id="industr12">Информатичка технологија</span></h4>
+                <div id="line"></div>
+                <h3 id="opis">Опис на компанијата</h3>
+                <p id="para12">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                    debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                    Nihil, quia itaque?</p>
+                <h6 id="brOglas">Број на огласи:<span id="brOglasite12">0</span></h6>
+                <button type="button" id="button12">Види огласи</button>
+            </div>
+        </div>
+        <div class="cover1">
+            <h3 id="nazad">Излези</h3>
+            <h2 id="naslovot">Сите објавени огласи на<span id="kompanija">Бинтерн</span></h2>
+            <div class="oglas1">
+
+                <h3 id="pozicija1">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce1">Аплицирај</button>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje1">0</span></h6>
+
+            </div>
+            <div class="oglas2">
+
+                <h3 id="pozicija2">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje2">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce2">Аплицирај</button>
+
+            </div>
+            <div class="oglas3">
+
+                <h3 id="pozicija3">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje3">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce3">Аплицирај</button>
+
+            </div>
+            <div class="oglas4">
+
+                <h3 id="pozicija4">Бинтерн ДООЕЛ Битола</h3>
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje4">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce4">Аплицирај</button>
+
+            </div>
+            <div class="oglas5">
+
+                <h3 id="pozicija5">Бинтерн ДООЕЛ Битола</h3>
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje5">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce5">Аплицирај</button>
+
+            </div>
+            <div class="oglas6">
+
+                <h3 id="pozicija6">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa6">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje6">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce6">Аплицирај</button>
+
+            </div>
+            <section class="oglas7" style="display: none;">
+                <h3 id="pozicija7">Бинтерн ДООЕЛ Битола</h3>
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa7">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce7">Аплицирај</button>
+
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje7">0</span></h6>
+            </section>
+            <div class="oglas8">
+
+                <h3 id="pozicija8">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa8">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje8">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce8">Аплицирај</button>
+
+            </div>
+            <div class="oglas9">
+
+                <h3 id="pozicija9">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa9">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje9">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce9">Аплицирај</button>
+
+            </div>
+            <div class="oglas10">
+
+                <h3 id="pozicija10">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje10">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce10">Аплицирај</button>
+
+            </div>
+            <div class="oglas11">
+                <h3 id="pozicija11">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa11">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">објавен:<span id="datumObjavuvanje11">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce11">Аплицирај</button>
+
+            </div>
+            <div class="oglas12">
+                <h3 id="pozicija12">Бинтерн ДООЕЛ Битола</h3>
+
+                <div id="line1"></div>
+                <h3 id="opis1">Опис на праксaта<h3>
+                        <p id="praksa12">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Odio a recusandae maiores accusantium quibusdam sint perferendis excepturi,
+                            debitis in eaque voluptatem rem mollitia quia doloribus adipisci quisquam.
+                            Nihil, quia itaque?</p>
+                        <h6 id="oglasObjaven">Објавен:<span id="datumObjavuvanje12">0</span></h6>
+                        <h6 id="aplicirano">Аплицирано</h6>
+                        <button type="button" id="kopce12">Аплицирај</button>
+
+            </div>
+            <div id="opacity">
+            </div>
+            <div id="message">Успешно аплициравте на огласот.</br> Очекувајте повик за интервју.</br> Со среќа</div>
+        </div>
+    </div>
+    <script src="../../firebase1.js"></script>
+    <script src="bintern19.js"></script>
+</body>
+
+</html>

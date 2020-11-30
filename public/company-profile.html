@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bintern</title>
+  <link rel="icon" type="image/gif/png" href="bintern12.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-functions.js"></script>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="companies/bintern8.css">
+  <link rel="stylesheet" href="companies/style.css" />
+  <link rel="stylesheet" type="text/css" href="company-profile.css">
+</head>
+
+<body>
+
+  <!-- Login dialog -->
+  <dialog id="loginDialog" class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Најави се</h4>
+    <div class="mdl-dialog__content">
+      <p id="loginError"></p>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="loginEmail" onkeyup="inputKeyUp(event)">
+        <label class="mdl-textfield__label" for="sample3">Е-маил...</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="password" id="loginPassword" onkeyup="inputKeyUp1(event)">
+        <label class="mdl-textfield__label" for="sample3">Лозинка...</label>
+      </div>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button id="loginBtn"
+        class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+        Најава
+      </button>
+      <a href="registration.html"><button id="RegistrationBtn"
+          class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+          Регистрација
+        </button>
+      </a>
+
+
+      <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+    <div id="izvestuvanje">
+      <h4 id="text">Вашата е-маил адреса не е верифицирана, ве молиме проверете го вашиот мејл</h4>
+    </div>
+  </dialog>
+
+  <div class="login-cover">
+    <h3 id="msg" style="display: none;">За да се најавите користете Google Chrome</h3>
+    <div class="page-loader mdl-spinner mdl-js-spinner is-active" id="spiner"></div>
+
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Нова порака</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">До:</label>
+              <input type="text" class="form-control" id="recipient-name" readonly>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Порака:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Назад</button>
+          <button type="button" class="btn btn-primary">Испрати порака</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    <div id="slika">
+    </div>
+    <div id="logo">
+    </div>
+    <header>
+      <a href="index.html"><img src="bintern2.png" id="logoto" width="168px" height="60px" alt="Here was a photo"></a>
+      <nav id="horzNav">
+        <h2 id="izlezi">X</h2>
+        <a id="firmite" href="bintern4.html">За Фирмите</a>
+        <a id="objavi" href="createAd.html">Објави оглас Бесплатно</a>
+        <a id="kontakt1" href="kontakt.html">Контактирај нѐ</a>
+        <a id="najava" class="animate__animated animate__heartBeat animate__infinite"
+          href="interns/dashboard/view.html">Кориснички
+          панел</a>
+        <button id="singOutBtn">
+          Одјави се!
+        </button>
+      </nav>
+    </header>
+
+    <h3 id="moja"></h3>
+    <p id="para1"></p>
+    <a id="link" href="" target="_blank">mojafirma.com.mk</a>
+    <h4 id="kontaktTelefon">Контакт телефон:<span id="kontakt"></span></h4>
+    <hr>
+    <div class="vl"></div>
+    <h4 id="aktivni">Активни огласи<br>за практиканти
+      <span id="para3">0</span>
+    </h4>
+    <h3 id="preporaki">Препораки</h3>
+    <div class="elementi1">
+      <h5 id="element1">Број на вработени</h5>
+      <h5 id="brojVraboteni"></h5>
+    </div>
+    <div class="elementi2">
+      <h5 id="element3">Овластено лице</h5>
+      <h5 id="ovlastenoLice"></h5>
+    </div>
+    <div class="elementi3">
+      <h5 id="element3">Адреса</h5>
+      <h5 id="ulica"></h5>
+    </div>
+    <div class="elementi4">
+      <h5 id="element3">Град</h5>
+      <h5 id="gr"></h5>
+    </div>
+    <h5 id="nema">За жал сеуште нема препораки</h5>
+    <a id="pobaraj" href="">Напиши препорака</a>
+    <button id="button" type="button" class="btn btn-outline-primary">Аплицирај на оглас</button>
+    <button id="button2" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Напиши
+      порака</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+      <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown"
+          id="logoto1" width="168px" height="60px" alt="Here was a photo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Почетна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Повеќе информации</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown09">
+              <a class="dropdown-item" href="bintern4.html">За фирмите</a>
+              <a class="dropdown-item" href="bintern5.html">За практикании </a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Moj профил<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="interns/dashboard/view.html">Кориснички панел</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="createAd.html">Објави оглас</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="singOutBtn1">Одјави се</button>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+  <div class="modal fade show" id="gridSystemModal" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel"
+    style="display: none; padding-right: 17px;" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="gridModalLabel">Објавени огласи</h5>
+          <button id="nazad" type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid bd-example-row">
+            <ul class="list-group">
+              <li id="li1" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp1" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn1" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li2" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp2" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn2" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li3" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp3" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn3" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li4" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp4" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn4" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li5" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp5" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn5" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li6" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp6" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn6" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li7" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp7" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn7" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li8" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp8" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn8" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li9" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp9" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn9" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+              <li id="li10" class="list-group-item d-flex justify-content-between align-items-center"
+                style="display: none!important;">
+                <span id="sp10" data-toggle="tooltip" title="Повеќе информации"> Cras justo
+                  odio</span>
+                <button id="btn10" type="button" class="btn btn-primary">Аплицирај</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="nazad1" type="button" class="btn btn-secondary" data-dismiss="modal">Назад</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="firebase.js"></script>
+  <script src="company-profile.js"></script>
+</body>
+
+</html>

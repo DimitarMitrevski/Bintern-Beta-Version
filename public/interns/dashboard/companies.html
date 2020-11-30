@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Кориснички панел</title>
+    <link rel="icon" type="image/gif/png" href="../../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="../../jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="bintern21.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="vector"></div>
+        <header>
+            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="objavi" href="../profile.html">Вашиот Профил</a>
+                <a id="najava">Одјави се</a>
+            </nav>
+        </header>
+        <h1 id="korisnicki">Кориснички панел</h1>
+        <div class="navigacija">
+            <a href="view.html">
+                <div id="nav">
+                    <h3 id="centar">Преглед</h3>
+                </div>
+            </a>
+            <a href="ads.html">
+                <div id="nav1">
+                    <h3 id="centar">Огласи</h3>
+                </div>
+            </a>
+            <a href="companies.html">
+                <div id="nav2">
+                    <h3 id="centar">Компании</h3>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div id="nav3">
+                    <h3 id="centar">Пораки</h3>
+                </div>
+            </a>
+        </div>
+        <div id="search">
+            <h5 style="text-align:center;">Филтрирајте компании</h5>
+            <div class="form-row">
+                <div class="form-group col-md-4 col-4">
+                    <label for="inputState">Компанија</label>
+                    <select id="inputState" class="form-control kompanija">
+                        <option selected value="">Избери...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 col-4">
+                    <label for="inputState">Индустрија</label>
+                    <select id="inputState" class="form-control industrija">
+                        <option selected value="">Избери...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 col-4">
+                    <label for="inputState">Град</label>
+                    <select id="inputState" class="form-control grad">
+                        <option selected value="">Избери...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="alertMessage">Не се пронајдени резултати обидете се повторно.</h2>
+        <div class="red">
+            <div class="row row-cols-1 row-cols-md-3" id="row">
+                <div class="col mb-3 aktivni1 animate__animated animate__zoomIn">
+                    <div class="row no-gutters h-100 position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img id="slika1" src="../../slika4.png" class="w-100" alt="">
+                            <h5 id="akoglasi1" class="mt-0">Columns with stretched link</h5>
+                            <h5 id="marketer1" class="mt-0">Columns with stretched link</h5>
+                        </div>
+                        <div class="col-md-6 position-static p-4 pl-md-0">
+
+                            <p id="paragraf1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                ante
+                                sollicitudin.
+                                Cras
+                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                nisi
+                                vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <a href="#1" id="button1" class="stretched-link">Види профил</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col mb-3 aktivni2 animate__animated animate__zoomIn">
+                    <div class="row no-gutters h-100 position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img id="slika2" src="../../slika4.png" class="w-100" alt="">
+                            <h5 id="akoglasi2" class="mt-0">Columns with stretched link</h5>
+                            <h5 id="marketer2" class="mt-0">Columns with stretched link</h5>
+                        </div>
+                        <div class="col-md-6 position-static p-4 pl-md-0">
+                            <p id="paragraf2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                ante
+                                sollicitudin.
+                                Cras
+                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                nisi
+                                vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <a href="#2" id="button2" class="stretched-link">Види профил</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col mb-3 aktivni3 animate__animated animate__zoomIn">
+                    <div class="row no-gutters h-100 position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img id="slika3" src="../../slika4.png" class="w-100" alt="">
+                            <h5 id="akoglasi3" class="mt-0">Columns with stretched link</h5>
+                            <h5 id="marketer3" class="mt-0">Columns with stretched link</h5>
+                        </div>
+                        <div class="col-md-6 position-static p-4 pl-md-0">
+                            <p id="paragraf3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                ante
+                                sollicitudin.
+                                Cras
+                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                nisi
+                                vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <a href="#3" id="button3" class="stretched-link">Види профил</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col mb-3 aktivni4 animate__animated animate__zoomIn">
+                    <div class="row no-gutters h-100 position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img id="slika4" src="../../slika4.png" class="w-100" alt="">
+                            <h5 id="akoglasi4" class="mt-0">Columns with stretched link</h5>
+                            <h5 id="marketer4" class="mt-0">Columns with stretched link</h5>
+                        </div>
+                        <div class="col-md-6 position-static p-4 pl-md-0">
+                            <p id="paragraf4">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                ante
+                                sollicitudin.
+                                Cras
+                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                nisi
+                                vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <a href="#4" id="button4" class="stretched-link">Види профил</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3 aktivni5 animate__animated animate__zoomIn">
+                    <div class="row no-gutters h-100 position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img id="slika5" src="../../slika4.png" class="w-100" alt="">
+                            <h5 id="akoglasi5" class="mt-0">Columns with stretched link</h5>
+                            <h5 id="marketer5" class="mt-0">Columns with stretched link</h5>
+                        </div>
+                        <div class="col-md-6 position-static p-4 pl-md-0">
+                            <p id="paragraf5">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                ante
+                                sollicitudin.
+                                Cras
+                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                nisi
+                                vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <a href="#5" id="button5" class="stretched-link">Види профил</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3 aktivni6 animate__animated animate__zoomIn">
+                    <div class="row no-gutters h-100 position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img id="slika6" src="../../slika4.png" class="w-100" alt="">
+                            <h5 id="akoglasi6" class="mt-0">Columns with stretched link</h5>
+                            <h5 id="marketer6" class="mt-0">Columns with stretched link</h5>
+                        </div>
+                        <div class="col-md-6 position-static p-4 pl-md-0">
+                            <p id="paragraf6">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                ante
+                                sollicitudin.
+                                Cras
+                                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                nisi
+                                vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <a href="#6" id="button6" class="stretched-link">Види профил</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aktivni7">
+                    <h3 id="strana">Страна<span id="span">| Број на Регистрирани Компании:</span><span
+                            id="brojPr">0</span>
+                    </h3>
+                    <hr id="hr2">
+                    <div id="brStranica" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button id="eden" type="button" class="btn btn-secondary active" style="display: none;"
+                                aria-pressed="true">1</button>
+                            <button id="dva" type="button" class="btn btn-secondary" style="display: none;">2</button>
+                            <button id="tri" type="button" class="btn btn-secondary" style="display: none;">3</button>
+                            <button id="cetiri" type="button" class="btn btn-secondary"
+                                style="display: none;">4</button>
+                            <button id="pet" type="button" class="btn btn-secondary" style="display: none;">5</button>
+                            <button id="ses" type="button" class="btn btn-secondary" style="display: none;">6</button>
+                            <button id="sedum" type="button" class="btn btn-secondary" style="display: none;">7</button>
+                            <button type="osum" class="btn btn-secondary" style="display: none;">8</button>
+                            <button id="devet" type="button" class="btn btn-secondary" style="display: none;">9</button>
+                            <button id="deset" type="button" class="btn btn-secondary"
+                                style="display: none;">10</button>
+                            <button id="edinaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">11</button>
+                            <button id="dvanaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">12</button>
+                            <button id="trinaeset" type=" button" class="btn btn-secondary"
+                                style="display: none;">13</button>
+                            <button id="cetirinaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">14</button>
+                            <button id="petnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">15</button>
+                            <button id="sesnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">16</button>
+                            <button id="sedumnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">17</button>
+                            <button id="osumnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">18</button>
+                            <button id="devetnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">19</button>
+                            <button id="dvaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">20</button>
+                            <button id="dvaesetieden" type="button" class="btn btn-secondary"
+                                style="display: none;">21</button>
+                            <button id="dvaesetidva" type="button" class="btn btn-secondary"
+                                style="display: none;">22</button>
+                            <button id="dvaesetitri" type="button" class="btn btn-secondary"
+                                style="display: none;">23</button>
+                            <button id="dvaeseticetiri" type="button" class="btn btn-secondary"
+                                style="display: none;">24</button>
+                            <button id="dvaesetipet" type="button" class="btn btn-secondary"
+                                style="display: none;">25</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="aktivni2">
+            <div class="logoKompanija"><img id="slika2" src="company.png" style="padding:8px;" width="80px"
+                    height="60px"></div>
+            <h3 id="akoglasi2">2.Компанија: Име </h3>
+            <h4 id="tekst">Индустрија:</h4>
+            <h4 id="tekst1">Опис</h4>
+            <hr id="hr1">
+            <p id="paragraf2"></p>
+            <h5 id="marketer2">Дигитален маркетер</h5>
+            <button id="button2" type="button">Види компанија</button>
+         </div>
+         <div class="aktivni3">
+            <div class="logoKompanija"><img id="slika3" src="company.png" style="padding:8px;" width="80px"
+                    height="60px"></div>
+            <h3 id="akoglasi3">3.Компанија: Име</h3>
+            <h4 id="tekst">Индустрија:</h4>
+            <h4 id="tekst1">Опис</h4>
+            <hr id="hr1">
+            <p id="paragraf3"></p>
+            <h5 id="marketer3">Дигитален маркетер</h5>
+            <button id="button3" type="button">Види компнија</button>
+         </div>
+         <div class="aktivni4">
+            <div class="logoKompanija"><img id="slika4" src="company.png" style="padding:8px;" width="80px"
+                    height="60px"></div>
+            <h3 id="akoglasi4">4.Кандиадат: Име Презиме</h3>
+            <hr id="hr1">
+            <h4 id="tekst">Индустрија:</h4>
+            <h4 id="tekst1">Опис</h4>
+            <p id="paragraf4"></p>
+            <h5 id="marketer4">Дигитален маркетер</h5>
+            <button id="button4" type="button">Види компанија</button>
+         </div>
+         <div class="aktivni5">
+            <div class="logoKompanija"><img id="slika5" src="company.png" style="padding:8px;" width="80px"
+                    height="60px"></div>
+            <h3 id="akoglasi5">3.Кандиадат: Име Презиме</h3>
+            <hr id="hr1">
+            <h4 id="tekst">Индустрија:</h4>
+            <h4 id="tekst1">Опис</h4>
+            <p id="paragraf5"></p>
+            <h5 id="marketer5">Дигитален маркетер</h5>
+            <button id="button5" type="button">Види компанија</button>
+         </div>
+         <div class="aktivni6">
+            <div class="logoKompanija"><img id="slika6" src="company.png" style="padding:8px;" width="80px"
+                    height="60px"></div>
+            <h3 id="akoglasi6">3.Кандиадат: Име Презиме</h3>
+            <hr id="hr1">
+            <h4 id="tekst">Индустрија:</h4>
+            <h4 id="tekst1">Опис</h4>
+            <p id="paragraf6"></p>
+            <h5 id="marketer6">Дигитален маркетер</h5>
+            <button id="button6" type="button">Види компанија</button>
+         </div> -->
+
+
+        </div>
+        <script src="../../firebase.js"></script>
+        <script src="bintern21.js"></script>
+</body>
+
+</html>

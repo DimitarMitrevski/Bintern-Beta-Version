@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - CV</title>
+    <link rel="icon" type="image/gif/png" href="../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="bintern18.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="../jquery.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper" class="animate__animated animate__zoomIn">
+        <header>
+            <a href="../index.html"><img src="../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="firmite" href="../bintern4.html">За Фирмите</a>
+                <a id="praktikanti" href="../bintern5.html">За практиканти</a>
+                <!-- <a id="objavi" href="objavi">Објави оглас Бесплатно</a> -->
+                <a id="najava" href="dashboard/view.html">Кориснички панел</a>
+                <a id="kontakt1" href="../kontakt.html">Контактирај нѐ</a>
+            </nav>
+        </header>
+        <div id="slika">
+            <img id="img1" src="../man.png" width="183px" height="183">
+        </div>
+        <button id="urediCV" type="button">Уреди CV</button>
+        <h2 id="ime1"></h2>
+        <p id="para1"></p>
+
+        <h2 id="praksa">Каква пракса барам</h2>
+        <p id="para22"></p>
+        <p id="para2">Нема</p>
+
+        <h2 id="osnovni">Основни информации</h2>
+        <div class="informacii">
+            <h5 id="univerzitet">Универзитет</h5>
+            <h5 id="univerzitetot"></h5>
+        </div>
+        <div class="informacii2">
+            <h5 id="univerzitet">Факултет</h5>
+            <h5 id="fakultet"></h5>
+        </div>
+        <div class="informacii3">
+            <h5 id="univerzitet">Година на студии</h5>
+            <h5 id="godinaStudii"></h5>
+        </div>
+        <div class="informacii4">
+            <h5 id="univerzitet">Град</h5>
+            <h5 id="gradot"></h5>
+
+        </div>
+        <div class="vestini">
+            <h3 id="vestinT">Вештини</h3>
+            <div id="predmet">
+                <p id="imepre1"></p>
+                <!-- <h6 id="preporaki">9 препораки</h6> -->
+            </div>
+            <!-- <div id="predmet2">
+                                    <h6 id="imepre">Англиски јазил</h6>
+                                    <h6 id="preporaki">6 препораки</h6>
+                                </div>
+                                <div id="predmet3">
+                                        <h6 id="imepre">Презентациски вештини</h6>
+                                        <h6 id="preporaki">5 препораки</h6>
+                                    </div>
+                                    <div id="predmet4">
+                                            <h6 id="imepre">Дизајн</h6>
+                                            <h6 id="preporaki">5 препораки</h6>
+                                        </div>
+                                        <div id="predmet5">
+                                                <h6 id="imepre">HTML</h6>
+                                                <h6 id="preporaki">9 препораки</h6>
+                                            </div> -->
+        </div>
+        <div class="moite">
+            <h5 id="proekti">Моите проекти</h5>
+            <!-- <textarea id="paragraf1" readonly></textarea> -->
+            <p id="paragraf1"></p>
+        </div>
+        <div class="ostvareni">
+            <h5 id="opraksi">Остварени пракси</h5>
+            <div id="praksata">
+                <h5 id="kakva1"><span id="digitalen1">Дигитален маркетер</span><span id="vo"> во</span><span id="kade1">
+                        Netcetera</span></h5>
+                <h5 id="kakva2"><span id="digitalen2">Дигитален маркетер</span><span id="vo"> во</span><span id="kade2">
+                        Netcetera</span></h5>
+                <h5 id="kakva3"><span id="digitalen3">Дигитален маркетер</span><span id="vo"> во</span><span id="kade3">
+                        Netcetera</span></h5>
+                <h5 id="kakva4"><span id="digitalen4">Дигитален маркетер</span><span id="vo"> во</span><span id="kade4">
+                        Netcetera</span></h5>
+            </div>
+        </div>
+        <div class="knigi">
+            <h3 id="kniga">Книги кои ми се допаѓаат</h3>
+            <p id="para33"></p>
+        </div>
+        <h2 id="preporaka">Препораки<span id="nema">Немате сеуште препораки!</span></h2>
+        <div id="preporaka1">
+            <h4 id="prof">проф.ИмеПрезиме</h4>
+            <p id="para5">Покажа одлични комуникациски и лидерски вештини при работењето
+                на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                би сакала да го има во својот тим!
+            </p>
+        </div>
+        <div id="preporaka2">
+            <h4 id="prof">проф.ИмеПрезиме</h4>
+            <p id="para5">Покажа одлични комуникациски и лидерски вештини при работењето
+                на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                би сакала да го има во својот тим!
+            </p>
+        </div>
+        <div id="preporaka3">
+            <h4 id="prof">проф.ИмеПрезиме</h4>
+            <p id="para5">Покажа одлични комуникациски и лидерски вештини при работењето
+                на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                би сакала да го има во својот тим!
+            </p>
+        </div>
+        <div id="preporaka4">
+            <h4 id="prof">проф.ИмеПрезиме</h4>
+            <p id="para5">Покажа одлични комуникациски и лидерски вештини при работењето
+                на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                би сакала да го има во својот тим!
+            </p>
+        </div>
+        <div id="preporaka5">
+            <h4 id="prof">проф.ИмеПрезиме</h4>
+            <p id="para5">Покажа одлични комуникациски и лидерски вештини при работењето
+                на проектот “Lounching new product”. Марко е студент кој секоја компанија
+                би сакала да го има во својот тим!
+            </p>
+        </div>
+        <button id="button" type="button" disabled>Побарај препорака</button>
+        <label id="poraka">Оваа можност сеуште не е достапна</label>
+        <a href="dashboard/ads.html"><button id="button1" type="button">Аплицирај на оглас</button></a>
+        <a href="profile.html"><button id="button2">Назад кон профилот</button></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <a class="navbar-brand" href="#"><img src="../bintern2.png" class="animate__animated animate__backInDown"
+                    id="logoto1" width="168px" height="60px" alt="Here was a photo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Почетна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../kontakt.html">Контактирај нѐ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                            <a class="dropdown-item" href="../bintern4.html">За фирмите</a>
+                            <a class="dropdown-item" href="../bintern5.html">За практикании </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Moj профил</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard/view.html">Кориснички панел</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="CV.html">Уреди CV<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="cover"></div>
+
+        <div id="uredi" class="animate__animated animate__backInLeft">
+            <div id="vr"></div>
+            <form id="editForm">
+                <div class="vnesi">
+                    <label id="label1" for="brVraboteni">Вештини</label>
+                    <textarea id="brVraboteni" type="text" placeholder="160 карактери" maxlength="160"></textarea>
+                </div>
+                <div class="vnesi1">
+                    <label id="label2" for="odgLice">Мои проекти</label>
+                    <textarea id="odgLice" type="text" placeholder="200 карактери" maxlength="200"
+                        max-rows="5"></textarea>
+                </div>
+                <div class="vnesi2">
+                    <label id="label1" for="Ul">Остварени пракси</label>
+                    <label id="labelot" for="Ul">Која позиција?</label>
+                    <input id="Ul" type="text" placeholder="Дигитален Маркетинг" maxlength="25"></input>
+                    <label id="labelot1" for="Ul1">Каде?</label>
+                    <input id="Ul1" type="text" placeholder="БИНТЕРН ДООЕЛ" maxlength="20"></input>
+                    <h2 id="Dodadeno">Успешно е додадено!</h2>
+                    <button type="button" id="dodaj">Додај</button>
+                </div>
+                <div class="vnesi3">
+                    <label id="label1" for="Grad">Книги кои ми се допаѓаат</label>
+                    <textarea id="Grad" type="text" placeholder="Почни со Зошто?-Симон Синек"
+                        maxlength="200"></textarea>
+                </div>
+                <div class="vnesi4">
+                    <label id="label1" for="Link">Побарај препорака</label>
+                    <input id="Link" type="text" placeholder="user@mail.com" maxlength="50"></input>
+                </div>
+                <div class="vnesi5">
+                    <label id="label1" for="brVraboteni">Препорачател</label>
+                    <input id="imeFirma" type="text" placeholder="Петар Петровски" maxlength="50"></input>
+                </div>
+                <div class="vnesi6">
+                    <label id="label1" for="brVraboteni">Каква пракса барам</label>
+                    <textarea id="textarea" placeholder="До 230 карактери" rows="5" maxlength="230"></textarea>
+                </div>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li id="li1" class="list-group-item">
+                        <span id="brisi1" class="badge badge-primary badge-pill">X</span>
+                        <h6 id="txt1">Cras justo odio <h6>
+                    </li>
+                    <li id="li2" class="list-group-item">
+                        <span id="brisi2" class="badge badge-primary badge-pill">X</span>
+                        <h6 id="txt2">Cras justo odio <h6>
+                    </li>
+                    <li id="li3" class="list-group-item">
+                        <span id="brisi3" class="badge badge-primary badge-pill">X</span>
+                        <h6 id="txt3">Cras justo odio <h6>
+                    </li>
+                    <li id="li4" class="list-group-item">
+                        <span id="brisi4" class="badge badge-primary badge-pill">X</span>
+                        <h6 id="txt4">Cras justo odio <h6>
+                    </li>
+                </ul>
+                <button type="submit" id="promeniBtn" onClick="document.location.reload(true)">Зачувај промени</button>
+                <div class="alert">Промените се успешно направени</div>
+            </form>
+            <button id="Nazad">Назад</button>
+        </div>
+
+    </div>
+    <div id='skri' class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <script src="../firebase.js"></script>
+    <script src="bintern18.js"></script>
+    <script src="../menu1.js"></script>
+</body>
+
+</html>

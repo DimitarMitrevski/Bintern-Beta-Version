@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Кориснички панел</title>
+    <link rel="icon" type="image/gif/png" href="../../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <script src="../../jquery.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="bintern20.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-functions.js"></script>
+
+</head>
+
+<body>
+    <div class="login-cover">
+        <div class="loader">
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="vector"></div>
+        <header>
+            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="objavi" href="../profile.html">Вашиот Профил</a>
+                <a id="najava">Одјави се</a>
+            </nav>
+        </header>
+        <h1 id="korisnicki">Кориснички панел</h1>
+        <div class="navigacija">
+            <a href="view.html">
+                <div id="nav">
+                    <h3 id="centar">Преглед</h3>
+                </div>
+            </a>
+            <a href="ads.html">
+                <div id="nav1">
+                    <h3 id="centar">Огласи</h3>
+                </div>
+            </a>
+            <a href="companies.html">
+                <div id="nav2">
+                    <h3 id="centar">Компании</h3>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div id="nav3">
+                    <h3 id="centar">Пораки</h3>
+                </div>
+            </a>
+        </div>
+        <hr id="hr">
+        <div id="search">
+            <h5 style="text-align: center; width: 100%; margin: 2% 27%;">Филтрирајте Огласи</h5>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputState">Позиција</label>
+                    <select id="inputState" class="form-control pozicija">
+                        <option selected value="">Избери...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Индустрија</label>
+                    <select id="inputState" class="form-control industrija">
+                        <option selected value="">Избери...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Компанија</label>
+                    <select id="inputState" class="form-control kompanija">
+                        <option selected value="">Избери...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="red">
+            <div class="row row-cols-1 row-cols-md-3" id="row">
+                <div class="col mb-4 kreiraj1 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img1" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 id="besplaten1" class="card-title">Card title</h5>
+                            <h5 id="pozicija1" class="card-title">Позиција</h5>
+                            <p id='para1' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" id="button1" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce1" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj2 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img2" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten2" class="card-title">Card title</h5>
+                            <h5 id="pozicija2" class="card-title">Позиција</h5>
+                            <p id='para2' class="card-text">This is a short card.</p>
+                            <a href="#" id="button2" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce2" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj3 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img3" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten3" class="card-title">Card title</h5>
+                            <h5 id="pozicija3" class="card-title">Позиција</h5>
+                            <p id='para3' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content.</p>
+                            <a href="#" id="button3" class="btn btn-primary">Аплицирај</a>
+                            <button id="kopce3" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj4 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img4" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten4" class="card-title">Card title</h5>
+                            <h5 id="pozicija4" class="card-title">Позиција</h5>
+                            <p id='para4' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" id="button4" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce4" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj5 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img5" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten5" class="card-title">Card title</h5>
+                            <h5 id="pozicija5" class="card-title">Позиција</h5>
+                            <p id='para5' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" id="button5" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce5" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj6 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img6" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten6" class="card-title">Card title</h5>
+                            <h5 id="pozicija6" class="card-title">Позиција</h5>
+                            <p id='para6' class="card-text">This is a short card.</p>
+                            <a href="#" id="button6" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce6" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj7 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img7" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten7" class="card-title">Card title</h5>
+                            <h5 id="pozicija7" class="card-title">Позиција</h5>
+                            <p id='para7' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content.</p>
+                            <a href="#" id="button7" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce7" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj8 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img8" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten8" class="card-title">Card title</h5>
+                            <h5 id="pozicija8" class="card-title">Позиција</h5>
+                            <p id='para8' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" id="button8" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce8" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj9 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img9" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten9" class="card-title">Card title</h5>
+                            <h5 id="pozicija9" class="card-title">Позиција</h5>
+                            <p id='para9' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" id="button9" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce9" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj10 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img10" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten10" class="card-title">Card title</h5>
+                            <h5 id="pozicija10" class="card-title">Позиција</h5>
+                            <p id='para10' class="card-text">This is a short card.</p>
+                            <a href="#" id="button10" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce10" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj11 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img11" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten11" class="card-title">Card title</h5>
+                            <h5 id="pozicija11" class="card-title">Позиција</h5>
+                            <p id='para11' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content.</p>
+                            <a href="#" id="button11" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce11" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 kreiraj12 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="" id="img12" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="besplaten12" class="card-title">Card title</h5>
+                            <h5 id="pozicija12" class="card-title">Позиција</h5>
+                            <p id='para12' class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" id="button12" class="btn btn-primary" data-toggle="modal"
+                                data-target="#staticBackdrop">Аплицирај</a>
+                            <button id="kopce12" type="button" class="btn btn-secondary">Прочитај повеќе</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="aktivni">
+                    <img id="slika" src="dashboard.PNG">
+                    <h3 id="akoglasi">Активни огласи:</h3>
+                    <h4 id="brojOglasi"></h4>
+                    <hr id="hr1">
+                    <div id="marketer" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button id="eden" type="button" class="btn btn-secondary" style="display: none;">1</button>
+                            <button id="dva" type="button" class="btn btn-secondary" style="display: none;">2</button>
+                            <button id="tri" type="button" class="btn btn-secondary" style="display: none;">3</button>
+                            <button id="cetiri" type="button" class="btn btn-secondary"
+                                style="display: none;">4</button>
+                            <button id="pet" type="button" class="btn btn-secondary" style="display: none;">5</button>
+                            <button id="ses" type="button" class="btn btn-secondary" style="display: none;">6</button>
+                            <button id="sedum" type="button" class="btn btn-secondary" style="display: none;">7</button>
+                            <button type="osum" class="btn btn-secondary" style="display: none;">8</button>
+                            <button id="devet" type="button" class="btn btn-secondary" style="display: none;">9</button>
+                            <button id="deset" type="button" class="btn btn-secondary"
+                                style="display: none;">10</button>
+                            <button id="edinaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">11</button>
+                            <button id="dvanaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">12</button>
+                            <button id="trinaeset" type=" button" class="btn btn-secondary"
+                                style="display: none;">13</button>
+                            <button id="cetirinaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">14</button>
+                            <button id="petnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">15</button>
+                            <button id="sesnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">16</button>
+                            <button id="sedumnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">17</button>
+                            <button id="osumnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">18</button>
+                            <button id="devetnaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">19</button>
+                            <button id="dvaeset" type="button" class="btn btn-secondary"
+                                style="display: none;">20</button>
+                            <button id="dvaesetieden" type="button" class="btn btn-secondary"
+                                style="display: none;">21</button>
+                            <button id="dvaesetidva" type="button" class="btn btn-secondary"
+                                style="display: none;">22</button>
+                            <button id="dvaesetitri" type="button" class="btn btn-secondary"
+                                style="display: none;">23</button>
+                            <button id="dvaeseticetiri" type="button" class="btn btn-secondary"
+                                style="display: none;">24</button>
+                            <button id="dvaesetipet" type="button" class="btn btn-secondary"
+                                style="display: none;">25</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- <div class="kreiraj1">
+            <div class="logoKompanija"><img id="img1" alt="MF" style="padding:10px;" width="90px" height="80px"></div>
+            <h2 id="besplaten1"></h2>
+            <h2 id='pozicija'>Позиција:<span id="pozicija1">Дигитален Маркетинг</span></h2>
+            <p id="para1"></p>
+            <h2 id="vremetraenje">Времетраење на праксата</h2>
+            <h2 id='od'>Од:</h2>
+            <h2 id='do'>До:</h2>
+            <h2 id='od1'></h2>
+            <h2 id='do1'></h2>
+            <h5 id="aplicirano1">Аплицирано</h5>
+            <button id="button1" type="button"><img src="document.png" width="25px" height="30px"></button>
+        </div>-->
+
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Успешно аплициравте на огласот</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Вашата апликација е успешно испратена до работдавецот! Ќе добиете е-маил нотификација
+                        доколку
+                        сте повикани на интервју. Со среќа!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../firebase1.js"></script>
+        <script src="bintern20.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bintern</title>
+  <link rel="icon" type="image/gif/png" href="../bintern12.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-amber.min.css" />
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+  <script src="../jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="bintern8.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Login dialog -->
+  <dialog id="loginDialog" class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Најави се</h4>
+    <div class="mdl-dialog__content">
+      <p id="loginError"></p>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="loginEmail" onkeyup="inputKeyUp(event)">
+        <label class="mdl-textfield__label" for="sample3">Е-маил...</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="password" id="loginPassword" onkeyup="inputKeyUp1(event)">
+        <label class="mdl-textfield__label" for="sample3">Лозинка...</label>
+      </div>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button id="loginBtn"
+        class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+        Најава
+      </button>
+      <a href="registration.html"><button id="RegistrationBtn"
+          class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+          Регистрација
+        </button>
+      </a>
+
+
+      <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+    <div id="izvestuvanje">
+      <h4 id="text">Вашата е-маил адреса не е верифицирана, ве молиме проверете го вашиот мејл</h4>
+    </div>
+  </dialog>
+
+  <div class="login-cover">
+    <h3 id="msg" style="display: none;">За да се најавите користете Google Chrome</h3>
+    <div class="page-loader mdl-spinner mdl-js-spinner is-active" id="spiner"></div>
+
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <div id="wrapper">
+    <div id="slika">
+      <!-- <img src="../luge.PNG" width="1400px" height="290px"> -->
+    </div>
+    <div id="logo">
+      <!-- <img id="img1" src="" alt="MF"> -->
+    </div>
+    <header>
+      <a href="../index.html"><img src="../bintern2.png" id="logoto" width="168px" height="60px"
+          alt="Here was a photo"></a>
+      <!-- <a class="navigation"><img class="img1" src="../navigation.png" alt="" width="30px" height="30px"></a> -->
+      <nav id="horzNav">
+        <h2 id="izlezi">X</h2>
+        <a id="firmite" href="../bintern4.html">За Фирмите</a>
+        <a id="objavi" href="createAd.html">Објави оглас Бесплатно</a>
+        <a id="kontakt1" href="../kontakt.html">Контактирај нѐ</a>
+        <a id="najava" class="animate__animated animate__heartBeat animate__infinite"
+          href="dashboard/view.html">Кориснички
+          панел</a>
+        <button id="singOutBtn">
+          Одјави се!
+        </button>
+      </nav>
+    </header>
+
+
+    <!-- <div id="logo">
+      <img id="img1" src="" alt="MF">
+    </div> -->
+    <h3 id="moja"></h3>
+    <p id="para1"></p>
+    <a id="link" href="" target="_blank">mojafirma.com.mk</a>
+    <h4 id="kontaktTelefon">Контакт телефон:<span id="kontakt"></span></h4>
+    <hr>
+    <div class="vl"></div>
+    <!-- <p id="para3">0</p> -->
+    <h4 id="aktivni">Активни огласи<br>за практиканти
+      <span id="para3">0</span>
+    </h4>
+    <h3 id="preporaki">Препораки</h3>
+    <div class="elementi1">
+      <h5 id="element1">Број на вработени</h5>
+      <h5 id="brojVraboteni"></h5>
+    </div>
+    <div class="elementi2">
+      <h5 id="element3">Овластено лице</h5>
+      <h5 id="ovlastenoLice"></h5>
+    </div>
+    <div class="elementi3">
+      <h5 id="element3">Адреса</h5>
+      <h5 id="ulica"></h5>
+    </div>
+    <div class="elementi4">
+      <h5 id="element3">Град</h5>
+      <h5 id="gr"></h5>
+    </div>
+    <h5 id="nema">За жал сеуште немате препораки</h5>
+    <a id="pobaraj" href="">Побарај препорака</a>
+    <a href="createAd.html"><button id="button" type="button" class="btn btn-outline-primary">Креирај оглас</button></a>
+    <button id="button2" class="btn btn-outline-primary">Уреди профил</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+      <a class="navbar-brand" href="#"><img src="../bintern2.png" class="animate__animated animate__backInDown"
+          id="logoto1" width="168px" height="60px" alt="Here was a photo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Почетна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../kontakt.html">Контактирај нѐ</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Повеќе информации</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown09">
+              <a class="dropdown-item" href="../bintern4.html">За фирмите</a>
+              <a class="dropdown-item" href="../bintern5.html">За практикании </a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Moj профил<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard/view.html">Кориснички панел</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="createAd.html">Објави оглас</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="singOutBtn1">Одјави се</button>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+  <div class="cover"></div>
+  <div class="animate__animated animate__fadeInDown" id="uredi">
+    <div id="vr"></div>
+    <form id="editForm">
+      <div class="vnesi">
+        <label id="label1" for="brVraboteni">Број на вработени</label>
+        <input id="brVraboteni" type="number" placeholder="12" maxlength="3"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></input>
+      </div>
+      <div class="vnesi1">
+        <label id="label2" for="odgLice">Одговорно лице</label>
+        <input id="odgLice" type="text" placeholder="Петар Петковски" maxlength="35"></input>
+      </div>
+      <div class="vnesi2">
+        <label id="label1" for="Ul">Адреса</label>
+        <input id="Ul" type="text" placeholder="ул.Солунска бр54-75" maxlength="50"></input>
+      </div>
+      <div class="vnesi3">
+        <label id="label1" for="Grad">Град</label>
+        <input id="Grad" type="text" placeholder="Битола" maxlength="15"></input>
+      </div>
+      <div class="vnesi4">
+        <label id="label1" for="Link">Линк од вебсајт</label>
+        <input id="Link" type="text" placeholder="mojafirma.com.mk" maxlength="50"></input>
+      </div>
+      <div class="vnesi5">
+        <label id="label1" for="brVraboteni">Име на Фирмата</label>
+        <input id="imeFirma" type="text" placeholder="Moja Firma DOO" maxlength="30"></input>
+      </div>
+      <div class="vnesi6">
+        <label id="label1" for="brVraboteni">Опис на Фирмата</label>
+        <textarea id="textarea" placeholder="До 255 карактери" rows="5" maxlength="255"></textarea>
+      </div>
+      <div class="vnesi7">
+        <label id="label1" for="kotaktTel">Контакт телефон</label>
+        <input id="kontaktTel" type="number" maxlength="14" placeholder="07XXXXXXX"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></input>
+      </div>
+      <div class="vnesi8">
+        <label id="label1" for="brVraboteni">Лого на компанијата</label>
+        <input onchange="javascript:  var upl = document.getElementById('element10');
+        if (upl.files[0].size >2097152) {
+            window.alert('Сликата е преголема ве молиме додадете помала слика до 2MB');
+            upl.value = '';
+        }" id="element10" type="file" accept="image/*" name="logo" placeholder="logo.img">
+      </div>
+      <button type="submit" id="promeniBtn">Зачувај промени</button>
+      <div class="alert">Промените се успешно направени</div>
+    </form>
+    <button id="Nazad">Назад</button>
+
+  </div>
+  <script src="../firebase.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

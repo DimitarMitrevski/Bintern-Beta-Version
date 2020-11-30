@@ -1,0 +1,1974 @@
+#wrapper{
+  
+    position: relative;
+    width: 1400px;
+    height: 1860px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: none;
+    }
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+    header{
+        position: absolute;
+        width: 1400px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        
+        color: #000000;
+        
+        }
+        nav{
+            position: absolute;
+        width: 568.14px;
+        height: 54px;
+        left: 900px;
+        top: 60px;
+        border-spacing: 10px;
+       
+        }
+        #logoto{
+            position: absolute;
+            top:20px; 
+            left:60px;
+        }
+        #img1{
+            border-radius:100%;
+        }
+        #firmite{
+            position: absolute;
+            width: 142.03px;
+            height: 0px;
+            left: -300px;
+            top: 0px;
+            font-family: Century Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 106.67%;
+            /* or 15px */
+            
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.03em;
+            
+            color: #000000;
+             text-decoration: none;
+            }
+            
+            #praktikanti{
+                position: absolute;
+                width: 142.03px;
+                height: 0px;
+                left: -150px;
+                top: 0px;
+                font-family: Century Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 106.67%;
+            /* or 15px */
+            
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.03em;
+            
+            color: #000000;
+            text-decoration: none;
+                }
+                #objavi{
+                    position: absolute;
+                    width: 142.03px;
+                    height: 0px;
+                    left: 0px;
+                    top: 0px;
+                    font-family: Century Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 106.67%;
+            /* or 15px */
+            
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.03em;
+            
+            color: #000000;
+            text-decoration: none;
+                    }
+                    #najava{
+                        position: absolute;
+                        width: 142.03px;
+                        height: 0px;
+                        left: 190px;
+                        top: 0px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        text-decoration-line: underline;
+
+                        color: #59C7D6;
+                     }
+                     #slika{
+                        position: absolute;
+                        left: 566px;
+                        top: 122px;
+                     }
+                     #ime{
+                        position: absolute;
+                        width: 335px;
+                        height: 33px;
+                        left: 570px;
+                        top: 366px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 106.67%;
+                        /* or 26px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        
+                     }
+                     #ime1 {
+                        position: absolute;
+                        width: 335px;
+                        height: 33px;
+                        left: 491px;
+                        top: 368px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 23px;
+                        line-height: 106.67%;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        color: #000000; 
+                    }
+                    #para1 {
+                        position: absolute;
+                        width: 622px;
+                        height: 95px;
+                        left: 350px;
+                        top: 393px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 106.67%;
+                        /* display: flex; */
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        color: #9C9999;
+                    }
+                     #paragrafot{
+                        position: absolute;
+                        width: 591px;
+                        height: 118px;
+                        left: 366px;
+                        top: 375px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 106.67%;
+                        /* or 19px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #9C9999;
+                     }
+                 #praksa{
+                    position: absolute;
+                    width: 243px;
+                    height: 33px;
+                    left: 570px;
+                    top: 485px;
+                    
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 106.67%;
+                    /* or 19px */
+                    
+                    align-items: center;
+                    letter-spacing: -0.03em;
+                    
+                    color: #000000;
+                    
+                 }    
+               #para2{
+                position: absolute;
+                width: 591px;
+                height: 60px;
+                left: 366px;
+                top: 515px;
+                
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 106.67%;
+                /* or 19px */
+                
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: -0.03em;
+                
+                color: #9C9999;
+                
+               } 
+               #para22 {
+                position: absolute;
+                width: 622px;
+                height: 60px;
+                left: 350px;
+                top: 509px;
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 106.67%;
+                /* display: flex; */
+                align-items: center;
+                text-align: center;
+                letter-spacing: -0.03em;
+                color: #9C9999;
+            }
+               #osnovni{
+                position: absolute;
+                width: 311px;
+                height: 43px;
+                left: 60px;
+                top: 583px;
+                
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 106.67%;
+                /* or 19px */
+                
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.03em;
+                
+                color: #000000;
+                
+               }
+               
+#univerzitet{
+position: absolute;
+width: 198px;
+height: 15px;
+left:0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+}
+
+#godina{
+    position: absolute;
+    width: 198px;
+    height: 15px;
+    left: 0px;
+    top: 20px;
+    
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    /* or 14px */
+    
+    letter-spacing: -0.03em;
+    
+    color: #142757;
+    
+}
+.informacii{
+    position: absolute;
+    width: 198px;
+    height: 50px;
+    left: 60px;
+    top: 623px;
+    
+    } 
+    .informacii2{
+        position: absolute;
+        width: 198px;
+        height: 50px;
+        left: 60px;
+        top: 673px;
+        } 
+        .informacii3{
+            position: absolute;
+            width: 258px;
+            height: 50px;
+            left: 60px;
+            top: 733px;
+            } 
+        .informacii4{
+           
+                position: absolute;
+                width: 198px;
+                height: 50px;
+                left: 60px;
+                top: 783px;
+            
+        }
+.vestini{
+position: absolute;
+width: 331px;
+height: 178px;
+left: 60px;
+top: 863px;
+        }
+#vestiniT{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+#predmet{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 0px;
+}
+#imepre{
+    position: absolute;
+width: 219px;
+height: 22px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #9C9999;
+
+}
+#preporaki{
+position: absolute;
+width: 136px;
+height: 22px;
+left: 205px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+text-align: right;
+letter-spacing: -0.03em;
+
+color: #59C7D6;
+
+}
+#li1,#li2,#li3,#li4{
+    display: none;
+    padding: .0rem 0.5rem;
+}
+#brisi1,#brisi2,#brisi3,#brisi4{
+    cursor:default;
+}
+#brisi1:hover,#brisi2:hover,#brisi3:hover,#brisi4:hover{
+    border-radius: 0;
+}
+#predmet2{
+    position: absolute;
+    width: 311px;
+    height: 22px;
+    left: 0px;
+    top: 30px;
+    }
+    #predmet3{
+        position: absolute;
+        width: 311px;
+        height: 22px;
+        left: 0px;
+        top: 60px;
+        }
+        #predmet4{
+            position: absolute;
+            width: 311px;
+            height: 22px;
+            left: 0px;
+            top: 90px;
+            }
+#predmet5{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 120px;
+}
+.moite{
+position: absolute;
+width: 331px;
+height: 112px;
+left: 60px;
+top: 1043px;
+
+}
+#proekti{
+    position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+
+#paragraf1 {
+    position: absolute;
+    width: 361px;
+    height: 64px;
+    left: 0px;
+    top: 37px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 115%;
+    letter-spacing: -0.03em;
+    color: #142757;
+    white-space: break-spaces;
+    display: flex;
+}
+.ostvareni{
+    position: absolute;
+width: 331px;
+height: 162px;
+left: 60px;
+top: 1183px;
+}
+#opraksi{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+#praksata{
+    position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 50px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+.navbar{
+    display: none;
+}
+#kakva1{
+    position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+display: none;
+
+}
+#kakva2 {
+    position: absolute;
+    width: 418px;
+    height: 15px;
+    left: 0px;
+    top: 25px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: #142757;
+    display: none;
+}
+#kakva3 {
+    position: absolute;
+    width: 418px;
+    height: 15px;
+    left: 0px;
+    top: 50px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: #142757;
+    display: none;
+}
+#kakva4 {
+    position: absolute;
+    width: 418px;
+    height: 15px;
+    left: 0px;
+    top: 75px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: #142757;
+    display:none;
+}
+#vo{
+position: absolute;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration: none;
+color: #142757;
+
+}
+span{
+    padding-right: 10px;
+}
+#kade1{
+    position: absolute;
+    padding-left: 30px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #59C7D6;
+
+}
+#kade2{
+    position: absolute;
+    padding-left: 30px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #59C7D6;
+
+}
+#kade3{
+    position: absolute;
+    padding-left: 30px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #59C7D6;
+
+}
+#kade4{
+    position: absolute;
+    padding-left: 30px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #59C7D6;
+}
+#praksata1{
+    position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 80px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+#praksata2{
+    position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 110px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+.knigi{
+ position: absolute;
+width: 331px;
+height: 202px;
+left: 60px;
+top: 1343px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 100%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#kniga{
+    position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+
+#para33{
+    position: absolute;
+width: 361px;
+height: 172px;
+left: 0px;
+top: 40px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 150%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+white-space: break-spaces;
+
+}
+#preporaka{
+position: absolute;
+width: 243px;
+height: 33px;
+left: 728px;
+top: 589px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+#preporaka1{
+position: absolute;
+width: 594px;
+height: 123px;
+left: 728px;
+top: 649px;
+
+background: #F7F7F7;
+border-radius: 5px;
+display: none;
+}
+#prof{
+position: absolute;
+width: 219px;
+height: 22px;
+left: 30px;
+top: 5px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #506CF0;
+
+}
+.list-group{
+    padding-top: 516px;
+}
+#para5{
+    position: absolute;
+width: 545px;
+height: 44px;
+left: 30px;
+top: 40px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+
+color: #000000;
+}
+#preporaka2{
+    position: absolute;
+    width: 594px;
+    height: 123px;
+    left: 728px;
+    top: 789px;
+    
+    background: #F7F7F7;
+    border-radius: 5px;
+    display: none;
+    }
+    #preporaka3{
+        position: absolute;
+        width: 594px;
+        height: 123px;
+        left: 728px;
+        top: 929px;
+        
+        background: #F7F7F7;
+        border-radius: 5px;
+        display: none;
+        }
+        #preporaka4{
+            position: absolute;
+            width: 594px;
+            height: 123px;
+            left: 728px;
+            top: 1069px;
+            
+            background: #F7F7F7;
+            border-radius: 5px;
+            display: none;
+            }
+            #preporaka5{
+                position: absolute;
+                width: 594px;
+                height: 123px;
+                left: 728px;
+                top: 1209px;
+                
+                background: #F7F7F7;
+                border-radius: 5px;
+                display: none;
+                }
+#button{
+ position: absolute;
+width: 201.76px;
+height: 65px;
+left: 728px;
+top: 1349px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+background: #C4C4C4;
+border-radius: 12px;
+
+                }
+#poraka{
+position: absolute;
+width: 299px;
+height: 22px;
+left: 948px;
+top: 1379px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #D0D0D0;
+}
+#button1{
+    position: absolute;
+width: 201.76px;
+height: 49px;
+left: 728px;
+top: 1549px;
+
+background: #59C7D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+color: #FFFFFF;
+
+}
+#button2{
+position: absolute;
+width: 201.76px;
+height: 50px;
+left: 948px;
+top: 1549px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+text-decoration-line: underline;
+
+color: #59C7D6;
+border: 1px solid #59C7D6;
+box-sizing: border-box;
+border-radius: 12px;
+background: #FFFFFF;
+
+}
+#godinaStudii {
+    position: absolute;
+    top: 13px;
+    font-weight: normal;
+    font-family: Century Gothic;
+    font-size: 23px;
+    color: #142757;
+}
+#univerzitetot {
+    position: absolute;
+    top: 19px;
+    width: 266px;
+    font-family: Century Gothic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 77%;
+    color: #142757;
+}
+#fakultet {
+    position: absolute;
+    top: 19px;
+    font-size:18px;
+    font-family: Century Gothic;
+    font-weight: normal;
+    color: #142757;
+}    
+#vestinT{
+    font-size: 21px;
+}   
+    #gradot {
+        position: absolute;
+        top: 19px;
+    font-size:18px;
+        font-family: Century Gothic;
+    font-weight: normal;
+        color: #142757;
+    }
+                #urediCV{
+                    position: absolute;
+                width: 201.76px;
+                height: 49px;
+                left: 554px;
+                top: 314px;
+                
+                background: #59C7D6;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 12px;
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 106.67%;
+                /* or 15px */
+                
+                color: #FFFFFF;
+                
+                }                
+                .cover {
+                    position: absolute;
+                    width: 1400px;
+                    height: 1859px;
+                    left: -1px;
+                    top: 0px;
+                    background: black;
+                    opacity: 0.5;
+                    filter: blur(1px);
+                    display: none;
+                }
+                        #uredi{
+                            position: absolute;
+                            width: 850px;
+                            height: 800px;
+                            left: 290px;
+                            top: 180px;
+                            
+                            background:#FFFFFF;
+                            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+                            border-radius: 5px;
+                             display: none;
+                                }
+                                .vnesi{
+                            position: absolute;
+                            width: 243px;
+                            height: 68px;
+                            left: 0px;
+                            top: 0px;
+                            
+                            
+                                }
+                            #label1{
+                            position: absolute;
+                            width: 250px;
+                            left: 40px;
+                            top: 20px;
+                            
+                            font-family: Century Gothic;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 106.67%;
+                            /* or 26px */
+                            
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            letter-spacing: -0.03em;
+                            
+                            color: #000000;
+                            
+                            }
+                            #brVraboteni{
+                                position: absolute;
+                                width: 303px;
+                                height: 100px;
+                            left: 30px;
+                            top: 50px;
+                            
+                            background: #EBEBEB;
+                            border-radius: 5px;
+                            resize: none;
+                            }
+                            
+                            .vnesi1{
+                                position: absolute;
+                            width: 243px;
+                            height: 68px;
+                            left: 0px;
+                            top: 140px;
+                            
+                            }
+                            .vnesi2{
+                                position: absolute;
+                            width: 243px;
+                            height: 68px;
+                            left: 0px;
+                            top: 280px;
+                            
+                            }
+                            .vnesi3{
+                                position: absolute;
+                            width: 243px;
+                            height: 68px;
+                            left: 0px;
+                            /* top: 502px;     */
+                            top: 582px;
+                            }
+                            #vr{
+                            position: absolute;
+                            width: 620px;
+                            height: 0px;
+                            left:40px;
+                            top: 340px;
+                            
+                            border: 1px solid #EBEBEB;
+                            transform: rotate(90deg);
+                            
+                            }
+                            .vnesi6{
+                                position: absolute;
+                                width: 243px;
+                                height: 68px;
+                                left: 400px;
+                                top: 0px;
+                            }    
+                            .vnesi4{
+                                position: absolute;
+                                width: 243px;
+                                height: 68px;
+                                left: 360px;
+                                top: 150px;
+                            }    
+                            .vnesi5{    
+                                position: absolute;
+                                width: 243px;
+                                height: 68px;
+                                left: 360px;
+                                top:230px;
+                            } 
+                            #textarea{
+                                position: absolute;
+                                width: 303px;
+                                height: 100px;
+                                top: 50px;
+                                left: -20px;
+                            
+                            
+                            background: #EBEBEB;
+                            border-radius: 5px;
+                            resize: none;
+                            }
+                            #promeniBtn{
+                                position: absolute;
+                                width: 150.76px;
+                                height: 49px;
+                                right:200px;
+                                top: 360px;
+                                
+                                background: #59C7D6;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 14px;
+                                font-family: Century Gothic;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 14px;
+                                line-height: 106.67%;
+                                /* or 15px */
+                                
+                                
+                                letter-spacing: -0.03em;
+                                
+                                color: #FFFFFF;
+                                
+                            
+                            } 
+                            #Nazad{
+                            position: absolute;
+                            width: 150.76px;
+                            height: 49px;
+                            right: 30px;
+                            top:360px;
+                            background: #ffffff;
+                            border: 1px solid #59C7D6;
+                            box-sizing: border-box;
+                            border-radius: 12px;
+                            font-family: Century Gothic;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 14px;
+                                line-height: 106.67%;
+                                /* or 15px */
+                                
+                                
+                                letter-spacing: -0.03em;
+                                
+                                color: #59C7D6;
+                              
+                            }
+                            #label2{
+                                position: absolute;
+                                left: 40px;
+                                top: 20px;
+                                
+                                font-family: Century Gothic;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 106.67%;
+                                /* or 26px */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                letter-spacing: -0.03em;
+                                
+                                color: #000000;
+                                
+                                }
+                                #labelot {
+                                    position: absolute;
+                                    left: 40px;
+                                    top: 45px;
+                                    font-family: Century Gothic;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 106.67%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    letter-spacing: -0.03em;
+                                    color: #000000;
+                                }
+                               
+                                #Ul {
+                                    position: absolute;
+                                    width: 303px;
+                                    height: 30px;
+                                    left: 30px;
+                                    top: 70px;
+                                    background: #EBEBEB;
+                                    border-radius: 5px;
+                                }
+
+                                #labelot1 {
+                                    position: absolute;
+                                    left: 40px;
+                                    top: 114px;
+                                    font-family: Century Gothic;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 106.67%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    letter-spacing: -0.03em;
+                                    color: #000000;
+                                }
+                                #Dodadeno {
+                                    position: absolute;
+                                    width: 300px;
+                                    left: 30px;
+                                    top: 87px;
+                                    font-family: Century Gothic;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 27px;
+                                    line-height: 106.67%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    letter-spacing: -0.03em;
+                                    background-color: green;
+                                    color: #FFFFFF;
+                                    display:none;
+                                }
+                                #dodaj {
+                                    position: absolute;
+                                    width: 125.76px;
+                                    height: 43px;
+                                    left: 111px;
+                                    top: 183px;
+                                    background: #59C7D6;
+                                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                    border-radius: 14px;
+                                    font-family: Century Gothic;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    line-height: 106.67%;
+                                    letter-spacing: -0.03em;
+                                    color: #FFFFFF;
+                                }
+                                #Ul1 {
+                                    position: absolute;
+                                    width: 303px;
+                                    height: 30px;
+                                    left: 30px;
+                                    top: 140px;
+                                    background: #EBEBEB;
+                                    border-radius: 5px;
+                                }
+                                #odgLice{
+                                    position: absolute;
+                                    width: 303px;
+                                    height: 100px;
+                                left: 30px;
+                                top: 50px;
+                                
+                                background: #EBEBEB;
+                                border-radius: 5px;
+                                resize: none;
+                                }
+                                #Grad{
+                                    position: absolute;
+                                width: 303px;
+                               height: 100px;
+                                left: 30px;
+                                top: 50px;
+                                
+                                background: #EBEBEB;
+                                border-radius: 5px;
+                                resize: none;
+                                }
+                                #Link{
+                                    position: absolute;
+                                width: 243px;
+                                height: 38px;
+                                left: 30px;
+                                top: 50px;
+                                
+                                background: #EBEBEB;
+                                border-radius: 5px;
+                                }
+                                #imeFirma{
+                                    position: absolute;
+                                width: 243px;
+                                height: 38px;
+                                left: 30px;
+                                top: 50px;
+                                
+                                background: #EBEBEB;
+                                border-radius: 5px;
+                                }
+                                .alert{
+                                    position: absolute;
+                                    width: 850px;
+                                    height: 50px;
+                                    left: 0px;
+                                    top:150px;
+                                    font-family: Century Gothic;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 34px;
+                                line-height: 106.67%;
+                                /* or 15px */
+                                
+                                display: flex;
+                            align-items: middle;
+                            text-align: center;
+                                letter-spacing: -0.03em;
+                                
+                                color: #FFFFFF;
+                                background-color: green;
+                               display:none;
+                                }
+ #imepre1{
+
+ position: absolute;
+ width: 251px;
+height: 22px;
+left: 0px;
+top: 27px;
+
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #9C9999;
+ }
+ #kakva1{
+    position: absolute;
+    width: 418px;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    /* or 14px */
+    
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    
+    color: #142757;
+    
+ }
+ #kontakt1 {
+    position: absolute;
+    top: -7px;
+    left: 2%;
+    text-decoration: none;
+    color: black;
+    font-family: Century MONOSPACE;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  #nema {
+    position: absolute;
+    padding-top: 59px;
+    left: -28px;
+    width: 300px;
+    text-align: center;
+    padding-right: 0px;
+}
+  #singOutBtn{
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    left: 312px;
+    top: -15px;
+    border: 1px solid #59C7D6;
+box-sizing: border-box;
+border-radius: 12px;
+background: #ffffff;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* identical to box height, or 15px */
+color: #59C7D6;
+
+}
+#izlezi{
+    display: none;
+}
+.d-flex{
+    margin: 20% 0%;
+}
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border: 0.3rem solid salmon;
+    border-right-color: transparent;
+}
+  .img1{display: none;}
+  @media screen and (max-width: 430px) {
+    #logoto{
+        position: absolute;
+        top:-10px;
+        left: 87px;
+        display: none;
+    }
+    nav{
+        all:unset;
+    }
+    .d-flex{
+        margin: 79% 0;
+    }
+    .navbar{
+        position:fixed;
+        width: -webkit-fill-available;
+        display: flex;
+        top: 0;
+
+    }
+    #img1{
+        height: 153px;
+        width: 153px;
+    }
+
+  #horzNav{
+    all:unset;
+    position: absolute;
+    top: 49px;
+    left: 0px;
+    width: 436px;
+    height: 252px;
+    background-color:#59C7D6;
+    overflow-wrap: normal;
+    display: none;
+  }
+  #izlezi {
+    all: unset;
+    position: absolute;
+    width: 829px;
+    top: 11px;
+    left: 10px;
+    left: -398px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+  }
+  #izlezi:hover{
+    color:#FFFFFF;
+  }
+  #firmite{
+    position:absolute;
+    width:425px;
+    top:50px;
+    left: 0px;
+      padding-left: 10px;
+      padding-bottom: 17px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    }
+    #firmite:hover{
+        color:#FFFFFF;
+    }
+    
+    #praktikanti{
+        position:absolute;
+        width:425px;
+        top: 94px;
+        left: 0px;
+      padding-left: 10px;
+      padding-bottom: 17px;
+        border-bottom: 1px solid black;
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: bold;
+        color:black;
+        text-decoration: none;
+        font-size: 18px;
+        cursor: pointer;
+        }
+        #praktikanti:hover{
+            color:#FFFFFF;
+        }
+     
+        #objavi{
+            position:absolute;
+            width:425px;
+            top: 137px;
+            left: 0px;
+            padding-left: 10px;
+            padding-bottom: 17px;
+            border-bottom: 1px solid black;
+            font-family: Century Gothic;
+            font-style: normal;
+            font-weight: bold;
+            color:black;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+            }
+            #objavi1:hover{
+                color:#FFFFFF;
+  
+            }
+            #najava{
+                position:absolute;
+                width:425px;
+                top: 177px;
+                left: 0px;
+                padding-left: 10px;
+                padding-bottom: 17px;
+                border-bottom: 1px solid black;
+                font-family: Century Gothic;
+                font-style: normal;
+                font-weight: bold;
+                color:black;
+                text-decoration: none;
+                font-size: 18px;
+                cursor: pointer;
+                }
+                #najava:hover{
+                    color:#FFFFFF;
+  
+                }
+                #kontakt1 {
+                  position: absolute;
+                  width: 729px;
+                  top: 129px;
+                  left: -293px;
+                  padding-bottom: 10px;
+                  border-bottom: 1px solid black;
+                  font-family: Century MONOSPACE;
+                  font-style: normal;
+                  font-weight: bold;
+                  color: black;
+                  text-decoration: none;
+                  font-size: 18px;
+                  cursor: pointer;
+                  /* display: none; */
+              }
+             
+                #singOutBtn {
+                    all: unset;
+                    position: absolute;
+                    left:-303px;
+                    display: block;
+                    bottom: 20px;
+                    padding-bottom: 10px;
+                    width: 729px;
+                    border-bottom: 1px solid black;
+                    font-style: normal;
+                    font-weight: bold;
+                    color: black;
+                    font-size: 18px;
+                }
+                #logo{
+                    left: 102px;
+                  top: 302px;
+                }
+                #moja{
+                    left: 73px;
+                 top: 434px;
+                }
+                #slika {
+                    left: auto;
+                    top: 90px;
+                    right: 29%;
+                }
+                #ime1 {
+                    left: 0px;
+                    top: 304px;
+                    width: 100%;
+                    text-align: center;
+                }
+                #urediCV{
+                    top: 250px;
+                    left: auto;
+                    width: 56%;
+                    margin: 0 22%;
+                }
+                #para1{
+                    left: 0px;
+                    width: 100%;
+                    top: 345px;
+                    text-align: center;
+                    padding: 0 2%;
+                }
+                #para2{
+                    left: 5px;
+                    width: 100%;
+                    top: 522px;
+                    text-align: center;
+                    padding: 0 2%;
+                }
+                .knigi{
+                    width: 100%;
+                    left: 0px;
+                    text-align: center;
+                }
+                #praksata{
+                    width: 100%;
+                    left: -78px;
+                    top: 28px;
+                }
+                #praksa{
+                    left: 0px;
+    top: 478px;
+    width: 100%;
+    text-align: center;
+                }
+                #vr{
+                    display: none;
+                }
+                #nema {
+                    position: absolute;
+                    padding-top: 29px;
+                    left: 0px;
+                    width: 100%;
+                    text-align: center;
+                    padding-right: 0px;
+                }
+                #osnovni{
+                    top: 624px;
+                    left: 0;
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+                #univerzitet{
+                    all:unset;
+                    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #142757;
+
+                }
+                #univerzitetot,#fakultet,#gradot,#godinaStudii{
+                    all:unset;
+                  position: absolute;
+                  top: 30px;
+                  left:0px;
+                  width: 100%;
+                  text-align: center;
+                    font-family: Century Gothic;
+                    font-size: 16px;
+                    font-weight: bold;
+                  line-height: 77%;
+                         color: #142757;
+                }
+                .informacii,.informacii1,.informacii2,.informacii3,.informacii4{
+                    left: 0px;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                .informacii4{
+                    top: 813px;
+                }
+                .informacii3{
+                    top: 763px;
+                }
+                .informacii2{
+                    top: 711px;
+                }
+                .informacii{
+                    top: 658px;
+                }
+               
+                #godnaStudii{
+                    font-size: 17px;
+
+                }
+                #preporaka {
+                    left: 0px;
+                    width: 100%;
+                    top: 1521px;
+                    display: block;
+                    text-align: center;
+                }
+                #button{
+                    display:none;
+                }
+                #poraka{
+                    display:none;
+                }
+                #button1,#button2 {
+                    left: 0px;
+                    top: 1629px;
+                    margin: 0 23%;
+                    width: 54%;
+                }
+                 #button2{
+                    top: 1689px;
+                }
+                #uredi {
+                    left: 0px;
+                    height: 950px;
+                    width: 96%;
+                    margin: 0 2%;
+                }
+                .vestini,.moite{
+                    width:100%;
+                    text-align:center;
+                    left: 0px;
+                }
+                .vnesi6{
+                    left:50px;
+                    top: 505px;
+                }
+                .vnesi3{
+                    
+                    top: 662px;
+                }
+                .vnesi4{
+                   display:none;
+                }
+                .vnesi5{
+                    display:none;
+                 }
+                 #promeniBtn{
+                    left:20px;
+                    top:852px;
+                 }
+                 #Nazad{
+                    right:20px;
+                    top:852px;
+                 }
+                 #paragraf1{
+                     width: 100%;
+                    padding: 0px 2%;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: -0.03em;
+                    color: #142757;
+                    white-space: normal;
+                }
+                 .ostvareni {
+                    top: 1209px;
+                    left: 0px;
+                    width: 100%;
+                    text-align: center;
+                }
+                #opraksi,#kniga{
+                    all:unset;
+                    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 106.67%;
+    letter-spacing: -0.03em;
+    color: #000000;
+                }
+                #para33 {
+                    all: unset;
+                    position: absolute;
+                    top: 25px;
+                    left: 0px;
+                    padding: 0 2%;
+                    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #142757;
+                }
+                #imepre1{
+                    padding: 0 2%;
+                    width:100%;
+                }
+                #para22{
+                    left:0px;
+                    width:100%;
+                    text-align:center;
+                    padding: 0 2%;
+                }
+                 span{
+                    padding-right: 7px;
+                 }
+                 #kade1,#kade2,#kade3,#kade4{
+                    padding-left: 19px;
+                    width: fit-content;
+                 }
+
+                 #kakva1{
+                    left: -10px;
+                    width: 100%;
+                 }
+                 #kakva2{
+                    left: -10px;
+                    width: 100%;
+                 }
+                 #kakva3{
+                    left: -10px;
+                    width: 100%;
+                 }
+                 #kakva4{
+                    left: -10px;
+                    width: 100%;
+                 }
+                 #proekti{
+                    all:unset;
+                    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 106.67%;
+                 }
+                 #predmet{
+                   width:100%;
+                 }
+                 /* #vestinT{
+                    width: 248px;
+                 } */
+                 #wrapper{
+                    width: 100%;
+                 }
+                 #horzNav{
+                     display: none;
+                 }
+                 header{
+                     width: 100%;
+                 }
+                 #brVraboteni,#odgLice,#Grad,#textarea,#Ul,#Ul1{
+                    width: 85%;
+                 }
+                 #promeniBtn,#Nazad{
+                    width: 40%;
+                 }
+                 .vnesi,.vnesi1, .vnesi2,.vnesi3,.vnesi4, .vnes5,.vnesi6,.vnesi7, .vnesi8,.vnesi9{
+                     width:100%;
+                 }
+                 .list-group{
+                     display: none;
+                 }
+            }
+@media screen and (max-width:359px){
+ #slika{
+     right:26%;
+ }
+ #dodaj{
+    left: 89px;
+ }
+ #brVraboteni,#odgLice,#Grad,#textarea,#Ul,#Ul1{
+    width: 82%;
+ }
+}

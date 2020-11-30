@@ -1,0 +1,1300 @@
+#wrapper{
+  
+    position: relative;
+    left:0px;
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+    }
+    body{
+       margin:0;
+       overflow-x: hidden;
+    }
+    #block{
+      position: relative;
+      top: 200px;
+      left: 250px;
+      width: 900px;
+      height: 590px;
+      display:none;
+      border-radius: 25px;
+      border:1px solid yellowgreen;
+      background: #f7f7f7;
+    }
+    #centar,#nav3,#nav,#nav1, #nav2,#buttonsearch,#element2{
+       all:revert;
+       z-index: 1;
+    }
+    .aktivni1,.aktivni2,.aktivni3,.aktivni4,.aktivni5,.aktivni6{
+       display: none;
+    }
+    .cover{
+      position: absolute;
+      width: 1400px;
+      height: 1050px;
+      left: -1px;
+      top: 98px;
+      background:#FFFFFF;
+      opacity: 0.9;
+      filter: blur(9px);
+      display: none;
+          }
+        .no-gutters{
+         background-color: #ffffff!important;
+     }
+    header{
+        position: absolute;
+        width: 1400px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        
+        color: #000000;
+        
+        }
+        nav{
+            position: absolute;
+        width: 568.14px;
+        height: 54px;
+        left: 900px;
+        top: 60px;
+        border-spacing: 10px;
+        }
+        .row{
+         margin-right: 2%!important;
+         margin-left: 2px!important;
+         width: 99%;
+  background-color: #ECECEC;
+}
+.red{
+   position: absolute;
+   top: 323px;
+   /* width: 100%;
+   height: 100%; */
+   background-color: #ECECEC;
+}
+
+        #logoto{
+         position: absolute;
+         top:20px; 
+         left:60px;
+     }
+      
+                #objavi{
+                    position: absolute;
+                    width: 142.03px;
+                    height: 0px;
+                    left: 0px;
+                    top: 0px;
+                    font-family: Century Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 106.67%;
+            /* or 15px */
+            
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.03em;
+            
+            color: #000000;
+            text-decoration: none;
+                    }
+                    #najava{
+                        position: absolute;
+                        width: 142.03px;
+                        height: 0px;
+                        left: 190px;
+                        top: 0px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        text-decoration: none;
+
+                     }
+                     #korisnicki{
+                        position: absolute;
+                        width: 243px;
+                        height: 56px;
+                        left: 58px;
+                        top: 74px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 106.67%;
+                        /* or 26px */
+                        
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        
+                     }
+                     .navigacija{
+                        position: absolute;
+                        width: 756px;
+                        height: 37px;
+                        left: 60px;
+                        top: 150px;
+                        background: #FFFFFF;
+                     }
+                     #nav{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 0px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em; 
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+                        transition: 0.5s;
+                     }
+                     #nav1{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 200px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em; 
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+                        transition: 0.5s;
+
+                     }
+                     #nav2{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 400px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em; 
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+                        
+                        border-bottom: 10px solid  #59C7D6 ;
+                        z-index: 1;
+
+                     }
+                     #nav3{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 600px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        align-self: center;
+                        letter-spacing: -0.03em; 
+                        
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+                        transition: 0.5s;
+
+                     }
+                     #centar{
+                        position: absolute;
+                        left: 60px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #FFFFFF;
+                     }
+                     button{
+                        transition: 0.5s;
+                     }
+                     button:hover{
+                        cursor: pointer;
+                     }
+
+                   
+#vector{
+    position: absolute;
+width: 1400px;
+height: 100%;
+left: -5px;
+top: 196px;
+
+background: #ECECEC;
+}
+.logoKompanija {
+   position: absolute;
+   width: 100px;
+   height: 91px;
+   left: 1px;
+   top: 2px;
+   clip-path: circle(43.5% at 49% 45%);
+  background-color: #FFFFFF;
+}
+/* #slika1 {
+   position: absolute;
+   width: 75px;
+   height: 85px;
+   left: 15px;
+   top: 6px;
+   clip-path: circle(45% at 49% 45%);
+} */
+/* #slika2 {
+   position: absolute;
+   width: 75px;
+   height: 85px;
+   left: 15px;
+   top: 6px;
+   clip-path: circle(45% at 49% 45%);
+} */
+/* #slika3 {
+   position: absolute;
+   width: 75px;
+   height: 85px;
+   left: 15px;
+   top: 6px;
+   clip-path: circle(45% at 49% 45%);
+} */
+/* #slika4 {
+   position: absolute;
+   width: 75px;
+   height: 85px;
+   left: 15px;
+   top: 6px;
+   clip-path: circle(45% at 49% 45%);
+}
+#slika5 {
+   position: absolute;
+   width: 75px;
+   height: 85px;
+   left: 15px;
+   top: 6px;
+   clip-path: circle(45% at 49% 45%);
+}
+#slika6{
+   position: absolute;
+   width: 75px;
+   height: 85px;
+   left: 15px;
+   top: 6px;
+   clip-path: circle(45% at 49% 45%);
+} */
+/* #slika7{
+   position: absolute;
+   width: 255px;
+   height: 165px;
+   left: 25px;
+   top: 5px;
+} */
+#slikata {
+   position: absolute;
+   width: 255px;
+   height: 159px;
+   left: 25px;
+   top: 4px;
+   border-radius: 55px;
+   background-color: #FFFFFF;
+}
+#hr1 {
+   position: absolute;
+   width: 400px;
+   height: 0px;
+   left: 0px;
+   top: 80px;
+   border: 1px solid #D0D0D0;
+
+}
+#hr3 {
+   position: absolute;
+   width: 900px;
+   height: 0px;
+   left: 0px;
+   top: 160px;
+   border: 1px solid #D0D0D0;
+}
+#marketer1,#marketer2,#marketer3,#marketer4,#marketer5,#marketer6{
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 116%;
+   letter-spacing: -0.03em;
+   /* text-decoration-line: underline; */
+}
+.mt-0{
+   margin-top: 0.6em!important;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+#marketer7 {
+   position: absolute;
+   width: 289px;
+   height: 15px;
+   left: 492px;
+   top: 5px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 25px;
+   line-height: 100%;
+   letter-spacing: -0.03em;
+   text-decoration-line: underline;
+   color: #142757;
+   /* display: none; */
+}
+  
+#akoglasi7{
+   position: absolute;
+   width: 604px;
+   height: 56px;
+   left: 337px;
+   top: -30px;
+   
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 27px;
+   line-height: 106.67%;
+   /* or 19px */
+   
+   display: flex;
+   align-items: center;
+   letter-spacing: -0.03em;
+   
+   color: #000000;
+   
+}
+#tekst {
+   position: absolute;
+   left: 100px;
+   top: 34px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 106.67%;
+}
+#tekst11 {
+   position: absolute;
+   left: 337px;
+   top: 14px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 106.67%;
+}
+#Vraboteni {
+   position: absolute;
+   left: 337px;
+   top: 44px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 106.67%;
+}
+#brVraboteni {
+   position: absolute;
+   left: 573px;
+   top: 45px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 106.67%;
+}
+  #tekst1{
+   position: absolute;
+   left: 170px;
+    top: 74px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 106.67%;
+}
+#tekst12 {
+   font-weight: bold;
+   position: absolute;
+   left: 444px;
+   top: 147px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 106.67%;
+}
+#tekst14 {
+   position: absolute;
+   left: 336px;
+   top: 75px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 106.67%;
+}
+#tekst15 {
+   position: absolute;
+   left: 336px;
+   top: 105px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 106.67%;
+}
+#tekst16 {
+   position: absolute;
+   left: 35px;
+   bottom: 138px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 21px;
+   line-height: 106.67%;
+}
+#email {
+   position: absolute;
+   left: 122px;
+   bottom: 137px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 21px;
+   line-height: 106.67%;
+}
+#tekst18 {
+   position: absolute;
+   left: 35px;
+   bottom: 109px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 21px;
+   line-height: 106.67%;
+}
+#website {
+   position: absolute;
+   left: 131px;
+   bottom: 138px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 21px;
+   line-height: 106.67%;
+}
+#tekst17 {
+   position: absolute;
+   left: 35px;
+   bottom: 165px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 21px;
+   line-height: 106.67%;
+}
+#odgLice {
+   position: absolute;
+   left: 222px;
+   bottom: 164px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 21px;
+   line-height: 106.67%;
+}
+#ul {
+   position: absolute;
+   left: 450px;
+   top: 75px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 25px;
+   line-height: 106.67%;
+}
+#grad {
+   position: absolute;
+   left: 409px;
+   top: 105px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 25px;
+   line-height: 106.67%;
+}
+/* #paragraf1 {
+   position: absolute;
+   width: 380px;
+   height: 100px;
+   left: 10px;
+   top: 104px;
+   
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: italic;
+   font-size: 16px;
+   line-height: 106.67%;
+}
+#paragraf2 {
+position: absolute;
+width: 380px;
+height: 100px;
+left: 10px;
+top: 104px;
+display:center;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: italic;
+font-size: 16px;
+line-height: 106.67%;
+}
+#paragraf3 {
+position: absolute;
+width: 380px;
+height: 100px;
+left: 10px;
+top: 104px;
+display:center;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: italic;
+font-size: 16px;
+line-height: 106.67%;
+}
+#paragraf4 {
+position: absolute;
+width: 380px;
+height: 100px;
+left: 10px;
+top: 104px;
+display:center;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: italic;
+font-size: 16px;
+line-height: 106.67%;
+}
+#paragraf5 {
+position: absolute;
+width: 380px;
+height: 100px;
+left: 10px;
+top: 104px;
+display:center;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: italic;
+font-size: 16px;
+line-height: 106.67%;
+}
+
+#paragraf6 {
+position: absolute;
+width: 380px;
+height: 100px;
+left: 10px;
+top: 104px;
+display:center;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: italic;
+font-size: 16px;
+line-height: 106.67%;
+}
+#paragraf7 {
+   position: absolute;
+   width: 812px;
+   height: 100px;
+   left: 60px;
+   top: 192px;
+   display: center;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: italic;
+   font-size: 21px;
+   line-height: 124.67%;
+} */
+
+   
+.aktivni7 {
+   height: 140px;
+   margin: 0 3%;
+   margin-bottom: 2%;
+   background: #ffff;
+   min-width: 93%;
+   width: 100%;
+
+}
+     /* #search{
+        position: absolute;
+          width: 506px;
+          height: 38px;
+        left: 360px;
+        top: 208px;
+        
+     } */
+     #search{
+      position: absolute;
+        width: 70%;
+        height: 38px;
+      left: 0px;
+      margin: 0 15%;
+      top: 208px;
+      
+   }
+     #element1{
+        position: absolute;
+        width: 546px;
+        height: 38px;
+        left: 140px;
+        top: 0px;
+        
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        z-index: 1;
+        
+        color: #000000;
+        
+
+     }
+     #element2{
+        position: absolute;
+        width: 306px;
+        height: 38px;
+        left: 0px;
+        top: 40px;
+        
+        background: #EBEBEB;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+     }
+     #buttonsearch{
+        position: absolute;
+        width: 134px;
+        height: 46px;
+        left: 307px;
+        top: 40px;
+        
+        background: #F47A61;
+        font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+letter-spacing: -0.03em;
+
+color: #FFFFFF;
+
+     }
+     #strana{
+      margin: 1% 2%;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+
+   }
+   #hr2{
+      width: 92%;
+      height: 0px;
+      border: 1px solid #D0D0D0;
+   }
+   #button12{
+      position: absolute;
+      width: 153px;
+      height: 42px;
+      left: 1080px;
+      top: 110px;
+      top: 120px;
+      background: #59C7D6;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 106.67%;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      
+   }
+   #nazad {
+      position: absolute;
+      width: 153px;
+      height: 42px;
+      left: 430px;
+      bottom: 30px;
+      background: #59C7D6;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 106.67%;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+  }
+   #brStranica {
+      width: 381px;
+    height: 15px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin: 0 1%;
+    color: #142757;
+     
+  }
+  #brojPr{
+   padding-left: 4px;
+   pointer-events: none;
+   color: #007bff;
+   font-size: 29px;
+}
+#eden{
+   display:none;
+}
+#dva{
+   display:none;
+}
+#tri{
+   display: none;
+}
+#cetiri{
+   display:none;
+}
+#pet{
+   display: none;
+}
+#ses{
+   display:none;
+}
+
+  span{
+   padding-left: 20px;
+   
+}
+#button:hover{
+background-color: salmon;
+cursor:pointer;
+}
+#span{
+   font-size:22px;
+   pointer-events:none;
+   }
+   span:hover{
+      cursor:pointer;
+      color:red;
+      font-size:38px;
+      text-decoration-line: underline;
+   }
+      #objavi:hover{
+             text-decoration: underline;
+          }
+          #najava:hover{
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          #alertMessage{
+            position:absolute;
+            top:300px;
+            left:310px;
+            display:none;
+            z-index: 1;
+         }
+   #nav1:hover{
+      border-bottom: 10px solid  #59C7D6 ;
+   }
+    #nav:hover{
+      border-bottom: 10px solid  #59C7D6 ;
+   }
+   #nav3:hover{
+      border-bottom: 10px solid  #59C7D6 ;
+   }
+   #tekst19 {
+      position: absolute;
+      left: 35px;
+      bottom: 78px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 106.67%;
+  }
+  #kontakt{
+     all:unset;
+     padding-left: 5px;
+     font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 106.67%;
+  }
+  @media screen and (max-width: 430px) {
+   #logoto {
+      left: auto;
+      margin: 0 29%;
+      width: 43%;
+      margin-top: -6%;
+  }
+   #wrapper{
+      height: 100%;
+   }
+   #korisnicki{
+      top: 74px;
+      left:0px;
+         width: 100%;
+         text-align:center;
+         display: block;
+         height: auto;
+  
+   }
+   #horzNav{
+      left:0px;
+      width: 100%;
+      text-align:center;
+   }
+   #najava,#objavi{
+    position:unset;
+    display:inline-block;
+    width: unset;
+   margin: 0 8%;
+   }
+   .navigacija{
+      left: 10px;
+ top: 112px;
+ width: 0;
+ /* margin: 0 7%; */
+   }
+   #hr{
+      display:none;
+   }
+   #nav{
+      left: 24px;
+      width: 140px;
+
+   }
+   #nav1{
+      width: 140px;
+      left: 182px;
+   }
+   #centar{
+      left: 39px;
+   }
+   #nav2{
+ left: 24px;
+ top: 53px;
+ width: 140px;
+ border-bottom: 10px solid #59C7D6;
+   }
+   #nav3{
+      left: 182px;
+      top: 53px;
+     width: 140px; 
+   }
+   #vector{
+      top:210px;
+     height: 100%;
+      width: 100%;
+      left: 0;
+   }
+   header{
+      width: 100%;
+   }
+   .mt-0{
+      text-align: center;
+   }
+   #search {
+      width: 100%;
+      padding: 0 2%;
+      height: auto;
+      margin: unset;
+      background: #ECECEC;
+      top: 212px;
+  }
+   #element1{
+      left:60px;
+      width: 201px;
+      
+   }
+   .aktivni7{
+      margin: auto;
+      width: 75%;
+      margin-bottom: 3%;
+      min-width: 100%;
+
+   }
+   #element2{
+      width: 196px;
+   }
+   #buttonsearch{
+      left: 198px;
+   }
+
+   #hr1{
+      width: 350px;
+   }
+   #button1{
+      left: 190px;
+   }
+  
+   #button2{
+      left: 190px;
+   }
+ 
+   #button3{
+      left: 190px;
+   }
+
+   #button4{
+      left: 190px;
+   }
+
+   #button5{
+      left: 190px;
+   }
+ 
+   #button6{
+      left: 190px;
+   }
+
+   #marketer1{
+      font-size: 13px;
+      left: 184px;
+   }
+   #marketer2{
+      font-size: 13px;
+      left: 184px;
+   }
+   #marketer3{
+      font-size: 13px;
+      left: 184px;
+   }
+   #marketer4{
+      font-size: 13px;
+      left: 184px;
+   }
+   #marketer5{
+      font-size: 13px;
+      left: 184px;
+   }
+   #marketer6{
+      left: 184px;
+      font-size: 13px;
+   }
+   #tekst{
+      font-size: 13px;
+   }
+
+
+   #strana{
+      font-size: 17px;
+   }
+   #span{
+      font-size: 17px;
+   }
+   #brojPr{
+      font-size: 17px;
+   }
+   #brStranica{
+      left:10px;
+      font-size: 17px;
+      width: fit-content;
+   }
+   #hr2{
+      width: 100%;
+   }
+   .cover{
+      top:0px;
+      height: 2485px;
+   }
+   #block{
+      left: 5px;
+      width: 350px;
+      height: 700px;
+   }
+   #hr3{
+      width: 350px;
+      top: 240px;
+   }
+   #slikata {
+   position: absolute;
+    width: 155px;
+    height: 124px;
+    left: 10px;
+    top: 17px;
+    background-color: #FFFFFF;
+   }
+   #slika7 {
+      position: absolute;
+      width: 132px;
+      height: 63px;
+      left: -10px;
+      top: 10px;
+  }
+  #akoglasi7 {
+  
+   left: 171px;
+   top: 8px;
+   font-size: 17px;
+
+}
+#tekst11{
+   left: 173px;
+   top: 45px;
+   font-size: 17px;
+}
+#marketer7{
+   top: 62px;
+    left: 169px;
+    font-size: 17px;
+    width: 174px;
+}
+#Vraboteni{
+   left: 21px;
+   top: 130px;
+    font-size: 17px;
+}
+#godStudii{
+   left: 182px;
+   top: 123px;
+}
+#tekst14{
+   left: 17px;
+   top: 157px;
+   font-size: 17px;
+}
+#univerzitet {
+   left: 138px;
+   top: 151px;
+   font-size: 17px;
+}
+#tekst15{
+   left: 17px;
+   top: 191px;
+   font-size: 17px;
+}
+#fakultet {
+   left: 110px;
+   top: 193px;
+   font-size: 17px;
+}
+#tekst12{
+   left: 127px;
+   top: 241px;
+   font-size: 17px;
+}
+
+#paragraf7{
+   left: 10px;
+    top: 270px;
+    width:340px;
+    font-size: 17px;
+    line-height: 111%;
+}
+#tekst17{
+   left: 100px;
+   top: 431px;
+   font-size: 17px;
+}
+#odgLice{
+   all: unset;
+    position: absolute;
+    width: 350px;
+    bottom: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+}
+#tekst16{
+   bottom: 158px;
+   left: 138px;
+    font-size: 16px;
+}
+#email {
+   all: unset;
+   position: absolute;
+   top: 524px;
+   width: 350px;
+   text-align: center;
+   font-size: 17px;
+   bottom: 129px;
+   font-family: Century Gothic;
+}
+#tekst18{
+   left: 140px;
+   top: 552px;
+   font-size: 17px;
+}
+#brVraboteni {
+   left: 190px;
+   top: 125px;
+   font-size: 20px;
+}
+#ul{
+   left: 98px;
+   top: 158px;
+    font-size: 17px;
+
+}
+#grad{
+   left: 72px;
+   top: 191px;
+    font-size: 17px;
+}
+#website {
+   all: unset;
+   position: absolute;
+   bottom: 79px;
+   font-size: 17px;
+   width: 350px;
+   text-align: center;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   color: darkblue;
+   text-decoration: underline;
+}
+#tekst19{
+   bottom: 110px;
+   left: 90px;
+    font-size: 16px;
+}
+#kontakt{
+   font-size: 16px;
+}
+#nazad{
+   left:100px;
+}
+}
+@media screen and (max-width: 344px) {
+.row{
+   margin-left: 2px!important;
+   width: 98%;
+}
+/* #horzNav {
+   left: 41px;
+} */
+#nav,#nav2{
+   left: 10px;
+   width: 130px;
+}
+#nav1,#nav3{
+   left: 159px;
+   width: 130px;
+}
+#element2 {
+   width: 161px;
+}
+#buttonsearch {
+   left: 162px;
+   width: 117px;
+}
+#korisnicki{
+   left:0px;
+   width: 100%;
+   text-align:center;
+   display: block;
+}
+}

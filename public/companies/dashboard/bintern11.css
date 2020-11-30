@@ -1,0 +1,3137 @@
+/* *{
+ z-index:-1;  
+}
+iframe, body{
+   z-index:1;
+} */
+.frame-container {
+   position: relative;
+ }
+ .iframe-button {
+   /* display: none; */
+   position: absolute;
+   bottom: 100px;
+   width: 210.76px;
+    height: 49px;
+    left: 1020px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 106.67%;
+    letter-spacing: -0.03em;
+  
+ }
+ .col h5{
+   font-family: "Century Gothic";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 106.67%;
+   display: inline-block;
+   margin-left: 2%;
+   align-items: center;
+   letter-spacing: -0.03em;
+   color: rgb(0, 0, 0);
+ }
+ .col a{
+   height: 40px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 106.67%;
+   display: block;
+   align-items: center;
+   text-align: center;
+   letter-spacing: -0.03em;
+   text-decoration-line: underline;
+   color: #59C7D6!important;
+   margin-top: -47px;
+   transition:0.3s;
+ }
+ .mb-3 {
+   margin-bottom: 3rem!important;
+}
+ .col a:hover{
+      font-size: 18px;
+      cursor: pointer;
+      margin-left: 3%;
+ }
+ 
+ .nazad{
+   /* flex: 0 0 100%!important;
+   max-width: 100%!important; */
+   padding: 0 45%;
+   margin-bottom: 7%;
+ }
+ 
+ #row{
+   position: absolute;
+   padding: 0 8%;
+   top: 256px;
+   min-width: 100%;
+ }
+ /* Only show the button when the parent is hovered: */
+ 
+ .frame-container:hover .iframe-button {
+   display: initial;
+ }
+ /* #myIFrame{
+    display: none;
+ } */
+#wrapper{
+  
+    position: relative;
+    width: 1400px;
+    height: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+    display:none;
+    }
+    body{
+       margin:0;
+       overflow-x: hidden;
+    }
+    h3,h5{
+       all:revert;
+    }
+    hr{
+      all:revert;
+    }
+    p{
+       all:revert;
+    }
+    button{
+       transition:0.5s;
+    }
+    header{
+        position: absolute;
+        width: 1400px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        font-family: Century Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 106.67%;
+        /* or 15px */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.03em;
+        
+        
+        color: #000000;
+        
+        }
+        nav{
+            position: absolute;
+        width: 568.14px;
+        height: 54px;
+        left: 900px;
+        top: 60px;
+        border-spacing: 10px;
+       
+        }
+        #logoto{
+         position: absolute;
+         top:20px; 
+         left:60px;
+         transition: 0.5s;
+      }
+      #logoto:hover{
+         top:10px;
+       width:188px; 
+       height:70px;
+       -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+ 
+   }
+     #nav,#nav2,#nav3{
+      transition: 0.5s;
+   }
+     .login-cover{
+      background: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 800;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+     .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid salmon;
+      border-left: 5px solid salmon;
+      border-right: 5px solid salmon;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 0.8s linear infinite;
+      -webkit-animation: spin 0.8s linear infinite;
+  }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    } 
+    /* Safari */
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+        
+      
+                #objavi{
+                    position: absolute;
+                    width: fit-content;
+                    height: 0px;
+                    left: 0px;
+                    top: 0px;
+                    font-family: Century Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 106.67%;
+            /* or 15px */
+            
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.03em;
+            
+            color: #000000;
+            text-decoration: none;
+                    }
+                    #najava{
+                        position: absolute;
+                        width: fit-content;
+                        height: 0px;
+                        left: 190px;
+                        top: 0px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        text-decoration: none;
+
+                     }
+                     #loginProgress{
+                        display:none;
+                     }
+                     #najava:hover{
+                        cursor: pointer;
+                     }
+                     #korisnicki{
+                        position: absolute;
+                        width: 243px;
+                        left: 58px;
+                        top: 103px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 106.67%;
+                        /* or 26px */
+                        
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        
+                     }
+                     .navigacija{
+                        position: absolute;
+                        width: 756px;
+                        height: 37px;
+                        left: 60px;
+                        top: 150px;
+                        background: #FFFFFF;
+                     }
+                     #kakva1{
+                        position: absolute;
+                    width: 418px;
+                    height: 15px;
+                    left: 0px;
+                    top: 0px;
+                    
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    letter-spacing: -0.03em;
+                    text-decoration-line: underline;
+                    
+                    color: #142757;
+                    /* display: none; */
+                    
+                    }
+                    #kakva2 {
+                        position: absolute;
+                        width: 418px;
+                        height: 15px;
+                        left: 0px;
+                        top: 25px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: -0.03em;
+                        text-decoration-line: underline;
+                        color: #142757;
+                        display: none;
+                    }
+                    #kakva3 {
+                        position: absolute;
+                        width: 418px;
+                        height: 15px;
+                        left: 0px;
+                        top: 50px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: -0.03em;
+                        text-decoration-line: underline;
+                        color: #142757;
+                        display: none;
+                    }
+                    #kakva4 {
+                        position: absolute;
+                        width: 418px;
+                        height: 15px;
+                        left: 0px;
+                        top: 75px;
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: -0.03em;
+                        text-decoration-line: underline;
+                        color: #142757;
+                        display:none;
+                    }
+                    #vo{
+                    position: absolute;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    letter-spacing: -0.03em;
+                    text-decoration: none;
+                    color: #142757;
+                    
+                    }
+                    span{
+                        padding-right: 10px;
+                    }
+                    #kade1{
+                        position: absolute;
+                        padding-left: 30px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    letter-spacing: -0.03em;
+                    
+                    color: #59C7D6;
+                    
+                    }
+                    #kade2{
+                        position: absolute;
+                        padding-left: 30px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    letter-spacing: -0.03em;
+                    
+                    color: #59C7D6;
+                    
+                    }
+                    #kade3{
+                        position: absolute;
+                        padding-left: 30px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    letter-spacing: -0.03em;
+                    
+                    color: #59C7D6;
+                    
+                    }
+                    #kade4{
+                        position: absolute;
+                        padding-left: 30px;
+                    font-family: Century Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 100%;
+                    /* or 14px */
+                    
+                    letter-spacing: -0.03em;
+                    
+                    color: #59C7D6;
+                    }
+                     #nav{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 0px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em; 
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+
+                     }
+                     #nav1{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 200px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em; 
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+
+                     }
+                     #nav2{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 400px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em; 
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+
+                     }
+                     #nav3{
+                        position: absolute;
+                        width: 185px;
+                        height: 37px;
+                        left: 600px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        align-self: center;
+                        letter-spacing: -0.03em; 
+                        
+                        
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+
+                     }
+                     #centar{
+                        position: absolute;
+                        left: 60px;
+                        top: 0px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 106.67%;
+                        /* or 15px */
+                        
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #FFFFFF;
+                     }
+                     #hr {
+                        position: absolute;
+                        width: 184px;
+                        height: 10px;
+                        left: 260px;
+                        top: 175px;
+                        background: #59C7D6;
+                    }
+                     .aktivni{
+                        position: absolute;
+                        width: 1032px;
+                        height: 180px;
+                        left: 60px;
+                        top: 442px;
+                        background:#FFFFFF;
+                     }
+                     #akoglasi{
+                        position: absolute;
+                        width: 604px;
+                        height: 56px;
+                        left: 97px;
+                        top: 10px;
+                        
+                        font-family: Century Gothic;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 106.67%;
+                        /* or 19px */
+                        
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.03em;
+                        
+                        color: #000000;
+                        
+                     }
+#vector{
+    position: absolute;
+width: 1400px;
+height: 900px;
+left: 0px;
+top: 196px;
+
+background: #ECECEC;
+}
+
+#slikata1 {
+   position: absolute;
+   width: 40px;
+   height: 48px;
+   left: 29px;
+   top: 28px;
+}
+#hr1{
+position: absolute;
+width: 1032px;
+height: 0px;
+left: 0px;
+top: 80px;
+
+border: 1px solid #D0D0D0;
+
+}
+
+
+    #marketer{
+position: absolute;
+width: 381px;
+height: 15px;
+left: 50px;
+top: 90px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: 3em;
+
+
+color: #142757;
+
+    }
+    #button{
+        position: absolute;
+width: 153px;
+height: 42px;
+left: 850px;
+top: 100px;
+
+background: #59C7D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+
+letter-spacing: -0.03em;
+
+color: #FFFFFF;
+    }
+ .kreiraj{
+    position: absolute;
+width: 245px;
+height: 219px;
+left: 60px;
+top: 210px;
+
+/* градиент */
+background: linear-gradient(136.17deg, #5CC8D7 10.95%, #24EDB1 95.56%), #59C7D6;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+    }
+   #besplaten{
+    position: absolute;
+    width: 211px;
+    height: 56px;
+    left: 20px;
+    top: 7px;
+    
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 106.67%;
+    /* or 19px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+   }
+   #para{
+    position: absolute;
+    width: 211px;
+    height: 95px;
+    left: 20px;
+    top: 55px;
+    
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 106.67%;
+    /* or 13px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+   }
+   #besplaten4 {
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+     #para4{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten5{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para5{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten6 {
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+     #para6 {
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+     #besplaten7{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para7{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten8{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para8{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten9{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para9{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten10{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para10{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten11{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para11{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #besplaten12{
+      position: absolute;
+      width: 214px;
+      height: 56px;
+      left: 20px;
+      top: -10px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #para12{
+      position: absolute;
+      width: 211px;
+      height: 95px;
+      left: 20px;
+      top: 44px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #brAplikanti{
+      position: absolute;
+      width: 140px;
+      height: 40px;
+      left: 10px;
+      bottom: 20px;
+      
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 106.67%;
+      /* or 13px */
+      
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      
+      color: #FFFFFF;
+      
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+     }
+     #brojAplikanti0, #brojAplikanti1, #brojAplikanti2, #brojAplikanti3,  #brojAplikanti4, #brojAplikanti5, #brojAplikanti6, #brojAplikanti7{
+      position: absolute;
+      /* width: 140px; */
+      height: 40px;
+      left: 140px;
+      bottom: 0px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+
+   #button2{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 170px;
+    top: 150px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 106.67%;
+  color:#F47A61;
+  clip-path: circle(45% at 50% 50%);
+
+   }
+   #button211{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button212{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button213{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button214{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button215{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button216{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button217{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+     #button218{
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 170px;
+      top: 150px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 106.67%;
+    color:#42D9C5;
+    clip-path: circle(45% at 50% 50%);
+    background-color:#42D9C5;
+  
+     }
+    
+   .kreiraj2{
+    position: absolute;
+    width: 245px;
+    height: 219px;
+    left: 330px;
+    top: 210px;
+    
+    /* градиент */
+    
+    background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+   }
+   .kreiraj3{
+      position: absolute;
+    width: 245px;
+    height: 219px;
+    left: 600px;
+    top: 210px;
+    
+    /* градиент */
+   
+    background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+   }
+   .kreiraj4{
+      position: absolute;
+    width: 245px;
+    height: 219px;
+    left: 60px;
+    top: 640px;
+    display: none;
+    /* градиент */
+    
+    background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+   }
+
+   .kreiraj5{
+      position: absolute;
+      width: 245px;
+      height: 219px;
+      left: 330px;
+      top: 640px;
+      display: none;
+      /* градиент */
+      
+      background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+     }
+     .kreiraj6{
+        position: absolute;
+      width: 245px;
+      height: 219px;
+      left: 600px;
+      top: 640px;
+      display: none;
+      /* градиент */
+      
+      background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+  
+     }
+     .kreiraj7{
+      position: absolute;
+    width: 245px;
+    height: 219px;
+    left: 870px;
+    top: 640px;
+    display: none;
+    /* градиент */
+    
+    background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+   }
+   .kreiraj8{
+      position: absolute;
+    width: 245px;
+    height: 219px;
+    left: 60px;
+    top: 880px;
+    display: none;
+    /* градиент */
+    
+    background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+   }
+
+   .kreiraj9{
+      position: absolute;
+      width: 245px;
+      height: 219px;
+      left: 330px;
+      top: 880px;
+      display: none;
+      /* градиент */
+      
+      background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+     }
+     .kreiraj10{
+        position: absolute;
+      width: 245px;
+      height: 219px;
+      left: 600px;
+      top: 880px;
+      display: none;
+      /* градиент */
+      
+      background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+  
+     }
+     .kreiraj11{
+      position: absolute;
+    width: 245px;
+    height: 219px;
+    left: 870px;
+    top: 880px;
+    display: none;
+    /* градиент */
+    
+    background: linear-gradient(244.54deg, #F47A61 5.37%, #F15F61 68.83%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+   }
+   #eden{
+      display: none;
+   }
+   #dva{
+      display: none;
+   }
+   #tri{
+      display: none;
+   }
+   #cetiri{
+      display: none;
+   }
+   #pet{
+      display: none;
+   }
+
+   #eden:hover{
+      font-size: 24px;
+      cursor: pointer;
+      color:red;
+   }
+   #dva:hover{
+      font-size: 24px;
+      cursor: pointer;
+      color:red;
+   }
+   #tri:hover{
+      font-size: 24px;
+      cursor: pointer;
+      color:red;
+   }
+   #cetiri:hover{
+      font-size: 24px;
+      cursor: pointer;
+      color:red;
+      
+   }
+   #pet:hover{
+      cursor: pointer;
+      font-size: 24px;
+      color:red;
+   }
+     #brOglasi{
+      color: #142757;   
+      font-size:20px;
+      word-spacing:1em;
+     }
+     
+     button:hover{
+               
+    background-color:yellowgreen;
+    cursor: pointer;
+   }
+
+
+   #vector1{
+      position: absolute;
+      width: 1400px;
+       height: 1150px;   
+      left: 0px;
+      top: 0px;
+      background: #ffffff;
+      display: none;
+      }
+      #search{
+         position: absolute;
+           width: 506px;
+           height: 38px;
+         left: 460px;
+         top: 80px;
+         
+      }
+      #element1{
+         position: absolute;
+         width: 546px;
+         height: 38px;
+         left: 120px;
+         top: 0px;
+         
+         font-family: Century Gothic;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 106.67%;
+         /* or 15px */
+         
+         display: flex;
+         align-items: center;
+         text-align: center;
+         letter-spacing: -0.03em;
+         
+         color: #000000;
+         
+ 
+      }
+      #element2{
+         position: absolute;
+         width: 306px;
+         height: 38px;
+         left: 0px;
+         top: 40px;
+         
+         background: #EBEBEB;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 2px;
+ 
+      }
+      #buttonsearch{
+         position: absolute;
+         width: 134px;
+         height: 46px;
+         left: 307px;
+         top: 40px;
+         
+         background: #F47A61;
+         font-family: Century Gothic;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 100%;
+ /* identical to box height, or 14px */
+ 
+ letter-spacing: -0.03em;
+ 
+ color: #FFFFFF;
+ 
+      }
+      #kandidati{
+         position: absolute;
+         width: 546px;
+         height: 38px;
+         left: 480px;
+         top: 160px;
+         
+         font-family: Century Gothic;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 106.67%;
+         /* or 15px */
+         
+         display: flex;
+         align-items: center;
+         text-align: center;
+         letter-spacing: -0.03em;
+         
+         color: #000000;
+         
+      }
+#zapozicija{
+position: absolute;
+width: 192px;
+height: 15px;
+left: 550px;
+top: 223px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #000000;
+      }
+      #digitalen {
+         position: absolute;
+         width: 213px;
+         height: 15px;
+         left: 650px;
+         top: 200px;
+         font-family: Century Gothic;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 14px;
+         line-height: 100%;
+         letter-spacing: -0.03em;
+         text-decoration-line: underline;
+         color: #142757;
+     }
+#slika{
+    position: absolute;
+    width: 119.88px;
+    height: 119.88px;
+    left: 0px;
+    top: 0px;
+    clip-path: circle(45% at 50% 50%);
+    background: blue;
+ }
+ 
+ 
+
+#nemaPraksa{
+   position: absolute;
+    width: 418px;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: #142757;
+}
+
+
+#nazad1{
+position: absolute;
+width: 150.76px;
+height: 49px;
+/* left: 607px;
+top: 472px; */
+background: #ffffff;
+border: 1px solid #59C7D6;
+box-sizing: border-box;
+border-radius: 12px;
+font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 106.67%;
+    /* or 15px */
+    
+    
+    letter-spacing: -0.03em;
+    
+    color: #59C7D6;
+} 
+#nazad1:hover{
+   border: 5px solid  #59C7D6;
+   font-size: 16px;
+   background-color: #f7f7f7;
+}   
+
+ /* CV page */
+#wrapper1{
+  
+   position: absolute;
+   top: 0px;;
+   width: 1400px;
+   height: 1660px;
+   display: none;
+   
+   background: #ffffff;
+   }
+   #slikata{
+      position: absolute;
+      width: 153px;
+      height: 153px;
+      left: 580px;
+      top: 175px;
+      background: #59C7D6;
+      clip-path: circle(45% at 50% 50%);
+   }
+   #imeDefault{
+      position: absolute;
+      width: 335px;
+      height: 33px;
+      left: 570px;
+      top: 366px;
+      
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 106.67%;
+      /* or 26px */
+      
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.03em;
+      
+      color: #000000;
+      
+   }
+   #imeto{
+      position: absolute;
+      width: 335px;
+      height: 33px;
+      left: 570px;
+      top: 366px;
+      
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 106.67%;
+      /* or 26px */
+      
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.03em;
+      
+      color: #000000;
+      
+   }
+   #para1 {
+      position: absolute;
+      width: 591px;
+      height: 118px;
+      left: 366px;
+      top: 383px;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 106.67%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.03em;
+      color: #9C9999;
+  }
+   #paragrafot{
+      position: absolute;
+      width: 591px;
+      height: 118px;
+      left: 366px;
+      top: 375px;
+      
+      font-family: Century Gothic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 106.67%;
+      /* or 19px */
+      
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.03em;
+      
+      color: #9C9999;
+   }
+#praksa{
+  position: absolute;
+  width: 243px;
+  height: 33px;
+  left: 570px;
+  top: 485px;
+  
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 106.67%;
+  /* or 19px */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+  
+  color: #000000;
+  
+}    
+#para2{
+position: absolute;
+width: 591px;
+height: 60px;
+left: 366px;
+top: 515px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #9C9999;
+
+} 
+#para22{
+position: absolute;
+width: 591px;
+height: 60px;
+left: 366px;
+top: 515px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #9C9999;
+
+} 
+#osnovni{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 60px;
+top: 583px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+
+#univerzitet{
+position: absolute;
+width: 198px;
+height: 15px;
+left:0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+}
+#kiril{
+position: absolute;
+width: 271px;
+height: 15px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#fakultet1{
+position: absolute;
+width: 198px;
+height: 15px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#gradce{
+position: absolute;
+width: 198px;
+height: 15px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#godina{
+position: absolute;
+width: 241px;
+height: 15px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+.informacii{
+position: absolute;
+width: 198px;
+height: 50px;
+left: 60px;
+top: 623px;
+
+} 
+.informacii2{
+position: absolute;
+width: 198px;
+height: 50px;
+left: 60px;
+top: 677px;
+} 
+.informacii3{
+position: absolute;
+width: 258px;
+height: 50px;
+left: 60px;
+top: 733px;
+} 
+.informacii4{
+
+position: absolute;
+width: 198px;
+height: 50px;
+left: 60px;
+top: 783px;
+
+}
+.vestini{
+position: absolute;
+width: 331px;
+height: 178px;
+left: 60px;
+top: 863px;
+}
+#vestiniT{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+#predmet{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 0px;
+}
+#imepre{
+position: absolute;
+width: 219px;
+height: 22px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #9C9999;
+
+}
+#preporaki{
+position: absolute;
+width: 136px;
+height: 22px;
+left: 205px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+text-align: right;
+letter-spacing: -0.03em;
+
+color: #59C7D6;
+
+}
+#predmet2{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 30px;
+}
+#predmet3{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 60px;
+}
+#predmet4{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 90px;
+}
+#predmet5{
+position: absolute;
+width: 311px;
+height: 22px;
+left: 0px;
+top: 120px;
+}
+.moite{
+position: absolute;
+width: 331px;
+height: 112px;
+left: 60px;
+top: 1043px;
+
+}
+#proekti{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+#paragraf{
+position: absolute;
+width: 361px;
+height: 64px;
+left: 0px;
+top: 46px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 160%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#paragraf1{
+position: absolute;
+width: 361px;
+height: 64px;
+left: 0px;
+top: 60px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 160%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+.ostvareni{
+position: absolute;
+width: 331px;
+height: 162px;
+left: 60px;
+top: 1183px;
+}
+#opraksi{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+#praksata{
+position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 50px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+
+#praksata1{
+position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 80px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+#praksata2{
+position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 110px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+.knigi{
+position: absolute;
+width: 331px;
+height: 202px;
+left: 60px;
+top: 1343px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 100%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#kniga{
+position: absolute;
+width: 311px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+}
+#para3{
+position: absolute;
+width: 361px;
+height: 172px;
+left: 0px;
+top: 40px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 150%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#para33{
+position: absolute;
+width: 361px;
+height: 172px;
+left: 0px;
+top: 40px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 150%;
+/* or 12px */
+
+letter-spacing: -0.03em;
+
+color: #142757;
+
+}
+#preporaka{
+position: absolute;
+width: 360px;
+height: 33px;
+left: 728px;
+top: 589px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 106.67%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+#nemaPreporaki{
+ position: absolute;
+  padding-top: 80px;   
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 146.67%;
+   
+   display: flex;
+   align-items: center;
+   letter-spacing: -0.03em;
+   
+   color: #9C9999;
+   }
+#preporaka1{
+position: absolute;
+width: 594px;
+height: 123px;
+left: 728px;
+top: 649px;
+
+background: #F7F7F7;
+border-radius: 5px;
+display: none;
+}
+#prof{
+position: absolute;
+width: 219px;
+height: 22px;
+left: 30px;
+top: 5px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #506CF0;
+
+}
+#paragraf5{
+position: absolute;
+width: 545px;
+height: 44px;
+left: 30px;
+top: 40px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+
+color: #000000;
+}
+#preporaka2{
+position: absolute;
+width: 594px;
+height: 123px;
+left: 728px;
+top: 789px;
+
+background: #F7F7F7;
+border-radius: 5px;
+display: none;
+}
+#preporaka3{
+position: absolute;
+width: 594px;
+height: 123px;
+left: 728px;
+top: 929px;
+
+background: #F7F7F7;
+border-radius: 5px;
+display: none;
+}
+#preporaka4{
+position: absolute;
+width: 594px;
+height: 123px;
+left: 728px;
+top: 1069px;
+
+background: #F7F7F7;
+border-radius: 5px;
+display: none;
+}
+#preporaka5{
+position: absolute;
+width: 594px;
+height: 123px;
+left: 728px;
+top: 1209px;
+
+background: #F7F7F7;
+border-radius: 5px;
+display: none;
+}
+#kopce{
+position: absolute;
+width: 201.76px;
+height: 65px;
+left: 728px;
+top: 1349px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+background: #C4C4C4;
+border-radius: 12px;
+
+}
+#poraka{
+position: absolute;
+width: 299px;
+height: 22px;
+left: 948px;
+top: 1379px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #D0D0D0;
+}
+#kopce1{
+position: absolute;
+width: 201.76px;
+height: 49px;
+left: 728px;
+top: 1549px;
+
+background: #59C7D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+color: #FFFFFF;
+
+}
+#kopce2{
+position: absolute;
+width: 201.76px;
+height: 50px;
+left: 948px;
+top: 1549px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+text-decoration-line: underline;
+
+color: #59C7D6;
+border: 1px solid #59C7D6;
+box-sizing: border-box;
+border-radius: 12px;
+background: #FFFFFF;
+
+}
+
+
+#pokani{
+  position: absolute;
+width: 201.76px;
+height: 49px;
+left: 550px;
+top: 326px;
+
+background: #59C7D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+font-family: Century Gothic;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 106.67%;
+/* or 15px */
+
+color: #FFFFFF;
+
+}                
+.cover{
+
+  position: absolute;
+  width: 1400px;
+  height: 1820px;
+  left: -1px;
+  top: 0px;
+  background:#FFFFFF;
+  opacity: 0.9;
+  filter: blur(9px);
+  display: none;
+      }
+      #uredi{
+          position: absolute;
+          width: 850px;
+          height: 800px;
+          left: 290px;
+          top: 180px;
+          
+          background:#FFFFFF;
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+          border-radius: 5px;
+           display: none;
+              }
+              .vnesi{
+          position: absolute;
+          width: 243px;
+          height: 68px;
+          left: 0px;
+          top: 0px;
+          
+          
+              }
+          #label1{
+          position: absolute;
+          width: 250px;
+          left: 40px;
+          top: 20px;
+          
+          font-family: Century Gothic;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 106.67%;
+          /* or 26px */
+          
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.03em;
+          
+          color: #000000;
+          
+          }
+          #brVraboteni{
+              position: absolute;
+              width: 303px;
+              height: 100px;
+          left: 30px;
+          top: 50px;
+          
+          background: #EBEBEB;
+          border-radius: 5px;
+          }
+          
+          .vnesi1{
+              position: absolute;
+          width: 243px;
+          height: 68px;
+          left: 0px;
+          top: 140px;
+          
+          }
+          .vnesi2{
+              position: absolute;
+          width: 243px;
+          height: 68px;
+          left: 0px;
+          top: 280px;
+          
+          }
+          .vnesi3{
+              position: absolute;
+          width: 243px;
+          height: 68px;
+          left: 0px;
+          top: 420px;
+          
+          }
+          #vr{
+          position: absolute;
+          width: 620px;
+          height: 0px;
+          left:40px;
+          top: 340px;
+          
+          border: 1px solid #EBEBEB;
+          transform: rotate(90deg);
+          
+          }
+          .vnesi6{
+              position: absolute;
+              width: 243px;
+              height: 68px;
+              left: 400px;
+              top: 0px;
+          }    
+          .vnesi4{
+              position: absolute;
+              width: 243px;
+              height: 68px;
+              left: 360px;
+              top: 150px;
+          }    
+          .vnesi5{    
+              position: absolute;
+              width: 243px;
+              height: 68px;
+              left: 360px;
+              top:230px;
+          } 
+          #textarea{
+              position: absolute;
+              width: 303px;
+              height: 100px;
+              top: 50px;
+              left: -20px;
+          
+          
+          background: #EBEBEB;
+          border-radius: 5px;
+          }
+          #promeniBtn{
+              position: absolute;
+              width: 150.76px;
+              height: 49px;
+              right:200px;
+              top: 360px;
+              
+              background: #59C7D6;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 14px;
+              font-family: Century Gothic;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 106.67%;
+              /* or 15px */
+              
+              
+              letter-spacing: -0.03em;
+              
+              color: #FFFFFF;
+              
+          
+          } 
+          #Nazad{
+          position: absolute;
+          width: 150.76px;
+          height: 49px;
+          right: 30px;
+          top:360px;
+          background: #ffffff;
+          border: 1px solid #59C7D6;
+          box-sizing: border-box;
+          border-radius: 12px;
+          font-family: Century Gothic;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 106.67%;
+              /* or 15px */
+              
+              
+              letter-spacing: -0.03em;
+              
+              color: #59C7D6;
+            
+          }
+          #label2{
+              position: absolute;
+              left: 40px;
+              top: 20px;
+              
+              font-family: Century Gothic;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 106.67%;
+              /* or 26px */
+              
+              display: flex;
+              align-items: center;
+              text-align: center;
+              letter-spacing: -0.03em;
+              
+              color: #000000;
+              
+              }
+             
+              #Ul{
+                  position: absolute;
+                  width: 303px;
+                  height: 100px;
+              left: 30px;
+              top: 50px;
+              
+              background: #EBEBEB;
+              border-radius: 5px;
+              }
+              #odgLice{
+                  position: absolute;
+                  width: 303px;
+                  height: 100px;
+              left: 30px;
+              top: 50px;
+              
+              background: #EBEBEB;
+              border-radius: 5px;
+              }
+              #Grad{
+                  position: absolute;
+              width: 303px;
+             height: 100px;
+              left: 30px;
+              top: 50px;
+              
+              background: #EBEBEB;
+              border-radius: 5px;
+              }
+              #Link{
+                  position: absolute;
+              width: 243px;
+              height: 38px;
+              left: 30px;
+              top: 50px;
+              
+              background: #EBEBEB;
+              border-radius: 5px;
+              }
+              #imeFirma{
+                  position: absolute;
+              width: 243px;
+              height: 38px;
+              left: 30px;
+              top: 50px;
+              
+              background: #EBEBEB;
+              border-radius: 5px;
+              }
+              .alert{
+                  position: absolute;
+                  width: 850px;
+                  height: 50px;
+                  left: 0px;
+                  top:150px;
+                  font-family: Century Gothic;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 34px;
+              line-height: 106.67%;
+              /* or 15px */
+              
+              display: flex;
+          align-items: middle;
+          text-align: center;
+              letter-spacing: -0.03em;
+              
+              color: #FFFFFF;
+              background-color: green;
+             display:none;
+              }
+#imepre1{
+
+position: absolute;
+width: 219px;
+height: 22px;
+left: 0px;
+top: 20px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 106.67%;
+/* or 15px */
+
+letter-spacing: -0.03em;
+
+color: #9C9999;
+}
+#kakva1{
+position: absolute;
+width: 418px;
+height: 15px;
+left: 0px;
+top: 0px;
+
+font-family: Century Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+
+color: #142757;
+
+}
+#objavi,#najava{
+   transition: 0.5s;
+}
+#kopce1:hover{
+   background:yellowgreen;
+}
+#kopce2:hover{
+   background:yellowgreen;
+   color: black;
+}
+#pokani:hover{
+   background:yellowgreen;
+}
+#objavi:hover{
+   color: #59C7D6;
+   border-bottom: 1px solid #59C7D6;
+   padding-bottom: 8px;
+}
+#najava:hover{
+ border-bottom: 1px solid black;
+ padding-bottom: 8px;
+   cursor: pointer;
+}
+#nav:hover,#nav2:hover,#nav3:hover{
+   padding-bottom: 34px;
+   border-bottom: 10px solid #59C7D6;
+}
+
+ #kontaktInfo {
+   position: absolute;
+   width: 310px;
+   height: 43px;
+   left: 60px;
+   top: 485px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 106.67%;
+   display: flex;
+   align-items: center;
+   letter-spacing: -0.03em;
+   color: #000000;
+}
+#kontaktTel {
+    position: absolute;
+    width: 198px;
+    height: 15px;
+    left: 60px;
+   top: 520px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #142757;
+}
+#kontakt{
+   padding-left: 5px;
+}
+#kontaktEmail {
+    position: absolute;
+    width: 292px;
+    height: 15px;
+    left: 60px;
+   top: 550px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #142757;
+}
+#kontaktMail{
+   padding-left: 5px;
+}
+#pokanet{
+   position: absolute;
+    top: 329px;
+    left: 36%;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+    display: none;
+}
+html{
+   scroll-behavior: smooth;
+}
+@media screen and (max-width: 430px) {
+  body{
+     overflow:auto;
+  }
+  header{
+     width: 100%;
+  }
+   #logoto{
+       position: absolute;
+       top:-10px;
+       left: 87px;
+   }
+   #wrapper{
+      height: 3050px;
+      width: 100%;
+   }
+   #korisnicki {
+      top: 74px;
+      left: 73px;
+  }
+  #marketer{
+     width: fit-content;
+  }
+   #horzNav{
+      left:0px;
+   width: 100%;
+   top:55px;
+   text-align: center;
+ justify-content: center;
+   }
+   #horzNav a{
+      position: unset;
+      width: fit-content;
+      display: inline-block;
+      margin:0 10%;
+   }
+   #najava{
+      left:167px;
+   }
+   .navigacija{
+      left: 10px;
+ top: 112px;
+ width: 0;
+   }
+   #hr{
+      display:none;
+   }
+   #nav{
+      left: 24px;
+      width: 140px;
+
+   }
+   #akoglasi{
+      width: fit-content;
+   }
+   #nav1{
+      width: 140px;
+      left: 182px;
+      padding-bottom: 35px;
+      border-bottom: 10px solid #59C7D6;
+  }
+   #centar{
+      left: 39px;
+   }
+   #nav2{
+ left: 24px;
+ top: 53px;
+ width: 140px;
+   }
+   #nav3{
+      left: 182px;
+      top: 53px;
+     width: 140px; 
+   }
+   #vector{
+      top:210px;
+      height: 2842px;
+      width: 100%;
+   }
+   #button{
+      display: none;
+   }
+   .kreiraj{
+      left: 48px;
+   }
+   .kreiraj2{
+   left: 48px;
+    top: 439px;
+   }
+   .kreiraj3{
+      left: 48px;
+    top: 668px;
+   }
+   .aktivni{
+      position: absolute;
+      width: 322px;
+    height: 180px;
+    left: 17px;
+    top: 903px;
+    background: #FFFFFF;
+   }
+   #hr1{
+      width: 322px;
+   }
+   .kreiraj4{
+      left:48px;
+      top: 1093px;
+   }
+   .kreiraj5{
+      left:48px;
+      top: 1324px;
+
+   }
+   .kreiraj6{
+      left:48px;
+      top: 1555px;
+
+   }
+   .kreiraj7{
+      left:48px;
+      top: 1787px;
+
+   }
+   .kreiraj8{
+      left:48px;
+      top: 2021px;
+    
+   }
+   .kreiraj9{
+      left:48px;
+      top: 2256px;
+   }
+   .kreiraj10{
+      left:48px;
+      top: 2493px;
+   }
+   .kreiraj11{
+      left:48px;
+      top: 2728px;
+   }  
+   #element1{
+      display: none;
+   }
+   #element2{
+      display: none;
+   }
+   #buttonsearch{
+      display: none;
+   }
+   #kandidati{
+    position: absolute;
+    width: 318px;
+    height: 38px;
+    left: 10px;
+    top: 1px;
+   }
+   #search{
+      display: none;
+   }
+   #vector1{
+      height: 3050px;
+      width: 100%;
+
+   }
+   #row{
+      top: 112px;
+   }
+   .row {
+      margin: unset;
+   }
+   .col img{
+      float:left;
+   }
+   .col h5{
+      margin-bottom: 0.3rem!important;
+   }
+   .nazad{
+      padding: 0 24%;
+   }
+   .col a {
+      display: inline-flex;
+      margin-left: 26px;
+
+   }
+   .mb-3{
+      padding: 0;
+   }
+   #zapozicija{
+      left: 50px;
+      width: fit-content;
+      top: 83px;
+   }
+   #digitalen{
+      left: 150px;
+      top: 61px;
+      width:fit-content;
+   }
+   #nazad1{
+      left: 119px;
+   }
+   #slikata{
+      left: 100px;
+       top:40px;
+
+   }
+   #pokani{
+      left: 76px;
+    top: 198px;
+   }
+   #pokanet{
+      left: 19px;
+    top: 198px;
+   }
+   #imeto{
+      left: 88px;
+     top: 235px;
+   }
+   #para1{
+      left: 5px;
+      top: 286px;
+      width: 340px;
+   }
+   #praksa{
+      left: 60px;
+      top: 1490px;
+   }
+   #para2{
+      left: 5px;
+      top: 1551px;
+      width: 344px;
+   }
+   #preporaka{
+      left: 15px;
+      top: 1654px;
+   }
+   #kopce{
+      display: none;
+   }
+   #poraka{
+      display: none;
+   }
+   #kopce1{
+      top: 1786px;
+     left:74px;
+   }
+   #kopce2{
+      top: 1850px;
+      left:74px;
+    }
+    #paragraf{
+      width: 278px;
+   }
+   .ostvareni{
+      top: 1209px;
+   }
+   span{
+      padding-right: 7px;
+   }
+   #kade1{
+      padding-left: 19px;
+   }
+   #kade2{
+      padding-left: 19px;
+   }
+   #kade3{
+      padding-left: 19px;
+   }
+   #kade4{
+      padding-left: 19px;
+   }
+   #kakva1{
+      left: -10px;
+   }
+   #kakva2{
+      left: -10px;
+   }
+   #kakva3{
+      left: -10px;
+   }
+   #kakva4{
+      left: -10px;
+   }
+   #para3{
+      width: 287px;
+    top: 37px;
+    left:-10px;
+    line-height: 130%;
+   }
+
+}
+
+
+
+
+      
+   

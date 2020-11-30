@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Кориснички панел</title>
+    <link rel="icon" type="image/gif/png" href="../../bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="../../jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="bintern12.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-functions.js"></script>
+
+
+</head>
+
+<body>
+    <div class="login-cover">
+        <div class="loader">
+        </div>
+    </div>
+    <div id="wrapper">
+        <header>
+            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <a id="objavi" href="../profile.html">Вашиот Профил</a>
+                <a id="najava">Одјави се</a>
+            </nav>
+        </header>
+        <h1 id="korisnicki">Кориснички панел</h1>
+        <div class="navigacija">
+            <a href="view.html">
+                <div id="nav">
+                    <h3 id="centar">Преглед</h3>
+                </div>
+            </a>
+            <a href="myAds.html">
+                <div id="nav1">
+                    <h3 id="centar">Огласи</h3>
+                </div>
+            </a>
+            <a href="candidates.html">
+                <div id="nav2">
+                    <h3 id="centar">Кандидати</h3>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div id="nav3">
+                    <h3 id="centar">Пораки</h3>
+                </div>
+            </a>
+        </div>
+        <hr id="hr">
+        <div id="vector">
+            <div id="search">
+                <!-- <form id="search1">
+                <label id="element1" for="text">Пребарај кандидати</label>
+                <input id="element2" type="text" name="text" placeholder="Пребарај по Позиција или Име и Презиме">
+                <button id="buttonsearch" type="submit">Пребарај</button>
+            </form> -->
+                <h5 style="text-align: center;">Филтрирајте Кандидати</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Позиција</label>
+                        <select id="inputState" class="form-control pozicija">
+                            <option selected value="">Избери...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Факултет</label>
+                        <select id="inputState" class="form-control fakultet">
+                            <option selected value="">Избери...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Универзитет</label>
+                        <select id="inputState" class="form-control univerzitet">
+                            <option selected value="">Избери...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2 id="alertMessage">Не се пронајдени резултати обидете се повторно.</h2>
+            <div class="row row-cols-1 row-cols-md-3" id="row">
+                <div class="col mb-3 w3-container aktivni1 animate__animated animate__zoomIn">
+
+                    <div class=" w3-card-4">
+                        <header class="w3-container w3-light-grey">
+                            <img id="slika1" src="../../man.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                                style="width: 95px; height:95px;">
+                            <h3 id='akoglasi1'>John Doe</h3>
+                        </header>
+                        <div class="w3-container">
+                            <p id="marketer1">1 new friend request</p>
+                            <hr>
+                            <p id="paragraf1">CEO at Mighty Schools.CEO at Mighty Schools. Marketing and Advertising.
+                                Seeking a
+                                new job and new opportunities.
+                            </p>
+                            <br>
+                        </div>
+                        <button id="button1" class="w3-button w3-block w3-dark-grey">Види Профил</button>
+                    </div>
+                </div>
+                <div class="col mb-3 w3-container aktivni2 animate__animated animate__zoomIn">
+
+                    <div class=" w3-card-4">
+                        <header class="w3-container w3-light-grey">
+                            <img id="slika2" src="../../man.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                                style="width: 95px; height:95px;">
+                            <h3 id='akoglasi2'>John Doe</h3>
+                        </header>
+                        <div class="w3-container">
+                            <p id="marketer2">1 new friend request</p>
+                            <hr>
+                            <p id="paragraf2">CEO at Mighty Schools.CEO at Mighty Schools. Marketing and Advertising.
+                                Seeking a
+                                new job and new opportunities.
+                            </p>
+                            <br>
+                        </div>
+                        <button id="button2" class="w3-button w3-block w3-dark-grey">Види Профил</button>
+                    </div>
+                </div>
+                <div class="col mb-3 w3-container aktivni3 animate__animated animate__zoomIn">
+                    <div class=" w3-card-4">
+                        <header class="w3-container w3-light-grey">
+                            <img id="slika3" src="../../man.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                                style="width: 95px; height:95px;">
+                            <h3 id='akoglasi3'>John Doe</h3>
+                        </header>
+                        <div class="w3-container">
+                            <p id="marketer3">1 new friend request</p>
+                            <hr>
+                            <p id="paragraf3">CEO at Mighty Schools.CEO at Mighty Schools. Marketing and Advertising.
+                                Seeking a
+                                new job and new opportunities.
+                            </p>
+                            <br>
+                        </div>
+                        <button id="button3" class="w3-button w3-block w3-dark-grey">Види Профил</button>
+                    </div>
+                </div>
+                <div class="col mb-3 w3-container aktivni4 animate__animated animate__zoomIn">
+
+                    <div class=" w3-card-4">
+                        <header class="w3-container w3-light-grey">
+                            <img id="slika4" src="../../man.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                                style="width: 95px; height:95px;">
+                            <h3 id='akoglasi4'>John Doe</h3>
+                        </header>
+                        <div class="w3-container">
+                            <p id="marketer4">1 new friend request</p>
+                            <hr>
+                            <p id="paragraf4">CEO at Mighty Schools.CEO at Mighty Schools. Marketing and Advertising.
+                                Seeking a
+                                new job and new opportunities.
+                            </p>
+                            <br>
+                        </div>
+                        <button id="button4" class="w3-button w3-block w3-dark-grey">Види Профил</button>
+                    </div>
+                </div>
+                <div class="col mb-3 w3-container aktivni5 animate__animated animate__zoomIn">
+                    <div class=" w3-card-4">
+                        <header class="w3-container w3-light-grey">
+                            <img id="slika5" src="../../man.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                                style="width: 95px; height:95px;">
+                            <h3 id='akoglasi5'>John Doe</h3>
+                        </header>
+                        <div class="w3-container">
+                            <p id="marketer5">1 new friend request</p>
+                            <hr>
+                            <p id="paragraf5">CEO at Mighty Schools.CEO at Mighty Schools. Marketing and Advertising.
+                                Seeking a
+                                new job and new opportunities.
+                            </p>
+                            <br>
+                        </div>
+                        <button id="button5" class="w3-button w3-block w3-dark-grey">Види Профил</button>
+                    </div>
+                </div>
+                <div class="col mb-3 w3-container aktivni6 animate__animated animate__zoomIn">
+
+                    <div class=" w3-card-4">
+                        <header class="w3-container w3-light-grey">
+                            <img id="slika6" src="../../man.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                                style="width: 95px; height:95px;">
+                            <h3 id='akoglasi6'>John Doe</h3>
+                        </header>
+                        <div class="w3-container">
+                            <p id="marketer6">1 new friend request</p>
+                            <hr>
+                            <p id="paragraf6">CEO at Mighty Schools.CEO at Mighty Schools. Marketing and Advertising.
+                                Seeking a
+                                new job and new opportunities.
+                            </p>
+                            <br>
+                        </div>
+                        <button id="button6" class="w3-button w3-block w3-dark-grey">Види Профил</button>
+                    </div>
+                </div>
+                <div class="col mb-10 aktivni7">
+                    <h3 id="strana">Страна<span id="span">&vert; Број на Регистрирани Прaктиканти:</span><span
+                            id="brojPr">0</span>
+                    </h3>
+                    <hr id="hr2">
+                    <div id="brStranica" class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label id="eden" class="btn btn-secondary active" style="display: none;">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
+                        </label>
+                        <label id="dva" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                        </label>
+                        <label id="tri" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                        </label>
+                        <label id="cetiri" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 4
+                        </label>
+                        <label id="pet" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 5
+                        </label>
+                        <label id="ses" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 6
+                        </label>
+                        <label id="sedum" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 7
+                        </label>
+                        <label id="osum" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 8
+                        </label>
+                        <label id="devet" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 9
+                        </label>
+                        <label id="deset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 10
+                        </label>
+                        <label id="edinaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 11
+                        </label>
+                        <label id="dvanaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 12
+                        </label>
+                        <label id="trinaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 13
+                        </label>
+                        <label id="cetirinaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 14
+                        </label>
+                        <label id="petnaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 15
+                        </label>
+                        <label id="sesnaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 16
+                        </label>
+                        <label id="sedumnaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 17
+                        </label>
+                        <label id="osumnaeset" class="btn btn-secondary" style="display: none;">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 18
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../firebase1.js"></script>
+        <script src="bintern12.js"></script>
+</body>
+
+</html>

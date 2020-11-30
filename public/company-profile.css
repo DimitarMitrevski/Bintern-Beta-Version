@@ -1,0 +1,14 @@
+.modal-backdrop{
+    z-index:auto;
+}
+.close{
+    color: darkgray!important;
+}
+#gridSystemModal{
+    padding-top: 0px;
+}
+#sp1:hover,#sp2:hover,#sp3:hover,#sp4:hover,#sp5:hover,#sp6:hover,#sp7:hover,#sp8:hover,#sp9:hover,#sp10:hover{
+    color:blue;
+    cursor:pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - Најава/Регистрација</title>
+    <link rel="icon" type="image/gif/png" href="bintern12.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="bintern7.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="vector1">
+            <div id="vector2" class="animate__animated animate__backInUp">
+                <h3 id="najavise">Најави се!</h3>
+                <a href="companies/profile.html"><button class="btn btn-outline-danger" id="najavi1" onclick="">Најави
+                        се како компанија</button></a>
+                <a id="registracija" href="companies/registration.html">Регистрирај компанија</a>
+                <a href="interns/profile.html"><button class="btn btn-outline-danger" id="najavi" onclick="">Најави се
+                        како практикант</button></a>
+                <a id="registracija1" href="interns/registration.html">Регистрација практиканти</a>
+
+            </div>
+        </div>
+        <header>
+            <a href="index.html"><img src="bintern2.png" id="logoto" width="168px" height="60px"
+                    alt="Here was a photo"></a>
+            <nav id="horzNav">
+                <h2 id="izlezi" hidden>X</h2>
+                <a id="firmite" href="bintern4.html">За Фирмите</a>
+                <a id="praktikanti" href="bintern5.html">За практиканти</a>
+                <a id="objavi" href="companies/registration.html">Објави оглас Бесплатно</a>
+                <a id="najava" href="registrationOrSingIn.html">Најава/Регистрација</a>
+                <a id="kontakt1" href="kontakt.html">Контактирај нѐ</a>
+            </nav>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown"
+                    id="logoto1" width="168px" height="60px" alt="Here was a photo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Почетна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="companies/registration.html">Објави оглас Бесплатно</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                            <a class="dropdown-item" href="bintern4.html">За фирмите</a>
+                            <a class="dropdown-item" href="bintern5.html">За практикании</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="registrationOrSingIn.html">Регистрација/Најава<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </div>
+    <script src="bintern7.js"></script>
+    <script src="menu1.js"></script>
+</body>
+
+
+
+
+</html>
