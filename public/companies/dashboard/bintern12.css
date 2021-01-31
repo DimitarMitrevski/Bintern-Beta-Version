@@ -1,32 +1,15 @@
-#wrapper {
-   position: absolute;
-   width: 1400px;
-   height: fit-content;
-   margin: 0 auto;
-   background: #ffffff;
-   display: none;
-}
-    body{
-       /* margin: 0 auto; */
-       overflow-x: hidden;
+
+    body{      
+       font-family: 'Century Gothic',Helvetica, sans-serif;
     }
     #nav1,#nav,#nav3{
       transition: 0.5s;
    }
    .row {
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      /* margin-right: 2%; */
-      width: 96%;
-      margin: 0 2%;
-      margin-left: 5px;
-      position: absolute;
-      top: 159px;
-      min-width: 96%;
-      background: #ECECEC;
-      /* overflow: hidden; */
+      margin: 0 auto;
+      background: rgb(236, 236, 236);
   }
   .row-cols-md-3>* {
    -ms-flex: 0 0 33.333333%;
@@ -50,7 +33,7 @@
       background: cornflowerblue;
     }
     .cover{
-      position: absolute;
+   
       width: 1400px;
       height: 1050px;
       left: -1px;
@@ -60,8 +43,8 @@
       filter: blur(9px);
       display: none;
           }
-    header{
-        position: absolute;
+    /* header{
+     
         width: 100%;
         height: 100px;
         left: 0px;
@@ -71,7 +54,7 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 106.67%;
-        /* or 15px */
+     
         
         display: flex;
         align-items: center;
@@ -81,7 +64,7 @@
         
         color: #000000;
         
-        }
+        } */
         .login-cover{
          background: #ffffff;
          position: fixed;
@@ -117,22 +100,9 @@
 0% { -webkit-transform: rotate(0deg); }
 100% { -webkit-transform: rotate(360deg); }
 }
-
-        nav{
-            position: absolute;
-        width: 568.14px;
-        height: 54px;
-        left: 900px;
-        top: 60px;
-        border-spacing: 10px;
-       
-        }
         #logoto{
-         position: absolute;
-         top:20px; 
-         left:60px;
          transition: 0.5s;
-     }
+     } 
      #logoto:hover{
         top:10px;
       width:188px; 
@@ -144,7 +114,7 @@
   }
       
                 #objavi{
-                    position: absolute;
+                 
                     width: fit-content;
                     height: 0px;
                     left: 0px;
@@ -166,34 +136,18 @@
             transition: 0.5s;
                     }
                     #najava{
-                        position: absolute;
-                        width: fit-content;
-                        height: 0px;
-                        left: 190px;
-                        top: 0px;
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 106.67%;
-                        /* or 15px */
-                        
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.03em;
-                        
+                        cursor:pointer;
                         color: #000000;
                         text-decoration: none;
                         transition: 0.5s;
 
                      }
                      #korisnicki{
-                        position: absolute;
+                        /* position: absolute;
                         width: 243px;
                         height: 56px;
                         left: 58px;
-                        top: 74px;
+                        top: 74px; */
                         
                         font-family: Century Gothic;
                         font-style: normal;
@@ -210,133 +164,21 @@
                         
                      }
                      .w3-container, .w3-panel {
-                        padding: 3.2em 0px;
+                        padding: 0.5em 0px;
+                       
                     }
-                 
-                     .navigacija{
-                        position: absolute;
-                        width: 756px;
-                        height: 37px;
-                        left: 60px;
-                        top: 150px;
-                        background: #FFFFFF;
-                     }
-                     #nav{
-                        position: absolute;
-                        width: 185px;
-                        height: 37px;
-                        left: 0px;
-                        top: 0px;
-                        
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 106.67%;
-                        /* or 15px */
-                        
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.03em; 
-                        
-                        color: #FFFFFF;
-                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
-
-                     }
-                     #nav1{
-                        position: absolute;
-                        width: 185px;
-                        height: 37px;
-                        left: 200px;
-                        top: 0px;
-                        
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 106.67%;
-                        /* or 15px */
-                        
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.03em; 
-                        
-                        color: #FFFFFF;
-                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
-
-                     }
-                     #nav2{
-                        position: absolute;
-                        width: 185px;
-                        height: 37px;
-                        left: 400px;
-                        top: 0px;
-                        
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 106.67%;
-                        /* or 15px */
-                        
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.03em; 
-                        
-                        color: #FFFFFF;
-                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
-
-                     }
-                     #nav3{
-                        position: absolute;
-                        width: 185px;
-                        height: 37px;
-                        left: 600px;
-                        top: 0px;
-                        
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 106.67%;
-                        /* or 15px */
-                        
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        align-self: center;
-                        letter-spacing: -0.03em; 
-                        
-                        
-                        color: #FFFFFF;
-                        background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
-
-                     }
-                     #centar{
-                        position: absolute;
-                        left: 60px;
-                        top: 0px;
-                        
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 106.67%;
-                        /* or 15px */
-                        
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.03em;
-                        
-                        color: #FFFFFF;
-                     }
+                .w3-card-4{
+                  margin-bottom: 10px;
+                }
+                 header.w3-container{
+                    display: flex;
+                    align-items: center;
+                 }
+                    
+      
                      #hr{
                         all: revert;
-                        position: absolute;
+                     
                         width: 184px;
                         height: 8px;
                         left: 460px;
@@ -344,19 +186,11 @@
                         
                         background: #59C7D6;
                      }
-                     /* .aktivni1 {
-                        position: absolute;
-                        width: 400px;
-                        height: 280px;
-                        left: 50px;
-                        top: 310px;
-                        background: #FFFFFF;
-                        display: none;
-                    } */
+               
                
                      
                      #tekst {
-                        position: absolute;
+                     
                         left: 100px;
                         top: 34px;
                         font-family: Century Gothic;
@@ -365,53 +199,26 @@
                         font-size: 16px;
                         line-height: 106.67%;
                     }
-                    /* #tekst1{
-                     position: absolute;
-                     left: 170px;
-                      top: 74px;
-                     font-family: Century Gothic;
-                     font-style: normal;
-                     font-weight: normal;
-                     font-size: 18px;
-                     line-height: 106.67%;
-                 } */
+                 
                  
                  #paragraf1,#paragraf2, #paragraf3,#paragraf4, #paragraf5,#paragraf6   {                  
                   font-family: Century Gothic;
-    font-style: normal;
-    font-weight: italic;
-    font-size: 16px;
-    line-height: 102.67%;
-    position: relative;
-    top: 5px;
-    height: 26px;
-    display: block;
-    margin: 0 2%;
+                  font-style: normal;
+                  font-weight: italic;
+                  font-size: 16px;
+                  line-height: 102.67%;
+                  position: relative;
+                  
+                  margin: 0 2%;
               }
-              .paragraf{
-               font-family: Century Gothic;
-               font-style: normal;
-               font-weight: italic;
-               font-size: 16px;
-               line-height: 102.67%;
-               position: relative;
-               top: 5px;
-               height: 26px;
-               display: block;
-               margin: 0 2%;
-              }
+      
              
 #vector{
-    position: absolute;
-width: 1400px;
-height: 1003px;
-left: 0px;
-top: 196px;
-
+min-height: 100%;
 background: #ECECEC;
 }
 /* #slika1 {
-   position: absolute;
+
    width: 75px;
    height: 85px;
    left: 15px;
@@ -420,7 +227,7 @@ background: #ECECEC;
 } */
 
 #hr1 {
-   position: absolute;
+
    width: 400px;
    height: 0px;
    left: 0px;
@@ -484,7 +291,7 @@ hr{
    transition: 0.5s;
 }
     /* .aktivni2 {
-      position: absolute;
+   
       width: 400px;
       height: 280px;
       left: 480px;
@@ -493,7 +300,7 @@ hr{
       display: none;
   }
   .aktivni3 {
-   position: absolute;
+
    width: 400px;
    height: 280px;
    left: 910px;
@@ -502,7 +309,7 @@ hr{
    display: none;
 }
      .aktivni4{
-      position: absolute;
+   
       width: 400px;
       height: 280px;
       left: 50px;
@@ -511,7 +318,7 @@ hr{
       display: none;
    }
    .aktivni5{
-      position: absolute;
+   
       width: 400px;
       height: 280px;
       left: 480px;
@@ -520,7 +327,7 @@ hr{
       display: none;
    }
    .aktivni6{
-      position: absolute;
+   
       width: 400px;
       height: 280px;
       left: 910px;
@@ -529,13 +336,14 @@ hr{
       display: none;
    } */
    .aktivni7 {
-      height: 180px;
       background-color: #FFFFFF!important;
-      min-width: 95%;
-      margin: -15px 2.5%;
+      min-width: 90%;
+      margin: 0 auto;
+      margin-bottom: 35px;
+      padding: 20px;
   }
    #button12{
-      position: absolute;
+   
       width: 153px;
       height: 42px;
       left: 1080px;
@@ -554,21 +362,16 @@ hr{
       
    }
    #hr2{
-      position: absolute;
-      width: 1260px;
-      height: 0px;
-      left: 0px;
-      top: 80px;
-      border: 1px solid #D0D0D0;
+      background-color:  #D0D0D0;
    }
    #search {
-      position: absolute;
       width: 50%;
-      margin: 0 25%;
-      top: 0px;
+      margin: 15px auto;
+      padding: 2px;
+     
   }
      #element1{
-      position: absolute;
+   
       width: 100%;
       height: 38px;
       left: 0;
@@ -587,7 +390,7 @@ hr{
      }
      #element2{
       all: revert;
-      position: absolute;
+   
       width: 19%;
       height: 38px;
       /* left: 0px; */
@@ -599,7 +402,7 @@ hr{
 
      }
      #buttonsearch {
-      position: absolute;
+   
       width: 10%;
       height: 46px;
       top: 40px;
@@ -619,7 +422,7 @@ hr{
       color: #59C7D6;
    }
    #najava:hover{
-      padding-bottom: 10px;
+      /* padding-bottom: 10px; */
      border-bottom: 1px solid black;
       cursor: pointer;
    }
@@ -628,20 +431,16 @@ hr{
       
    }
    #strana{
-      position: absolute;
-      left:30px;
-      top:10px;
       font-family: Century Gothic;
 font-style: normal;
 font-weight: normal;
 font-size: 28px;
 
    }
-   #brStranica {
-      position: absolute;
+   /* #brStranica {
       left: 32px;
       top: 110px;
-  }
+  } */
   .btn{
    padding: 0.575rem .85rem;
   }
@@ -661,13 +460,11 @@ font-size: 28px;
       text-decoration-line: underline;
    }
    #alertMessage{
-      position:absolute;
-      top:300px;
-      left:310px;
+     
       display:none;
    }
    #slika7 {
-      position: absolute;
+   
       width: 208px;
       height: 155px;
       left: 46px;
@@ -675,7 +472,7 @@ font-size: 28px;
       border-radius: 30px;
   }
   #akoglasi7 {
-   position: absolute;
+
    width: 604px;
    height: 56px;
    left: 337px;
@@ -691,7 +488,7 @@ font-size: 28px;
    color: #000000;
 }
 #tekst11 {
-   position: absolute;
+
    left: 337px;
    top: 14px;
    font-family: Century Gothic;
@@ -701,7 +498,7 @@ font-size: 28px;
    line-height: 106.67%;
 }
 #marketer7 {
-   position: absolute;
+
    width: 289px;
    height: 15px;
    left: 462px;
@@ -717,7 +514,7 @@ font-size: 28px;
    /* display: none; */
 }
 #Vraboteni {
-   position: absolute;
+
    left: 337px;
    top: 55px;
    font-family: Century Gothic;
@@ -727,7 +524,7 @@ font-size: 28px;
    line-height: 106.67%;
 }
 #godStudii {
-   position: absolute;
+
    left: 531px;
    top: 55px;
    font-family: Century Gothic;
@@ -738,7 +535,7 @@ font-size: 28px;
    color: paleturquoise;
 }
 #tekst14 {
-   position: absolute;
+
    left: 336px;
    top: 82px;
    font-family: Century Gothic;
@@ -748,7 +545,7 @@ font-size: 28px;
    line-height: 106.67%;
 }
 #univerzitet {
-   position: absolute;
+
    left: 485px;
    top: 84px;
    font-family: Century Gothic;
@@ -759,7 +556,7 @@ font-size: 28px;
    color: paleturquoise;
 }
 #tekst15 {
-   position: absolute;
+
    left: 336px;
    top: 113px;
    font-family: Century Gothic;
@@ -769,7 +566,7 @@ font-size: 28px;
    line-height: 106.67%;
 }
 #fakultet {
-   position: absolute;
+
    left: 450px;
    top: 114px;
    font-family: Century Gothic;
@@ -780,7 +577,7 @@ font-size: 28px;
    color: paleturquoise;
 }
 #tekst12 {
-   position: absolute;
+
    left: 444px;
    top: 155px;
    font-family: Century Gothic;
@@ -790,7 +587,7 @@ font-size: 28px;
    line-height: 106.67%;
 }
 #tekst17 {
-   position: absolute;
+
    left: 370px;
    top: 282px;
    font-family: Century Gothic;
@@ -800,7 +597,7 @@ font-size: 28px;
    line-height: 106.67%;
 }
 #paragraf7 {
-   position: absolute;
+
    width: 787px;
    height: 100px;
    left: 60px;
@@ -813,7 +610,7 @@ font-size: 28px;
    color: floralwhite;
 }
 #kakvaPraksa {
-   position: absolute;
+
    width: 787px;
    height: 100px;
    left: 60px;
@@ -826,7 +623,7 @@ font-size: 28px;
    color: floralwhite;
 }
 #nazad {
-   position: absolute;
+
    width: 153px;
    height: 42px;
    left: 478px;
@@ -843,7 +640,7 @@ font-size: 28px;
    color: #FFFFFF;
 }
 #hr3 {
-   position: absolute;
+
    width: 900px;
    height: 0px;
    left: 0px;
@@ -855,7 +652,7 @@ font-size: 28px;
    border-bottom: 8px solid #59C7D6;
 }
  #pokaniNaOglas {
-   position: absolute;
+
    width: 153px;
    height: 42px;
    left: 310px;
@@ -881,7 +678,7 @@ font-size: 28px;
  }
 
 #poraka {
-   position: absolute;
+
    width: 378px;
    height: 342px;
    left: 278px;
@@ -899,7 +696,7 @@ font-size: 28px;
    display: none;
 }
 #pokanata {
-   position: absolute;
+
    top: 124px;
    left: 0px;
    width: 219px;
@@ -910,7 +707,7 @@ font-size: 28px;
    
 }
 #pokanet{
-   position: absolute;
+
    left: 199px;
    bottom: 11px;
    font-family: Century Gothic;
@@ -923,7 +720,7 @@ font-size: 28px;
     display: none;
 }
 #izlezi{
-   position: absolute;
+
    width: 153px;
    height: 42px;
    left: 120px;
@@ -954,9 +751,6 @@ font-size: 28px;
 }
 @media screen and (max-width: 430px) {
    #logoto {
-      position: absolute;
-      top: 0px;
-      left: 0;
       margin: 0 30%;
       width: 40%;
       height: 50%;
@@ -1029,7 +823,7 @@ font-size: 28px;
    }
    #vector{
       top:210px;
-      height: 100%;
+      min-height: 100%;
       width: 100%;
    }
    #search {
@@ -1176,7 +970,7 @@ span{
       top: 240px;
    }
    #slika7 {
-      position: absolute;
+   
       width: 153px;
       height: 143px;
       left: 11px;
@@ -1276,7 +1070,7 @@ html{
    width: 333px;
 }
 #pokanata {
-   position: absolute;
+
    top: 124px;
    left: -4px;
    width: 219px;

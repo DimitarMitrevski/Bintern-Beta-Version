@@ -31,7 +31,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-functions.js"></script>
 
-
+    <link rel="stylesheet" href="../../styles/navigation.css" />
 </head>
 
 <body>
@@ -40,38 +40,55 @@
         </div>
     </div>
     <div id="wrapper">
-        <header>
+        <header class="d-flex align-items-end justify-content-between px-5 py-2">
             <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
                     alt="Here was a photo"></a>
-            <nav id="horzNav">
-                <a id="objavi" href="../profile.html">Вашиот Профил</a>
-                <a id="najava">Одјави се</a>
+            <nav>
+                <a href="../profile.html" class="font-weight-bolder">Вашиот Профил</a>
+                <a id="najava" class="ml-4">Одјави се</a>
             </nav>
         </header>
-        <h1 id="korisnicki">Кориснички панел</h1>
-        <div class="navigacija">
-            <a href="view.html">
-                <div id="nav">
-                    <h3 id="centar">Преглед</h3>
+        <div class="container-fluid">
+            <div class="row bg-transparent">
+                <div class="col">
+                    <h1 id="korisnicki">Кориснички панел</h1>
                 </div>
-            </a>
-            <a href="myAds.html">
-                <div id="nav1">
-                    <h3 id="centar">Огласи</h3>
+
+            </div>
+
+            <div class="row navigacija bg-transparent">
+                <div class="col-sm">
+                    <a href="view.html">
+
+                        Преглед
+
+                    </a>
                 </div>
-            </a>
-            <a href="candidates.html">
-                <div id="nav2">
-                    <h3 id="centar">Кандидати</h3>
+                <div class="col-sm">
+                    <a href="myAds.html">
+
+                        Огласи
+
+                    </a>
                 </div>
-            </a>
-            <a href="messages.html">
-                <div id="nav3">
-                    <h3 id="centar">Пораки</h3>
+                <div class="col-sm">
+                    <a class="active" href="candidates.html">
+
+                        Кандидати
+
+                    </a>
                 </div>
-            </a>
+                <div class="col-sm">
+                    <a href="messages.html">
+                        Пораки
+                    </a>
+                </div>
+                <div class="col-sm">
+
+                </div>
+            </div>
         </div>
-        <hr id="hr">
+        <!-- <hr id="hr"> -->
         <div id="vector">
             <div id="search">
                 <!-- <form id="search1">
@@ -79,7 +96,7 @@
                 <input id="element2" type="text" name="text" placeholder="Пребарај по Позиција или Име и Презиме">
                 <button id="buttonsearch" type="submit">Пребарај</button>
             </form> -->
-                <h5 style="text-align: center;">Филтрирајте Кандидати</h5>
+                <h3 class="text-center">Филтрирајте Кандидати</h3>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputState">Позиција</label>

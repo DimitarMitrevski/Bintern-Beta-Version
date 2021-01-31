@@ -1,0 +1,27 @@
+
+  .navigacija a{
+     font-family: Century Gothic;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 106.67%;
+     /* or 15px */
+     width: 100%;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+     letter-spacing: -0.03em; 
+     transition: all .5s;
+     color: #FFFFFF;
+     background: linear-gradient(90deg, #F47A61 0%, #F15F61 100%);
+
+  }
+  .navigacija a:hover{
+     text-decoration: none;
+     border-bottom:8px solid #59C7D6;
+     
+  }
+  .active{
+   border-bottom: 8px solid #59C7D6;
+}

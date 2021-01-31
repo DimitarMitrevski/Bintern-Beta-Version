@@ -246,7 +246,7 @@ firebase.auth().onAuthStateChanged(function (user) {
             var brPokani = snapshot.val().brPokani;
             var opis = snapshot.val().Opis;
             var email = snapshot.val().email;
-            console.log(j + 1);
+            // console.log(j + 1);
             $(".aktivni" + (j + 1)).show();
             // document.querySelector(".aktivni" + (j + 1)).style.display = "block";
             $("#akoglasi" + (j + 1)).text(ImePrezime);
