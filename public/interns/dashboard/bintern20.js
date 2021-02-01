@@ -477,22 +477,27 @@ firebase.auth().onAuthStateChanged(function (user) {
           location.reload();
         })
 
-        var oglasi = firebase.database().ref("oglasi").orderByKey();
+        var oglasi = firebase.database().ref("oglasi")
         oglasi.once("value")
           .then(function (snapshot) {
-            snapshot.forEach(function (childSnapshot) {
+           var obj = snapshot.val();
+           var niza=[];
+           for(var oglas in obj){
+             niza.unshift({...obj[oglas], key:oglas})
+           }
+           niza.forEach(function (childSnapshot) {
               // key will be "ada" the first time and "alan" the second time
               var key = childSnapshot.key;
               br++;
               // childData will be the actual contents of the child
-              var pozicija = childSnapshot.val().pozicija;
-              var imeFirma = childSnapshot.val().imefirma;
-              var odKoga = childSnapshot.val().odKoga;
-              var doKoga = childSnapshot.val().doKoga;
-              var opisPraksata = childSnapshot.val().opisPraksata;
-              var logo = childSnapshot.val().logoFirma;
-              var userID = childSnapshot.val().uid;
-              var brojAplikanti = childSnapshot.val().brojAplikanti;
+              var pozicija = childSnapshot.pozicija;
+              var imeFirma = childSnapshot.imefirma;
+              var odKoga = childSnapshot.odKoga;
+              var doKoga = childSnapshot.doKoga;
+              var opisPraksata = childSnapshot.opisPraksata;
+              var logo = childSnapshot.logoFirma;
+              var userID = childSnapshot.uid;
+              var brojAplikanti = childSnapshot.brojAplikanti;
               if (br >= 1 && br <= 12) {
 
                 $("#eden").show();
@@ -585,7 +590,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                   $(".cover").show();
                   $(".text").show();
                   console.log(userID);
-                  var brojAplikanti = childSnapshot.val().brojAplikanti;
+                  var brojAplikanti = childSnapshot.brojAplikanti;
                   var moiOglasi;
                   brojAplikanti++;
                   firebase.database().ref('companies/' + userID).once('value').then(function (snapshot) {
