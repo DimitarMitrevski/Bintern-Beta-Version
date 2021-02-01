@@ -24,44 +24,66 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../styles/navigation.css" />
 </head>
 
 <body>
     <!-- TO DO IMPLEMENT SENDING MAIL ON MESSAGES AND Write messages in database -->
     <div id="wrapper">
-        <div id="vector"></div>
         <header>
-            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
-                    alt="Here was a photo"></a>
-            <nav id="horzNav">
-                <a id="objavi" href="../profile.html">Вашиот Профил</a>
-                <a id="najava">Одјави се</a>
-            </nav>
-        </header>
-        <h1 id="korisnicki">Кориснички панел</h1>
-        <div class="navigacija">
-            <a href="view.html">
-                <div id="nav">
-                    <h3 id="centar">Преглед</h3>
+            <div class="row bg-transparent align-items-end justify-content-between px-3" >
+                <div class="col-12-sm col-lg onSm">
+     <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                        alt="Here was a photo" class="text-center"></a>
                 </div>
-            </a>
-            <a href="myAds.html">
-                <div id="nav1">
-                    <h3 id="centar">Огласи</h3>
+                <div class="text-right col-12-sm col-lg onSmNav">
+    
+                    <a href="../profile.html" class="font-weight-bolder text-dark" >Вашиот Профил</a>
+                    <a id="najava" class="ml-4">Одјави се</a>
+              
                 </div>
-            </a>
-            <a href="candidates.html">
-                <div id="nav2">
-                    <h3 id="centar">Кандидати</h3>
+            </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row bg-transparent">
+                    <div class="col">
+                        <h1 id="korisnicki">Кориснички панел</h1>
+                    </div>
+    
                 </div>
-            </a>
-            <a href="messages.html">
-                <div id="nav3">
-                    <h3 id="centar">Пораки</h3>
+                <div class="row navigacija bg-transparent">
+                    <div class="col-sm">
+                        <a href="view.html">
+    
+                            Преглед
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="myAds.html">
+    
+                            Огласи
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="candidates.html">
+    
+                            Кандидати
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="messages.html" class="active">
+                            Пораки
+                        </a>
+                    </div>
+                    <div class="col-sm">
+    
+                    </div>
                 </div>
-            </a>
-        </div>
-        <hr id="hr">
+            </div>
+            <div id="vector" class="mt-4">
         <div class="aktivni">
             <img id="slika" src="dashboard.PNG">
             <h3 id="akoglasi">Пораки</h3>
@@ -105,7 +127,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

@@ -21,6 +21,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-functions.js"></script>
     <script src="../../jquery.js"></script>
+    <link rel="stylesheet" href="../../styles/navigation.css" />
 
 
 </head>
@@ -40,11 +41,11 @@
             <p id="loginError"></p>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" type="text" id="loginEmail" onkeyup="inputKeyUp(event)">
-                <label class="mdl-textfield__label" for="sample3">Е-маил...</label>
+                <label class="mdl-textfield__label" for="sample3">Е-маил...</p>
             </div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" type="password" id="loginPassword" onkeyup="inputKeyUp1(event)">
-                <label class="mdl-textfield__label" for="sample3">Лозинка...</label>
+                <label class="mdl-textfield__label" for="sample3">Лозинка...</p>
             </div>
         </div>
         <div class="mdl-dialog__actions">
@@ -66,130 +67,226 @@
         </div>
     </div> -->
     <div id="wrapper">
-        <div id="vector"></div>
+        
         <header>
-            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
-                    alt="Here was a photo"></a>
-            <nav id="horzNav">
-                <a id="objavi" href="../profile.html">Вашиот Профил</a>
-                <a id="najava">Одјави се</a>
-            </nav>
-        </header>
-        <h1 id="korisnicki">Кориснички панел</h1>
-        <div class="navigacija">
-            <a href="view.html">
-                <div id="nav">
-                    <h3 id="centar">Преглед</h3>
+            <div class="row bg-transparent align-items-end justify-content-between px-3" >
+                <div class="col-12-sm col-lg onSm">
+     <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                        alt="Here was a photo" class="text-center"></a>
                 </div>
-            </a>
-            <a href="myAds.html">
-                <div id="nav1">
-                    <h3 id="centar">Огласи</h3>
+                <div class="text-right col-12-sm col-lg onSmNav">
+    
+                    <a href="../profile.html" class="font-weight-bolder text-dark" >Вашиот Профил</a>
+                    <a id="najava" class="ml-4">Одјави се</a>
+              
                 </div>
-            </a>
-            <a href="candidates.html">
-                <div id="nav2">
-                    <h3 id="centar">Кандидати</h3>
+            </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row bg-transparent">
+                    <div class="col">
+                        <h1 id="korisnicki">Кориснички панел</h1>
+                    </div>
+    
                 </div>
-            </a>
-            <a href="messages.html">
-                <div id="nav3">
-                    <h3 id="centar">Пораки</h3>
+                <div class="row navigacija bg-transparent">
+                    <div class="col-sm">
+                        <a href="view.html">
+    
+                            Преглед
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="myAds.html" class="active">
+    
+                            Огласи
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="candidates.html">
+    
+                            Кандидати
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="messages.html">
+                            Пораки
+                        </a>
+                    </div>
+                    <div class="col-sm">
+    
+                    </div>
                 </div>
-            </a>
-        </div>
-        <hr id="hr">
-        <div class="aktivni">
-            <img id="slikata1" src="dashboard.PNG">
-            <h3 id="akoglasi">Мои огласи:<span id="brOglasi"> </span></h3>
-            <hr id="hr1">
-            <h5 id="marketer"><span id="eden">1</span><span id="dva">2</span><span id="tri">3</span><span
-                    id="cetiri">4</span><span id="pet">5</span></h5>
-            <button id="button" type="button">Следна страна</button>
-        </div>
-        <div class="kreiraj">
+            </div>
+            <div id="vector" class="mt-2">
+            <div class="container-fluid">
+             <div class="row pt-4">
+           <div class="col-lg col-sm-12 mb-4">
+ <div class="kreiraj">
             <h2 id="besplaten">Креирај<br>Бесплатен Оглас</h2>
-            <p id="para">Објавете оглас за практиканство<br> и пронајдете го вашиот иден вработен.Со среќа!</p>
-            <a href="../createAd.html"><button id="button2" type="button">+</button></a>
+            <p id="para">Објавете оглас за практиканство<br> и пронајдете го вашиот иден вработен. Со среќа!</p>
+            <div class="text-right">
+            <a href="../createAd.html" class="btn"><button id="button2" type="button">+</button></a>
         </div>
-        <div class="kreiraj2">
+        </div>
+           </div>
+           <div class="col-lg col-sm-12 mb-4"><div class="kreiraj2">
             <h2 id="besplaten">Пребарувај<br>Кандидати</h2>
             <p id="para">Пребарувајте низ нашата база од Кандидати и пронајдете го вашиот иден вработен.Со среќа!</p>
-            <a href="candidates.html"><button id="button2" type="button"><img src="lupa.png" width="30px"
+            <div class="text-right">
+            <a href="candidates.html" class="btn"><button id="button2" type="button"><img src="lupa.png" width="30px"
                         height="30px"></button></a>
-        </div>
-        <div class="kreiraj3">
+
+            </div>
+        </div></div>
+           <div class="col-lg col-sm-12 mb-4">
+               <div class="kreiraj3">
             <h2 id="besplaten">Промовирај<br>Оглас</h2>
             <p id="para">Промовирајте го вашиот оглас за да добиете повеќе апликанти!</p>
-            <button id="button2" type="button"><img src="upgrade.png" width="30px" height="30px"></button>
+            <div class="text-right">
+                <button id="button2" type="button"><img src="upgrade.png" width="30px" height="30px"></button> 
+            </div>
+           
         </div>
-        <div class="kreiraj4">
-            <h2 id="besplaten4"></h2>
+    </div>
+           <div class="col"></div>
+             </div>
+             <div class="row ml-2">
+                <div class="col-lg-8 bg-light">
+                    <div class="row align-items-center">
+                        <img id="slikata1" src="dashboard.PNG">
+                    <h3 id="akoglasi">Мои огласи: <span id="brOglasi"> </span></h3> 
+                    </div>
+                   
+                    <hr id="hr1">
+                    <h5 id="marketer"><span id="eden">1</span><span id="dva">2</span><span id="tri">3</span><span
+                            id="cetiri">4</span><span id="pet">5</span></h5>
+                        <div class="text-right mb-2">
+                            <button id="button" type="button" disabled="disabled">Следна страна</button>  
+                        </div>
+                  
+                </div>
+             </div>
+            </div>
+        
+       
+        
+        <div class="row justify-content-between px-4 mt-4">
+            <div class="cols-12 col-lg">
+                <div class="kreiraj4">         
+                 <h2 id="besplaten4"></h2>
             <p id="para4"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
-            <h5 id="brojAplikanti0"></h5>
-            <button id="button211" type="button"><img src="eye.png" width="20px" height="20px"></button>
-        </div>
-        <div class="kreiraj5">
-            <h2 id="besplaten5"></h2>
+            <p>Број на апликанти:<span id="brojAplikanti0"></span></p>
+            <div class="text-right">
+                <button id="button211" type="button"><img src="eye.png" width="20px" height="20px"></button>
+                </div>
+        
+            </div>
+            </div>
+            
+            <div class="cols-12 col-lg">
+                <div class="kreiraj5">
+        <h2 id="besplaten5"></h2>
             <p id="para5"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
-            <h5 id="brojAplikanti1"></h5>
-            <button id="button212" type="button"><img src="eye.png" width="20px" height="20px"></button>
-        </div>
-        <div class="kreiraj6">
-            <h2 id="besplaten6"></h2>
+            <p>Број на апликанти: <span id="brojAplikanti1"></span></p>
+           <div class="text-right">
+               <button id="button212" type="button"><img src="eye.png" width="20px" height="20px"></button>  
+           </div>
+          
+
+                </div>
+               
+            </div>
+            <div class="cols-12 col-lg">
+                <div class="kreiraj6">
+                     <h2 id="besplaten6"></h2>
             <p id="para6"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
-            <h5 id="brojAplikanti2"></h5>
-            <button id="button213" type="button"><img src="eye.png" width="20px" height="20px"></button>
+            <p>Број на апликанти: <span id="brojAplikanti2"></span></p>
+           <div class="text-right">
+              <button id="button213" type="button"><img src="eye.png" width="20px" height="20px"></button> 
+           </div>
+            
+                </div>
+
+            </div>
+            <div class="cols-12 col-lg">
+                <div class="kreiraj7">
+                    <h2 id="besplaten7"></h2>
+                <p id="para7"></p>
+                <p>Број на апликанти: <span id="brojAplikanti3"></span></p>
+                <div class="text-right">
+                    <button id="button214" type="button"><img src="eye.png" width="20px" height="20px"></button>
+                </div>
+                
+                </div>
+                
+            </div>
         </div>
-        <div class="kreiraj7">
-            <h2 id="besplaten7"></h2>
-            <p id="para7"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
-            <h5 id="brojAplikanti3"></h5>
-            <button id="button214" type="button"><img src="eye.png" width="20px" height="20px"></button>
-        </div>
-        <div class="kreiraj8">
+        <div class="row px-4">
+            <div class="cols-12 col-lg">
+ <div class="kreiraj8">
             <h2 id="besplaten8"></h2>
             <p id="para8"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
+            <p>Број на апликанти:</p>
             <h5 id="brojAplikanti4"></h5>
-            <button id="button215" type="button"><img src="eye.png" width="20px" height="20px"></button>
+            <div class="text-right">
+                 <button id="button215" type="button"><img src="eye.png" width="20px" height="20px"></button>
+            </div>
+           
         </div>
-        <div class="kreiraj9">
+            </div>
+            <div class="cols-12 col-lg">
+   <div class="kreiraj9">
             <h2 id="besplaten9"></h2>
             <p id="para9"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
+            <p>Број на апликанти:</p>
             <h5 id="brojAplikanti5"></h5>
-            <button id="button216" type="button"><img src="eye.png" width="20px" height="20px"></button>
+            <div class="text-right">
+                 <button id="button216" type="button"><img src="eye.png" width="20px" height="20px"></button>
+            </div>
+          
         </div>
-        <div class="kreiraj10">
+            </div>
+            <div class="cols-12 col-lg"> <div class="kreiraj10">
             <h2 id="besplaten10"></h2>
             <p id="para10"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
+            <p>Број на апликанти:</p>
             <h5 id="brojAplikanti6"></h5>
-            <button id="button217" type="button"><img src="eye.png" width="20px" height="20px"></button>
-        </div>
-        <div class="kreiraj11">
+            <div class="text-right">
+                  <button id="button217" type="button"><img src="eye.png" width="20px" height="20px"></button> 
+            </div>
+         
+        </div></div>
+            <div class="cols-12 col-lg">
+  <div class="kreiraj11">
             <h2 id="besplaten11"></h2>
             <p id="para11"></p>
-            <label id="brAplikanti">Број на апликанти:</label>
+            <p>Број на апликанти:</p>
             <h5 id="brojAplikanti7"></h5>
-            <button id="button218" type="button"><img src="eye.png" width="20px" height="20px"></button>
+            <div class="text-right">
+                 <button id="button218" type="button"><img src="eye.png" width="20px" height="20px"></button> 
+            </div>
+          
+        </div>
+    </div>
+            </div>
         </div>
         <div id="vector1" class="animate__animated animate__zoomIn">
-            <div id="search">
+            <!-- <div id="search">
                 <form>
-                    <label id="element1" for="text">Покани други кандидати</label>
+                    <label id="element1" for="text">Покани други кандидати</p>
                     <input id="element2" type="text" name="text" placeholder="Дигитален маркетер">
                     <a href="bintern12.html"><button id="buttonsearch" type="button">Пребарај</button></a>
                 </form>
+            </div> -->
+            <div>
+                <h5 id="kandidati">Кандидати кои аплицираа на вашиот оглас <br/><span id="zapozicija">за позицијата</span> <span id="digitalen"></span></h5>
+           
             </div>
-            <h5 id="kandidati">Кандидати кои аплицираа на вашиот оглас</h5>
-            <h6 id="zapozicija">за позицијата</h6>
-            <h5 id="digitalen">Дигитален маркетер</h5>
+           
             <div id="row" class="row row-cols-1 row-cols-md-3">
                 <div class="col mb-10 nazad">
                     <button id="nazad1" type="button">Назад</button>
@@ -313,7 +410,7 @@
                 </p>
             </div>
             <button id="kopce" type="button" disabled>Напиши препорака</button>
-            <label id="poraka">Оваа можност сеуште не е достапна</label>
+            <label id="poraka">Оваа можност сеуште не е достапна</p>
             <a href="#top"><button id="kopce1" type="button">Покани на интервју</button></a>
             <button id="kopce2">Назад кон апликантите</button>
         </div>

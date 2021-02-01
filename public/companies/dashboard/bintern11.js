@@ -76,6 +76,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                 setTimeout(function () {
                     if (confirm("Имате апликанти на вашите огласи погледнете подолу во делот Мои огласи.")) {
                         $("html").scrollTop(450);
+                        firebase.database().ref("companies/" + uid).update({videno:1});
                         if (window.screen.width <= 430) {
                             $("html").scrollTop(900);
                         }
@@ -163,6 +164,9 @@ firebase.auth().onAuthStateChanged(function (user) {
                 $("span").css({ "color": "#142757", "font-size": "19px" });
                 $(brStranica).css({ "color": "red", "font-size": "24px" });
                 $('.kreiraj' + (k + 3)).show();
+                // for(let i=3; i<=11;i++){
+                //     $('.kreiraj' + i).show();
+                // }
                 if (pozicija != null && pozicija != "") {
                     $("#besplaten" + (k + 3)).text(pozicija);
 
@@ -207,6 +211,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                         //     $("#wrapper").hide();
                         //     $("#myIFrame").show();
                         // });
+                        if(childData){
 
                         firebase.database().ref('students/' + childData).once('value').then(function (snapshot) {
                             j++;
@@ -272,6 +277,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                             //     document.getElementById("slika" + j).src = "man.png";
 
                         });
+                    }
                         //     $("#vidi" + j).off().on('click', function () {
                         //         if (window.screen.width <= 430) {
                         //             $("html").scrollTop(0);
@@ -455,7 +461,10 @@ firebase.auth().onAuthStateChanged(function (user) {
                             var brAplikanti = snapshot.val().brojAplikanti;
                             if (i >= 1 && i <= 8) {
                                 displayApplicants("#eden", (i), pozicija, opisPraksa, brAplikanti, childData, firmaEmail, imeFirma, firmaTel, odgLice, 1);
-                                // $('#eden').trigger("click");
+                                setTimeout(()=>{
+                          $('#eden').trigger("click");
+                                },1000)
+                               
                                 // $("#eden").show();
                                 // $("#eden").css({ "color": "red", "font-size": "24px" });
                                 // $('.kreiraj' + (i + 3)).show();

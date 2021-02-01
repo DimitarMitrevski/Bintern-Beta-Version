@@ -14,6 +14,11 @@
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
     <script src="../../jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="../../styles/navigation.css" />
 </head>
 
 <body>
@@ -22,42 +27,70 @@
         </div>
     </div>
     <div id="wrapper">
-        <div id="vector"></div>
         <header>
-            <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
-                    alt="Here was a photo"></a>
-            <nav id="horzNav">
-                <a id="objavi" href="../profile.html">Вашиот Профил</a>
-                <a id="najava">Одјави се</a>
-            </nav>
-        </header>
-        <h1 id="korisnicki">Кориснички панел</h1>
-        <div class="navigacija">
-            <a href="view.html">
-                <div id="nav">
-                    <h3 id="centar">Преглед</h3>
+            <div class="row bg-transparent align-items-end justify-content-between px-3" >
+                <div class="col-12-sm col-lg onSm">
+     <a href="../../index.html"><img src="../../bintern2.png" id="logoto" width="168px" height="60px"
+                        alt="Here was a photo" class="text-center"></a>
                 </div>
-            </a>
-            <a href="myAds.html">
-                <div id="nav1">
-                    <h3 id="centar">Огласи</h3>
+                <div class="text-right col-12-sm col-lg onSmNav">
+    
+                    <a href="../profile.html" class="font-weight-bolder text-dark" >Вашиот Профил</a>
+                    <a id="najava" class="ml-4">Одјави се</a>
+              
                 </div>
-            </a>
-            <a href="candidates.html">
-                <div id="nav2">
-                    <h3 id="centar">Кандидати</h3>
+            </div>
+               
+                
+            </header>
+            <div class="container-fluid">
+                <div class="row bg-transparent">
+                    <div class="col">
+                        <h1 id="korisnicki">Кориснички панел</h1>
+                    </div>
+    
                 </div>
-            </a>
-            <a href="messages.html">
-                <div id="nav3">
-                    <h3 id="centar">Пораки</h3>
+                <div class="row navigacija bg-transparent">
+                    <div class="col-sm">
+                        <a href="view.html" class="active">
+    
+                            Преглед
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="myAds.html">
+    
+                            Огласи
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="candidates.html">
+    
+                            Кандидати
+    
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="messages.html">
+                            Пораки
+                        </a>
+                    </div>
+                    <div class="col-sm">
+    
+                    </div>
                 </div>
-            </a>
-        </div>
-        <hr id="hr">
-        <div class="aktivni">
-            <img id="slika" src="dashboard.PNG">
+            </div>
+            <div id="vector"> 
+                <div class="container-fluid">
+            <div class="row justify-content-around py-3 my-3">
+             <div class="col-12-sm col-lg-7 bg-light">
+                 <div class="row align-items-center my-2">
+                      <img id="slika" src="dashboard.PNG">
             <h3 id="akoglasi">Мои огласи:<span id="brMoiOglasi"></span></h3>
+                 </div>
+           
             <hr id="hr1">
             <h5 id="marketer" class="animate__animated animate__zoomIn animate__slow">Видете ги
                 вашите огласи и
@@ -65,34 +98,50 @@
                 имате апликанти</h5>
             <hr id="hr2">
             <button id="button" type="button">Види апликанти</button>
-            <a href="myAds.html"><label id="site">Сите огласи></label></a>
+            <a href="myAds.html" class="d-block text-right mb-4" id="site">Сите огласи &raquo;</a>
         </div>
-        <div class="aktivni1">
-            <img id="slika" src="dashboard.PNG">
-            <h3 id="akoglasi">Непрочитани пораки</h3>
-            <hr id="hr1">
-            <h5 id="marketer1">Немате непрочитани пораки</h5>
-            <hr id="hr2">
-            <a href="messages.html"><label id="site">Сите пораки></label></a>
-        </div>
-        <div class="aktivni2">
-            <img id="slika" src="dashboard.PNG">
-            <h3 id="akoglasi">Сите Кандидати</h3>
-            <hr id="hr1">
-            <h5 id="marketer1">Немате непрочитани пораки</h5>
-            <hr id="hr2">
-            <a href="candidates.html"><label id="site">Сите Кандидати></label></a>
-        </div>
-        <div id="divaider"><a id="zakon" href="../../Zakon-za-praktikanstvo-21-05-2019.pdf" target="_blank">
-                Закон за практиканство
-            </a>
-        </div>
-        <div id="divaider1">
-            <a id="zakon" href="https://binternblog.com" target="_blank">
-                Новости за пракса и вработување
-            </a>
-        </div>
+        <div class="col-12-sm col-lg-4 bg-light d-flex align-items-center justify-content-center rounded sm-Device ad-1"><a href="../../Zakon-za-praktikanstvo-21-05-2019.pdf" target="_blank">
+            Закон за практиканство
+        </a>
     </div>
+    </div>
+    <div class="row justify-content-around py-3 my-3">
+        <div class="col-12-sm col-lg-7 bg-light">
+            <div class="row align-items-center my-2">
+                <img id="slika" src="dashboard.PNG">
+            <h3 id="akoglasi">Непрочитани пораки</h3> 
+            </div>
+           
+            <hr id="hr1">
+            <h5 id="marketer1">Немате непрочитани пораки</h5>
+            <hr id="hr2">
+            <a href="messages.html" id="site" class="d-block text-right mb-4">Сите пораки &raquo;</a>
+   </div>
+   <div class="col-12-sm col-lg-4 bg-light d-flex align-items-center justify-content-center rounded sm-Device ad-2"> <a id="zakon" href="http://binternblog.com/nachini-na-ostvaruvanje-na-praksa/" target="_blank">
+    Новости за пракса и вработување
+</a>
+</div>
+</div>
+<div class="row justify-content-around py-3">
+    <div class="col-12-sm col-lg-7 bg-light my-2">
+        <div class="row">
+            <img id="slika" src="dashboard.PNG">
+       <h3 id="akoglasi">Сите Кандидати</h3>
+       </div>
+      
+       <hr id="hr1">
+       <h5 id="marketer1">Немате непрочитани пораки</h5>
+       <hr id="hr2">
+       <a href="candidates.html" id="site" class="d-block text-right mb-4">Сите Кандидати &raquo;</a>
+</div>
+<div class="col-12-sm col-lg-4 bg-transparent d-flex align-items-center justify-content-center rounded"> 
+</div>
+</div>
+       
+        </div>
+        
+    </div>
+</div>
     <script src="../../firebase.js"></script>
     <script src="bintern10.js"></script>
 </body>

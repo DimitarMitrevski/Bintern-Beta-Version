@@ -1,49 +1,49 @@
-
-    body{      
-       font-family: 'Century Gothic',Helvetica, sans-serif;
-    }
-    #nav1,#nav,#nav3{
-      transition: 0.5s;
-   }
-   .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      background: rgb(236, 236, 236);
-  }
-  .row-cols-md-3>* {
-   -ms-flex: 0 0 33.333333%;
-   flex: 0 0 30.333333%;
-   max-width: 30.333333%;
-   margin: 0 1.5%;
-   margin-top: -25px;
+body {
+  font-family: "Century Gothic", Helvetica, sans-serif;
 }
-   html{
-      scroll-behavior: smooth;
-   }
-    #block{
-      position: relative;
-      top: 200px;
-      left: 250px;
-      width: 900px;
-      height: 590px;
-      display:none;
-      border-radius: 25px;
-      border:1px solid yellowgreen;
-      background: cornflowerblue;
-    }
-    .cover{
-   
-      width: 1400px;
-      height: 1050px;
-      left: -1px;
-      top: 98px;
-      background:#FFFFFF;
-      opacity: 0.9;
-      filter: blur(9px);
-      display: none;
-          }
-    /* header{
+#nav1,
+#nav,
+#nav3 {
+  transition: 0.5s;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background: rgb(236, 236, 236);
+}
+.row-cols-md-3 > * {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 30.333333%;
+  max-width: 30.333333%;
+  margin: 0 1.5%;
+  margin-top: -25px;
+}
+html {
+  scroll-behavior: smooth;
+}
+#block {
+  position: relative;
+  top: 200px;
+  left: 250px;
+  width: 900px;
+  height: 590px;
+  display: none;
+  border-radius: 25px;
+  border: 1px solid yellowgreen;
+  background: cornflowerblue;
+}
+.cover {
+  width: 1400px;
+  height: 1050px;
+  left: -1px;
+  top: 98px;
+  background: #ffffff;
+  opacity: 0.9;
+  filter: blur(9px);
+  display: none;
+}
+/* header{
      
         width: 100%;
         height: 100px;
@@ -65,157 +65,159 @@
         color: #000000;
         
         } */
-        .login-cover{
-         background: #ffffff;
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100vh;
-         z-index: 800;
-         
-           display: flex;
-           justify-content: center;
-           align-items: center;
-        
-       }
-       .loader {
-         border: 5px solid #f3f3f3;
-         border-top: 5px solid salmon;
-         border-left: 5px solid salmon;
-         border-right: 5px solid salmon;
-         border-radius: 50%;
-         width: 40px;
-         height: 40px;
-         animation: spin 0.8s linear infinite;
-         -webkit-animation: spin 0.8s linear infinite;
-     }
-       
-       @keyframes spin {
-         0% { transform: rotate(0deg); }
-         100% { transform: rotate(360deg); }
-       } 
-       /* Safari */
-@-webkit-keyframes spin {
-0% { -webkit-transform: rotate(0deg); }
-100% { -webkit-transform: rotate(360deg); }
+.login-cover {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-        #logoto{
-         transition: 0.5s;
-     } 
-     #logoto:hover{
-        top:10px;
-      width:188px; 
-      height:70px;
-      -webkit-box-shadow: 0 10px 6px -6px #777;
-      -moz-box-shadow: 0 10px 6px -6px #777;
-           box-shadow: 0 10px 6px -6px #777;
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid salmon;
+  border-left: 5px solid salmon;
+  border-right: 5px solid salmon;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+  -webkit-animation: spin 0.8s linear infinite;
+}
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-      
-                #objavi{
-                 
-                    width: fit-content;
-                    height: 0px;
-                    left: 0px;
-                    top: 0px;
-                    font-family: Century Gothic;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 106.67%;
-            /* or 15px */
-            
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: -0.03em;
-            
-            color: #000000;
-            text-decoration: none;
-            transition: 0.5s;
-                    }
-                    #najava{
-                        cursor:pointer;
-                        color: #000000;
-                        text-decoration: none;
-                        transition: 0.5s;
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+#logoto {
+  transition: 0.5s;
+}
+#logoto:hover {
+  top: 10px;
+  width: 188px;
+  height: 70px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
 
-                     }
-                     #korisnicki{
-                        /* position: absolute;
+#objavi {
+  width: fit-content;
+  height: 0px;
+  left: 0px;
+  top: 0px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 106.67%;
+  /* or 15px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#najava {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#korisnicki {
+  /* position: absolute;
                         width: 243px;
                         height: 56px;
                         left: 58px;
                         top: 74px; */
-                        
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 24px;
-                        line-height: 106.67%;
-                        /* or 26px */
-                        
-                        display: flex;
-                        align-items: center;
-                        letter-spacing: -0.03em;
-                        
-                        color: #000000;
-                        
-                     }
-                     .w3-container, .w3-panel {
-                        padding: 0.5em 0px;
-                       
-                    }
-                .w3-card-4{
-                  margin-bottom: 10px;
-                }
-                 header.w3-container{
-                    display: flex;
-                    align-items: center;
-                 }
-                    
-      
-                     #hr{
-                        all: revert;
-                     
-                        width: 184px;
-                        height: 8px;
-                        left: 460px;
-                        top: 178px;
-                        
-                        background: #59C7D6;
-                     }
-               
-               
-                     
-                     #tekst {
-                     
-                        left: 100px;
-                        top: 34px;
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 16px;
-                        line-height: 106.67%;
-                    }
-                 
-                 
-                 #paragraf1,#paragraf2, #paragraf3,#paragraf4, #paragraf5,#paragraf6   {                  
-                  font-family: Century Gothic;
-                  font-style: normal;
-                  font-weight: italic;
-                  font-size: 16px;
-                  line-height: 102.67%;
-                  position: relative;
-                  
-                  margin: 0 2%;
-              }
-      
-             
-#vector{
-min-height: 100%;
-background: #ECECEC;
+
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 106.67%;
+  /* or 26px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+.w3-container,
+.w3-panel {
+  padding: 0.5em 0px;
+}
+.w3-card-4 {
+  margin-bottom: 10px;
+}
+header.w3-container {
+  display: flex;
+  align-items: center;
+}
+
+#hr {
+  all: revert;
+
+  width: 184px;
+  height: 8px;
+  left: 460px;
+  top: 178px;
+
+  background: #59c7d6;
+}
+
+#tekst {
+  left: 100px;
+  top: 34px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 106.67%;
+}
+
+#paragraf1,
+#paragraf2,
+#paragraf3,
+#paragraf4,
+#paragraf5,
+#paragraf6 {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: italic;
+  font-size: 16px;
+  line-height: 102.67%;
+  position: relative;
+
+  margin: 0 2%;
+}
+
+#vector {
+  min-height: 54vw;
+  background: #ececec;
 }
 /* #slika1 {
 
@@ -227,54 +229,61 @@ background: #ECECEC;
 } */
 
 #hr1 {
-
-   width: 400px;
-   height: 0px;
-   left: 0px;
-   top: 80px;
-   border: 1px solid #D0D0D0;
-
+  width: 400px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+  border: 1px solid #d0d0d0;
 }
-.w3-circle{
-   margin-left: 10px;
+.w3-circle {
+  margin-left: 10px;
 }
-h3{
-   line-height: 96%;
+h3 {
+  line-height: 96%;
 }
 
-#marketer1,#marketer2,#marketer3,#marketer4,#marketer5,#marketer6{
-   padding-left: 2%;
-    font-family: Century Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: -0.03em;
-    text-decoration-line: underline;
-    color: #142757;
-    margin: 4% 0px;
+#marketer1,
+#marketer2,
+#marketer3,
+#marketer4,
+#marketer5,
+#marketer6 {
+  padding-left: 2%;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-decoration-line: underline;
+  color: #142757;
+  margin: 4% 0px;
 }
-.marketer{
-   padding-left: 2%;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 100%;
-   letter-spacing: -0.03em;
-   text-decoration-line: underline;
-   color: #142757;
-   margin: 4% 0px;
+.marketer {
+  padding-left: 2%;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-decoration-line: underline;
+  color: #142757;
+  margin: 4% 0px;
 }
-hr{
-   margin: unset;
-   margin-bottom:10px;
-   border-top: 2px solid #f7f7f7;
+hr {
+  margin: unset;
+  margin-bottom: 10px;
+  border-top: 2px solid #f7f7f7;
 }
 
-
-#button1,#button2,#button3,#button4,#button5,#button6{
-   /* position: absolute;
+#button1,
+#button2,
+#button3,
+#button4,
+#button5,
+#button6 {
+  /* position: absolute;
    width: 153px;
    height: 42px;
    right: 10px;
@@ -288,804 +297,690 @@ hr{
    line-height: 106.67%;
    letter-spacing: -0.03em;
    color: #FFFFFF; */
-   transition: 0.5s;
+  transition: 0.5s;
 }
-    /* .aktivni2 {
-   
-      width: 400px;
-      height: 280px;
-      left: 480px;
-      top: 310px;
-      background: #FFFFFF;
-      display: none;
-  }
-  .aktivni3 {
-
-   width: 400px;
-   height: 280px;
-   left: 910px;
-   top: 310px;
-   background: #FFFFFF;
-   display: none;
+.aktivni7 {
+  background-color: #ffffff !important;
+  min-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
 }
-     .aktivni4{
-   
-      width: 400px;
-      height: 280px;
-      left: 50px;
-      top: 610px;
-      background: #FFFFFF;
-      display: none;
-   }
-   .aktivni5{
-   
-      width: 400px;
-      height: 280px;
-      left: 480px;
-      top: 610px;
-      background: #FFFFFF;
-      display: none;
-   }
-   .aktivni6{
-   
-      width: 400px;
-      height: 280px;
-      left: 910px;
-      top: 610px;
-      background: #FFFFFF;
-      display: none;
-   } */
-   .aktivni7 {
-      background-color: #FFFFFF!important;
-      min-width: 90%;
-      margin: 0 auto;
-      margin-bottom: 35px;
-      padding: 20px;
-  }
-   #button12{
-   
-      width: 153px;
-      height: 42px;
-      left: 1080px;
-      top: 110px;
-      top: 120px;
-      background: #59C7D6;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 12px;
-      font-family: Century Gothic;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 106.67%;
-      letter-spacing: -0.03em;
-      color: #FFFFFF;
-      
-   }
-   #hr2{
-      background-color:  #D0D0D0;
-   }
-   #search {
-      width: 50%;
-      margin: 15px auto;
-      padding: 2px;
-     
-  }
-     #element1{
-   
-      width: 100%;
-      height: 38px;
-      left: 0;
-      top: 0px;
-      font-family: Century Gothic;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 106.67%;
-      display: block;
-      text-align: center;
-      align-items: center;
-      letter-spacing: -0.03em;
-      color: #000000;
-      top: 6px;
-     }
-     #element2{
-      all: revert;
-   
-      width: 19%;
-      height: 38px;
-      /* left: 0px; */
-      margin: 0 34%;
-      top: 40px;
-      background: #EBEBEB;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
+#button12 {
+  width: 153px;
+  height: 42px;
+  left: 1080px;
+  top: 110px;
+  top: 120px;
+  background: #59c7d6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 106.67%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+#hr2 {
+  background-color: #d0d0d0;
+}
+#search {
+  width: 50%;
+  margin: 15px auto;
+  padding: 2px;
+}
+#element1 {
+  width: 100%;
+  height: 38px;
+  left: 0;
+  top: 0px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 106.67%;
+  display: block;
+  text-align: center;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  top: 6px;
+}
+#element2 {
+  all: revert;
 
-     }
-     #buttonsearch {
-   
-      width: 10%;
-      height: 46px;
-      top: 40px;
-      margin: 0px 53%;
-      background: #F47A61;
-      font-family: Century Gothic;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 100%;
-      letter-spacing: -0.03em;
-      color: #FFFFFF;
-  }
-     #objavi:hover{
-      padding-bottom: 10px;
-      border-bottom: 1px solid #59C7D6;
-      color: #59C7D6;
-   }
-   #najava:hover{
-      /* padding-bottom: 10px; */
-     border-bottom: 1px solid black;
-      cursor: pointer;
-   }
-   span{
-      padding-left: 20px;
-      
-   }
-   #strana{
-      font-family: Century Gothic;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-
-   }
-   /* #brStranica {
+  width: 19%;
+  height: 38px;
+  /* left: 0px; */
+  margin: 0 34%;
+  top: 40px;
+  background: #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+#buttonsearch {
+  width: 10%;
+  height: 46px;
+  top: 40px;
+  margin: 0px 53%;
+  background: #f47a61;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+#objavi:hover {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #59c7d6;
+  color: #59c7d6;
+}
+#najava:hover {
+  /* padding-bottom: 10px; */
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+span {
+  padding-left: 20px;
+}
+#strana {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+}
+/* #brStranica {
       left: 32px;
       top: 110px;
   } */
-  .btn{
-   padding: 0.575rem .85rem;
-  }
-   #span{
-      font-size:28px;
-      pointer-events:none;
-      }
-      #brojPr{
-         padding-left: 4px;
-         pointer-events:none;
-         font-size:38px;
-      }
-   span:hover{
-      cursor:pointer;
-      color:red;
-      font-size:38px;
-      text-decoration-line: underline;
-   }
-   #alertMessage{
-     
-      display:none;
-   }
-   #slika7 {
-   
-      width: 208px;
-      height: 155px;
-      left: 46px;
-      top: 5px;
-      border-radius: 30px;
-  }
-  #akoglasi7 {
-
-   width: 604px;
-   height: 56px;
-   left: 337px;
-   top: -30px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 27px;
-   line-height: 106.67%;
-   display: flex;
-   align-items: center;
-   letter-spacing: -0.03em;
-   color: #000000;
+.btn {
+  padding: 0.575rem 0.85rem;
+}
+#span {
+  font-size: 28px;
+  pointer-events: none;
+}
+#brojPr {
+  padding-left: 4px;
+  pointer-events: none;
+  font-size: 38px;
+}
+span:hover {
+  cursor: pointer;
+  color: red;
+  font-size: 38px;
+  text-decoration-line: underline;
+}
+#alertMessage {
+  display: none;
+}
+#slika7 {
+  width: 208px;
+  height: 155px;
+  left: 46px;
+  top: 5px;
+  border-radius: 30px;
+}
+#akoglasi7 {
+  width: 604px;
+  height: 56px;
+  left: 337px;
+  top: -30px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 106.67%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #000000;
 }
 #tekst11 {
-
-   left: 337px;
-   top: 14px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 24px;
-   line-height: 106.67%;
+  left: 337px;
+  top: 14px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 106.67%;
 }
 #marketer7 {
-
-   width: 289px;
-   height: 15px;
-   left: 462px;
-   top: 5px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 25px;
-   line-height: 100%;
-   letter-spacing: -0.03em;
-   text-decoration-line: underline;
-   color: snow;
-   /* display: none; */
+  width: 289px;
+  height: 15px;
+  left: 462px;
+  top: 5px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-decoration-line: underline;
+  color: snow;
+  /* display: none; */
 }
 #Vraboteni {
-
-   left: 337px;
-   top: 55px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 20px;
-   line-height: 106.67%;
+  left: 337px;
+  top: 55px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 106.67%;
 }
 #godStudii {
-
-   left: 531px;
-   top: 55px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 21px;
-   line-height: 106.67%;
-   color: paleturquoise;
+  left: 531px;
+  top: 55px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 106.67%;
+  color: paleturquoise;
 }
 #tekst14 {
-
-   left: 336px;
-   top: 82px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 21px;
-   line-height: 106.67%;
+  left: 336px;
+  top: 82px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 106.67%;
 }
 #univerzitet {
-
-   left: 485px;
-   top: 84px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 21px;
-   line-height: 106.67%;
-   color: paleturquoise;
+  left: 485px;
+  top: 84px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 106.67%;
+  color: paleturquoise;
 }
 #tekst15 {
-
-   left: 336px;
-   top: 113px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 21px;
-   line-height: 106.67%;
+  left: 336px;
+  top: 113px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 106.67%;
 }
 #fakultet {
-
-   left: 450px;
-   top: 114px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 21px;
-   line-height: 106.67%;
-   color: paleturquoise;
+  left: 450px;
+  top: 114px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 106.67%;
+  color: paleturquoise;
 }
 #tekst12 {
-
-   left: 444px;
-   top: 155px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 20px;
-   line-height: 106.67%;
+  left: 444px;
+  top: 155px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 106.67%;
 }
 #tekst17 {
-
-   left: 370px;
-   top: 282px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 20px;
-   line-height: 106.67%;
+  left: 370px;
+  top: 282px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 106.67%;
 }
 #paragraf7 {
-
-   width: 787px;
-   height: 100px;
-   left: 60px;
-   top: 192px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 106.67%;
-   color: floralwhite;
+  width: 787px;
+  height: 100px;
+  left: 60px;
+  top: 192px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 106.67%;
+  color: floralwhite;
 }
 #kakvaPraksa {
-
-   width: 787px;
-   height: 100px;
-   left: 60px;
-   top: 321px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 106.67%;
-   color: floralwhite;
+  width: 787px;
+  height: 100px;
+  left: 60px;
+  top: 321px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 106.67%;
+  color: floralwhite;
 }
 #nazad {
-
-   width: 153px;
-   height: 42px;
-   left: 478px;
-   bottom: 30px;
-   background: #59C7D6;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 12px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 106.67%;
-   letter-spacing: -0.03em;
-   color: #FFFFFF;
+  width: 153px;
+  height: 42px;
+  left: 478px;
+  bottom: 30px;
+  background: #59c7d6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 106.67%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
 }
 #hr3 {
-
-   width: 900px;
-   height: 0px;
-   left: 0px;
-   top: 160px;
-   border: 1px solid #D0D0D0;
+  width: 900px;
+  height: 0px;
+  left: 0px;
+  top: 160px;
+  border: 1px solid #d0d0d0;
 }
-#nav1:hover,#nav:hover, #nav3:hover{
-   padding-bottom: 38px;
-   border-bottom: 8px solid #59C7D6;
+#nav1:hover,
+#nav:hover,
+#nav3:hover {
+  padding-bottom: 38px;
+  border-bottom: 8px solid #59c7d6;
 }
- #pokaniNaOglas {
-
-   width: 153px;
-   height: 42px;
-   left: 310px;
-   bottom: 30px;
-   background: #FFFFFF;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 12px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 106.67%;
-   letter-spacing: -0.03em;
-   color: teal;
+#pokaniNaOglas {
+  width: 153px;
+  height: 42px;
+  left: 310px;
+  bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 106.67%;
+  letter-spacing: -0.03em;
+  color: teal;
 }
- #pokaniNaOglas:hover{
-    background-color: yellowgreen;
-    cursor: pointer;
- }
- #nazad:hover{
-    background-color: tomato;
-    cursor: pointer;
- }
+#pokaniNaOglas:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+#nazad:hover {
+  background-color: tomato;
+  cursor: pointer;
+}
 
 #poraka {
-
-   width: 378px;
-   height: 342px;
-   left: 278px;
-   bottom: 126px;
-   background: honeydew;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 12px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 106.67%;
-   letter-spacing: -0.03em;
-   color: black;
-   display: none;
+  width: 378px;
+  height: 342px;
+  left: 278px;
+  bottom: 126px;
+  background: honeydew;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 106.67%;
+  letter-spacing: -0.03em;
+  color: black;
+  display: none;
 }
 #pokanata {
-
-   top: 124px;
-   left: 0px;
-   width: 219px;
-   line-height: 25px;
-   width: 378px;
-   background-color: lightgreen;
-   text-align: center;
-   
+  top: 124px;
+  left: 0px;
+  width: 219px;
+  line-height: 25px;
+  width: 378px;
+  background-color: lightgreen;
+  text-align: center;
 }
-#pokanet{
-
-   left: 199px;
-   bottom: 11px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 24px;
-   line-height: 100%;
-   letter-spacing: -0.03em;
-   color: mediumblue;
-    display: none;
+#pokanet {
+  left: 199px;
+  bottom: 11px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: mediumblue;
+  display: none;
 }
-#izlezi{
-
-   width: 153px;
-   height: 42px;
-   left: 120px;
-   bottom: 30px;
-   background: #59C7D6;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 12px;
-   font-family: Century Gothic;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 106.67%;
-   letter-spacing: -0.03em;
-   color: #FFFFFF;
-
+#izlezi {
+  width: 153px;
+  height: 42px;
+  left: 120px;
+  bottom: 30px;
+  background: #59c7d6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 106.67%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
 }
-#kaver{
-   position: relative;
-    top: 0px;
-    left: 0px;
-    width: 900px;
-    height: 590px;
-    display: none;
-    opacity: 0.8;
-    border-radius: 25px;
-    border: 1px solid yellowgreen;
-    background: #f7f7f7f7;
+#kaver {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 900px;
+  height: 590px;
+  display: none;
+  opacity: 0.8;
+  border-radius: 25px;
+  border: 1px solid yellowgreen;
+  background: #f7f7f7f7;
 }
 @media screen and (max-width: 430px) {
-   #logoto {
-      margin: 0 30%;
-      width: 40%;
-      height: 50%;
+  .aktivni7 {
+    margin-bottom: 15px !important;
   }
-   #wrapper{
-      height: 100%;
-      width: 100%;
-   }
-   header{
-      width: 100%;
-   }
-   .aktivni7{
-      margin-bottom: 15px!important;
-   }
-   #korisnicki {
-      top: 64px;
-      left: 0px;
-      width: 100%;
-      display: block;
-      text-align: center;
+  #korisnicki {
+    top: 64px;
+    left: 0px;
+    width: 100%;
+    display: block;
+    text-align: center;
   }
   #horzNav {
-   left: 0px;
-   width: 100%;
-   align-items: center;
-   justify-items: center;
-   text-align: center;
-}
-#najava,#objavi {
-   position: unset;
-   display: unset;
-   margin: 6%;
-}
-   .navigacija{
-      left: 0px;
-    top: 112px;
+    left: 0px;
     width: 100%;
-   }
-   #hr{
-      display:none;
-   }
-   #nav,#nav2 {
-      left: auto;
-      width: 37%;
-      margin: 0 11%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
   }
-   #nav1,#nav3 {
-      width: 37%;
-      left: auto;
-      margin: 0 53%;
+
+  #hr {
+    display: none;
+  }
+  #nav,
+  #nav2 {
+    left: auto;
+    width: 37%;
+    margin: 0 11%;
+  }
+  #nav1,
+  #nav3 {
+    width: 37%;
+    left: auto;
+    margin: 0 53%;
   }
   #centar {
-   left: 0px;
-   width: 100%;
-   text-align: center;
-   display: block;
-}
-   #alertMessage{
-      font-size: 15px;
-      left: 17px;
-   }
-   #nav2{
- top: 53px;
- border-bottom: 8px solid #59C7D6;
- padding-bottom: 37px;
-   }
-   #nav3{
-
-      top: 53px;
-   }
-   #vector{
-      top:210px;
-      min-height: 100%;
-      width: 100%;
-   }
-   #search {
-      left: 0px;
-      top: 0px;
-      width: 100%;
-      margin: unset;
-      padding: 0 2%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    display: block;
   }
-  .form-row{
-     flex-wrap: unset;
+  #alertMessage {
+    font-size: 15px;
+    left: 17px;
   }
-   #element1 {
-      left: 0px;
-      width: 100%;
-      display: block;
-      top: 10px;
+  #nav2 {
+    top: 53px;
+    border-bottom: 8px solid #59c7d6;
+    padding-bottom: 37px;
+  }
+  #nav3 {
+    top: 53px;
+  }
+  #vector {
+    top: 210px;
+    min-height: 100%;
+    width: 100%;
+  }
+  #search {
+    width: 100%;
+    margin: unset;
+    padding: 0 2%;
+    margin-bottom: 37px !important;
+  }
+  .form-row {
+    flex-wrap: unset;
+  }
+  #element1 {
+    left: 0px;
+    width: 100%;
+    display: block;
+    top: 10px;
   }
   #element2 {
-   width: 51%;
-   margin: 0 8%;
-}
-   #buttonsearch {
-      left: 0;
-      margin: 0 60%;
-      width: 33%;
+    width: 51%;
+    margin: 0 8%;
   }
-   /* .aktivni1,.aktivni2,.aktivni3,.aktivni4,.aktivni5,.aktivni6 {
+  #buttonsearch {
+    left: 0;
+    margin: 0 60%;
+    width: 33%;
+  }
+  /* .aktivni1,.aktivni2,.aktivni3,.aktivni4,.aktivni5,.aktivni6 {
       left: -7px;
       width: 96%;
       margin: 0 4%;
   } */
-   #hr1{
-      width: 350px;
-   }
-   #button1{
-      left: 190px;
-   }
-   /* .aktivni2{
+  #hr1 {
+    width: 350px;
+  }
+  #button1 {
+    left: 190px;
+  }
+  /* .aktivni2{
       top: 610px;
    } */
-   #button2{
-      left: 190px;
-   }
-   .row-cols-md-3>* {
-      -ms-flex: 0 0 33.333333%;
-      flex: 0 0 98.333333%;
-      max-width: 98.333333%;
-      margin: unset;
-      margin-top: -42px;
-      margin-left: auto;
+  #button2 {
+    left: 190px;
   }
-   /* .aktivni3{
+  .row-cols-md-3 > * {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 98.333333%;
+    max-width: 98.333333%;
+  }
+  /* .aktivni3{
       top: 920px;
    } */
-   #button3{
-      left: 190px;
-   }
-   .aktivni4{
-      top: 1230px;
-   }
-   #button4{
-      left: 190px;
-   }
-   /* .aktivni5{
+  #button3 {
+    left: 190px;
+  }
+
+  #button4 {
+    left: 190px;
+  }
+  /* .aktivni5{
       top: 1540px;
    } */
-   #button5{
-      left: 190px;
-   }
-   /* .aktivni6{
+  #button5 {
+    left: 190px;
+  }
+  /* .aktivni6{
       top: 1850px;
    } */
-   #button6{
-      left: 190px;
-   }
-   br{
-      display: none;
-   }
-   #paragraf1, #paragraf2, #paragraf3, #paragraf4, #paragraf5, #paragraf6, .paragraf {
-     all:unset;
-      font-family: Century Gothic;
-      font-style: normal;
-      font-weight: italic;
-      font-size: 16px;
-      line-height: 102.67%;
-      /* position: relative; */
-      /* top: 5px; */
-      /* height: 26px; */
-      display: block;
-      margin: 0 2%;
-      margin-bottom: -28px;
-      word-break: break-word;
+  #button6 {
+    left: 190px;
+  }
+  br {
+    display: none;
+  }
+  #paragraf1,
+  #paragraf2,
+  #paragraf3,
+  #paragraf4,
+  #paragraf5,
+  #paragraf6,
+  .paragraf {
+    font-size: 16px;
+    line-height: 102.67%;
+    word-break: break-word;
   }
   hr {
-   border: 0;
-   border-top: 2px solid #f7f7f7;
-   margin: 20px 0;
-}
-span{
-   padding:unset;
-}
-#strana {
-   font-size: 17px;
-   line-height: 130%;
-   left: 0px;
-   width: 100%;
-   padding: 0 2%;
-}
-   #span{
-      font-size: 17px;
-   }
-   #brojPr{
-      font-size: 17px;
-   }
-   #brStranica{
-      left:10px;
-      font-size: 17px;
-      width: fit-content;
-   }
-   .row{
-      top: 165px;
-      width: 100%;
-      margin: unset;
-      padding: 0 2%;
-   }
-   #hr2{
-      width: 100%;
-   }
-   h3{
-      font-size: 20px;
-   }
-   .cover{
-      top:0px;
-      height: 2485px;
-   }
-   #block{
-      left: 5px;
-      width: 350px;
-      height: 700px;
-   }
-   #hr3{
-      width: 350px;
-      top: 240px;
-   }
-   #slika7 {
-   
-      width: 153px;
-      height: 143px;
-      left: 11px;
-      top: 5px;
-      border-radius: 30px;
+    border: 0;
+    border-top: 2px solid #f7f7f7;
+    margin: 20px 0;
+  }
+  span {
+    padding: unset;
+  }
+  #strana {
+    font-size: 17px;
+    line-height: 130%;
+    left: 0px;
+    width: 100%;
+    padding: 0 2%;
+  }
+  #span {
+    font-size: 17px;
+  }
+  #brojPr {
+    font-size: 17px;
+  }
+  #brStranica {
+    left: 10px;
+    font-size: 17px;
+    width: fit-content;
+  }
+
+  #hr2 {
+    width: 100%;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .cover {
+    top: 0px;
+    height: 2485px;
+  }
+  #block {
+    left: 5px;
+    width: 350px;
+    height: 700px;
+  }
+  #hr3 {
+    width: 350px;
+    top: 240px;
+  }
+  #slika7 {
+    width: 153px;
+    height: 143px;
+    left: 11px;
+    top: 5px;
+    border-radius: 30px;
   }
   #akoglasi7 {
-  
-   left: 171px;
-   top: -3px;
-   font-size: 17px;
-   width: 180px;
-
-}
-#tekst11{
-   left: 173px;
-   top: 45px;
-   font-size: 17px;
-}
-#marketer7{
-   top: 62px;
+    left: 171px;
+    top: -3px;
+    font-size: 17px;
+    width: 180px;
+  }
+  #tekst11 {
+    left: 173px;
+    top: 45px;
+    font-size: 17px;
+  }
+  #marketer7 {
+    top: 62px;
     left: 169px;
     font-size: 17px;
     width: 174px;
-}
-#Vraboteni{
-   left: 21px;
-   top: 130px;
-    font-size: 17px;
-}
-#godStudii{
-   left: 182px;
-   top: 130px;
-   font-size: 17px;
-}
-#tekst14{
-   left: 17px;
-   top: 151px;
-   font-size: 17px;
-}
-#univerzitet {
-   left: 138px;
-   top: 151px;
-   font-size: 17px;
-}
-#tekst15{
-   left: 17px;
-   top: 191px;
-   font-size: 17px;
-}
-#fakultet {
-   left: 110px;
-   top: 193px;
-   font-size: 17px;
-}
-#tekst12{
-   left: 127px;
-   top: 241px;
-   font-size: 17px;
-}
-#paragraf7{
-   left: 10px;
-    top: 270px;
-    width:340px;
-    font-size: 17px;
-}
-#tekst17{
-   left: 77px;
-   top: 441px;
-   font-size: 17px;
-}
-#kakvaPraksa{
-   left: 10px;
-   top: 475px;
-   width:340px;
-   font-size: 17px;
-}
-#pokanet{
-   left:5px;
-   font-size: 17px;
-
-}
-html{
-   scroll-behavior: smooth;
-}
-#nazad{
-   left:auto;
-   right: 20px;
-   width: 140px;
-}
-#pokaniNaOglas{
-   left: 24px;
-   width: 140px;
-}
-#poraka{
-   left: 8px;
-   width: 333px;
-}
-#pokanata {
-
-   top: 124px;
-   left: -4px;
-   width: 219px;
-   line-height: 25px;
-   width: 342px;
-   background-color: lightgreen;
-   text-align: center;
-}
-#paragraf1, #paragraf2, #paragraf3, #paragraf4, #paragraf5, #paragraf6 {
-width: fit-content;
-}
-.btn {
-      padding: 0.475rem .45rem;
   }
-  
-  
-   
+  #Vraboteni {
+    left: 21px;
+    top: 130px;
+    font-size: 17px;
+  }
+  #godStudii {
+    left: 182px;
+    top: 130px;
+    font-size: 17px;
+  }
+  #tekst14 {
+    left: 17px;
+    top: 151px;
+    font-size: 17px;
+  }
+  #univerzitet {
+    left: 138px;
+    top: 151px;
+    font-size: 17px;
+  }
+  #tekst15 {
+    left: 17px;
+    top: 191px;
+    font-size: 17px;
+  }
+  #fakultet {
+    left: 110px;
+    top: 193px;
+    font-size: 17px;
+  }
+  #tekst12 {
+    left: 127px;
+    top: 241px;
+    font-size: 17px;
+  }
+  #paragraf7 {
+    left: 10px;
+    top: 270px;
+    width: 340px;
+    font-size: 17px;
+  }
+  #tekst17 {
+    left: 77px;
+    top: 441px;
+    font-size: 17px;
+  }
+  #kakvaPraksa {
+    left: 10px;
+    top: 475px;
+    width: 340px;
+    font-size: 17px;
+  }
+  #pokanet {
+    left: 5px;
+    font-size: 17px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  #nazad {
+    left: auto;
+    right: 20px;
+    width: 140px;
+  }
+  #pokaniNaOglas {
+    left: 24px;
+    width: 140px;
+  }
+  #poraka {
+    left: 8px;
+    width: 333px;
+  }
+  #pokanata {
+    top: 124px;
+    left: -4px;
+    width: 219px;
+    line-height: 25px;
+    width: 342px;
+    background-color: lightgreen;
+    text-align: center;
+  }
+  #paragraf1,
+  #paragraf2,
+  #paragraf3,
+  #paragraf4,
+  #paragraf5,
+  #paragraf6 {
+    width: fit-content;
+  }
+  .btn {
+    padding: 0.475rem 0.45rem;
+  }
 }
