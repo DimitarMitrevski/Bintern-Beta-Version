@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    /* background: linear-gradient(272.61deg, #f47a61 17.29%, #f15f61 75.59%); */
+    text-align: center;
+    /* font-family: 'Comfortaa', cursive; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Century Gothic', Qartella, sans-serif;
+    font-size: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #f7f7f7;
+  }
+  /* LANDING HOME PAGE */
+  .landing{
+      background-image: url("./images/Vector.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0px 55px;
+    }
+    .landing h1{
+        font-size: 3.2rem;
+    }
+     /* LANDING HOME PAGE */
+      /* LANDING HOME PAGE LOGO */
+  svg {
+    width: 100px;
+    height: 100px;
+    margin: 22%;
+    display: inline-block;
+  }
+   /* LANDING HOME PAGE LOGO*/
+  .animation h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0 0 100px;
+    font-size: 34px;
+    font-weight: 100;
+    text-transform: uppercase;
+    background-color: #e43725;
+    padding: 20px 0;
+  }
+  .animation h1 b {
+    font-weight: 700;
+  }
+  .made-with-love {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: arial;
+    color: #fff;
+  }
+  .made-with-love i {
+    font-style: normal;
+    color: #f50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+  }
+  .made-with-love a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .made-with-love a:hover {
+    text-decoration: underline;
+  }
+  /* NAVBAR -----------------------------------------------------------*/
+  .nav-item > .nav-link {
+      font-size: 1.18rem;
+      font-weight: 500;
+  }
+  .nav-item{
+      margin: 0 11px;
+  }
+  .navbar{
+      background-color: #fff!important;
+  }
+ /* NAVBAR ------------------------------------------------------------*/
+
+ /* BUTTONS--------------------------------------------------- */
+ .btn{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    width: 180px;
+    height: 49px;
+    background: #59C7D6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    color: #FFFFFF;
+    border-color: transparent;
+ }
+ /* BUTTONS ---------------------------------------------------*/
+ #pattern{
+     position:absolute;
+     right: 10%;
+    
+ }

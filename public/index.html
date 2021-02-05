@@ -31,11 +31,11 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vuex"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="index1.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
 </head>
 
-<body>
-    <svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+<body class="landing">
+    <svg class="animation" version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
         <circle fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="15" stroke-dasharray="14.2472,14.2472"
             cx="50" cy="50" r="47">
@@ -71,238 +71,67 @@
         </g>
     </svg>
 
-    <div id="wrapper">
-        <div id="vector" class="animate__animated animate__backInRight animate__delay-1s" role="application">
-            <div class="clip"></div>
-            <div class="clip2"></div>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./styles/images/logo.png" alt="binternlogo" width="150" height="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse d-flex justify-content-end navbar-collapse pr-5 " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">За Фирмите</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">За Практиканти</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Објави Оглас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Најава/Регистрација</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="header"></div>
-        <header role="banner">
-            <h1 style="display: none;">Платформа за пракса и вработување</h1>
-            <img src="bintern2.png" class="animate__animated animate__backInDown" id="logoto" width="168" height="60"
-                alt="Bintern logo">
-            <nav class="animate__animated animate__lightSpeedInRight animate_delay-2s" id="horzNav" role="navigation">
-                <a id="firmite" href="bintern4.html">За Фирмите</a>
-                <a id="praktikanti" href="bintern5.html">За практиканти</a>
-                <a id="objavi" href="companies/registration.html">Објави оглас Бесплатно</a>
-                <a id="najava" href="registrationOrSingIn.html">Најава/Регистрација</a>
-                <a id="kontakt1" href="kontakt.html">Контактирај нѐ</a>
-            </nav>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-                <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown"
-                        width="168" height="60" alt="Bintern logo"></a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Почетна <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="companies/registration.html">Објави оглас Бесплатно</a>
-                        </li>
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown09">
-                                <a class="dropdown-item" href="bintern4.html">За фирмите</a>
-                                <a class="dropdown-item" href="bintern5.html">За практикании</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registrationOrSingIn.html">Регистрација/Најава</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </header>
-        <main role="main">
-            <article role="article">
-                <header>
-                    <h1 class="animate__animated animate__backInLeft animate__delay-1s" id="super">Ви треба млад
-                        <br>супер-талент во
-                        тимот?<br> Ние го имаме.
-                    </h1>
-                    <h2 id='najdobri' class="animate__animated animate__backInLeft animate__delay-1s">Ве поврзуваме со
-                        најдобрите
-                        практиканти.</h2>
-                    <a href="bintern4.html" class="animate__animated animate__backInLeft animate__delay-1s"
-                        id="zapocni">Започни
-                        тука</a>
-                    <img class="animate__animated animate__backInRight  animate__delay-1s" id="slika4" src="slika4.png"
-                        alt="Student Graphic Design image">
-                    <div class="animate__animated animate__backInRight animate__delay-1s" id="dots">
-                        .............................................................<br>
-                        .............................................................<br>
-                        .............................................................<br>
-                        .............................................................
-                    </div>
-                </header>
-                <section>
-                    <h2 id="kako">Како до супер-талент?</h2>
-                    <!-- Zamenata Uspesna --><!-- Zamenata Uspesna -->
-                    <!-- Zamenata Uspesna --><!-- Zamenata Uspesna -->
-                    <section id="animate">
-                        <h3 id="oglas1">Објави оглас
-                        </h3>
-                        <img id="slika1" src="slika1.png" alt="search illustration">
-                        <p id="zapraksa">- Со кул оглас
-                            покажи зошто
-                            токму <br> твојата
-                            компанија е вистинско место<br>
-                            за практикантите<br><br>
-                            - Заштеди 2x време и трошоци со<br> нашите совети за креирање на оглас
-                        </p>
-                    </section>
-                    <section id="animate">
-                        <h3 id="oglas2">Процени</h3>
-                        <img id="slika22" src="slika2.png" alt="group of people illustration">
-                        <p id="proceni">
-                            - Издвои ги најдобрите практиканти<br> со користење на филтри во нашата<br>
-                            база од студенти<br><br>
-
-                            - Споредувај, напредно пребарувај<br> со нашиот алгоритам и покани<br> на интервју
-                        </p>
-                    </section>
-                    <section id="animate">
-                        <h3 id="oglas3">Успешна приказна</h3>
-                        <img id="slika33" src="slika3.png" alt="checkbox illustration">
-                        <p id="uspesna">
-                            - Одлично искуство проследено со<br> препорака на практиканти. <br><br>
-
-                            - Можност за сами да си го<br> изградите вашиот иден вработен. <br><br>
-
-                            - Добивање на оценка за супер<br> фирма од практикантите
-                        </p>
-                    </section>
-                    <a href="bintern4.html" id="zapocni1">Започни тука</a>
-                </section>
-                <section>
-                    <h2 class="animate__animated animate__bounceIn" id="blog">Соработници</h2>
-
-
-                    <a href="https://webiart.mk/" target="_blank"><img id="slika" src="webiart.png" width="1033"
-                            height="476" alt="Webiart DOO Logo"></a>
-                    <a href="https://webiart.mk/" target="_blank" id="kopce1" role="button">Дознај
-                        повеќе</a>
-                    <a href="https://javen-advertising.com/" target="_blank"><img id="slika2" src="javen.png"
-                            width="1033" height="476" alt="Javen Advertajzing Logo"></a>
-                    <a href="https://javen-advertising.com/" target="_blank" id="kopce2" role="button">Дознај
-                        повеќе</a>
-                    <a href="https://krediti.com.mk/" target="_blank"><img id="slika3"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5DNCWcWPkaMytNujAq7C9FZEntyWvV4SP9EzGli2sQFBNaw3e"
-                            width="1033" height="476" alt="FD SN Finansii Logo"></a>
-                    <a href="https://krediti.com.mk/" target="_blank" id="kopce3" role="button">Прочитај
-                        повеќе</a>
-
-                    <a href="https://inbox.com.mk/" target="_blank">
-                        <img id="slika44"
-                            src="./images/inbox.png"
-                            width="253" height="359" alt="Nova Solutions Logo">
-                    </a>
-
-                    <a href="https://inbox.com.mk/" target="_blank" id="kopce4" role="button">Дознај повеќе</a>
-                    <div id="blogSliki">
-                        <div class="responsive">
-                            <div class="gallery">
-                                <a target="_blank" href="https://inbox.com.mk/">
-                                    <img src="./images/inbox.png"
-                                        alt="Cinque Terre" width="600" height="400">
-                                </a>
-                                <div class="desc"><a target="_blank" href="https://inbox.com.mk/"
-                                        class="btn btn-outline-primary" role="button">
-                                        Дознај повеќе</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="responsive" role="application">
-                            <div class="gallery">
-                                <a target="_blank" href="https://krediti.com.mk">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5DNCWcWPkaMytNujAq7C9FZEntyWvV4SP9EzGli2sQFBNaw3e"
-                                        alt="Forest" width="600" height="400">
-                                </a>
-                                <div class="desc"><a target="_blank" href=" https://krediti.com.mk"
-                                        class="btn btn-outline-primary" role="button">
-                                        Дознај Повеќе</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="responsive" role="application">
-                            <div class="gallery">
-                                <a target="_blank" href="https://javen-advertising.com/">
-                                    <img src="javen.png" alt="Javen Logo" width="600" height="400"
-                                        style="background: #FFF; padding: 100px 0px;">
-                                </a>
-                                <div class="desc"><a target="_blank" href="https://javen-advertising.com/"
-                                        class="btn btn-outline-primary" role="button">
-                                        Дознај Повеќе</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="responsive" role="application">
-                            <div class="gallery">
-                                <a target="_blank" href="https://webiart.mk">
-                                    <img src="./webiart.png" alt="Mountains" width="600" height="400"
-                                        style="background: #FFF; padding: 100px 10px;" />
-                                </a>
-                                <div class="desc"><a target="_blank" href="https://webiart.mk/"
-                                        class="btn btn-outline-primary" role="button">
-                                        Дознај Повеќе</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </article>
-        </main>
-        <footer role="contentinfo">
-            <a href="kontakt.html" class="button1" role="button"><span>Контактирај нѐ </span></a>
-
-            <p id="tekstmal">Контакт информации:<br>
-                <a href="tel://+389 72 642 390" title="Call Bintern!"><i style="font-size: 24px;"
-                        class="fa fa-phone-square"></i>тел:+389 72 642
-                    390</a><br>
-                <a href="mailto:bintern.info@gmail.com" title="Send email to Bintern!"><i style="font-size:24px"
-                        class="fa">&#xf0e0;</i>bintern.info@gmail.com</a>
-                <br>
-                <i style="font-size: 24px;" class="fa fa-map-marker"></i>ул.Паралово бр.6, Битола 7000<br>
-                Следете нe на социјалните медиуми:<br>
-                <span><a href="https://www.facebook.com/bintern12/" target="_blank"><img id="fbslika" src="facebook.png"
-                            width="40" height="40" alt="Facebook Logo"></a></span>
-                <span> <a href="https://www.instagram.com/bintern.mk/" target="_blank"><img id="instaslika"
-                            src="instagram.png" width="40" height="40" alt="Instagram Logo"></a></span>
-                <span> <a href="https://www.linkedin.com/company/bintern/" target=" _blank"><img id="linkedinslika"
-                            src="https://icon-library.com/images/white-linkedin-icon-png/white-linkedin-icon-png-8.jpg"
-                            width="40" height="40" alt="LinkedIn Logo"></a></span>
-            </p>
-            <small id="bintern">&copy;2020, Bintern<sup>&reg;</sup>, inc.All rigths Reserved.<br>
-                .................Beta Version 1.1....................
-            </small>
-            <div class="fitr">
-                <p>Поддржано од</p><a href="https://fitr.mk" target="_"><img
-                        src="https://fitr.mk/wp-content/uploads/2020/05/cropped-Logo-trans1-300x92-300x92-1_c2581900b492c75f1946764b1dc84a1c.png"
-                        style="background: #FFF;" /></a>
+      </nav>
+      <div class="container-fluid mt-5 pt-5 ml-5">
+        <div class="row align-items-center mb-3 pb-5">
+            <div class="col text-left">
+                <h1 class="font-weight-bolder">Ви треба млад<br/>супер-талент во тимот?<br/>Ние го имаме.</h1>
+                <p class=" pt-3">Ве поврзуваме со најдобрите практиканти.</p>
+                <a class="btn" href="#" role="button">Започни тука</a>
             </div>
-        </footer>
-        <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-            <p><i class="arrow up"></i></p>
-        </a>
-    </div>
-
+            <div class="col pr-5"><img src="./styles/images/graphic.png" alt="graphic"></div>
+        </div>
+        <div class="row position-relative">
+             <img id="pattern" src="./styles/images/pattern.png" alt="pattern">
+        </div>
+        <div class="row pt-5 mt-5">
+            <div class="col text-center">
+                <h1 class="text-light">Како до супер талент?</h1>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5 mr-3">
+            <div class="col text-white"><img src="./styles/images/prebaraj.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Објави оглас</h2><br>- Со кул оглас покажи зошто токму
+                твојата компанија е вистинско место
+                за практикантите<br/><br/>- Заштеди 2x време и трошоци со
+                нашите совети за креирање на оглас</div>
+            <div class="col text-white"><img src="./styles/images/proceni 2.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Процени</h2><br>- Издвои ги најдобрите практиканти
+                со користење на филтри во нашата
+                база од студенти<br/><br/>- Споредувај, напредно пребарувај
+                со нашиот алгоритам и покани
+                на интервју</div>
+            <div class="col text-white"><img src="./styles/images/izberi.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Успешна приказна</h2><br>- Одлично искуство проследено со
+                препорака на практиканти.<br/><br/>-Можност за сами да си го
+                изградите вашиот иден вработен.<br/><br/>- Добивање на оценка за супер
+                фирма од практикантите
+                
+                </div>
+        </div>
+      </div>
+      
 
     <script src="jquery.js"></script>
     <script src="menu.js"></script>
