@@ -20,8 +20,8 @@ firebase.auth().onAuthStateChanged(function (user) {
             const date2 = new Date(date);
             const diffTime = Math.abs(date2 - date1);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            $("#vremetraenjeOglasot").text("Времетраење на огласот: " + diffDays + ' денови');
-            $("#vremetraenjePraksa").text("Времетраење на праксата од: " + data.odKoga + " до: " + data.doKoga);
+            $("#vremetraenjeOglasot").text("Активен уште: " + diffDays + ' денови');
+            $("#vremetraenjePraksa").text("Времетраење на праксата: " + data.odKoga + " - " + data.doKoga);
             if (data.logoFirma != null) {
                 document.querySelector('#img1').src = data.logoFirma;
             }

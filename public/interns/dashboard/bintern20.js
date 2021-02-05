@@ -485,9 +485,21 @@ firebase.auth().onAuthStateChanged(function (user) {
            for(var oglas in obj){
              niza.unshift({...obj[oglas], key:oglas})
            }
+           niza.sort((a,b)=>{
+             var aIndex = parseInt(a.key.slice(6));
+             var bIndex = parseInt(b.key.slice(6));
+             let comparison=0;
+             if(aIndex>bIndex){
+               comparison =-1;
+             }else if(aIndex<bIndex){
+               comparison =1;
+             }
+             return comparison;
+           });
            niza.forEach(function (childSnapshot) {
               // key will be "ada" the first time and "alan" the second time
               var key = childSnapshot.key;
+              console.log(key);
               br++;
               // childData will be the actual contents of the child
               var pozicija = childSnapshot.pozicija;
@@ -578,7 +590,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                 })
                 let j = br;
                 $('#kopce' + j).off().on('click', function () {
-                  window.open("../../ads.html?" + j, "_blank");
+                  window.open("../../ads.html?" + key.slice(6), "_blank");
                 });
                 $('#button' + j).off().on('click', function () {
                   // $(this).hide();
