@@ -36,7 +36,8 @@
 </head>
 
 <body class="landing">
-    <svg class="animation" version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    <div class="animation">
+    <svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
         <circle fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="15" stroke-dasharray="14.2472,14.2472"
             cx="50" cy="50" r="47">
@@ -71,67 +72,83 @@
             </rect>
         </g>
     </svg>
-
-   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./styles/images/logo.png" alt="binternlogo" width="150" height="50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+</div>
+<div class="clip"></div>
+<div class="clip2"></div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded">
+        <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown" width="175" alt="Bintern logo"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse d-flex justify-content-end navbar-collapse pr-5 " id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">За Фирмите</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">За Практиканти</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Објави Оглас</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Најава/Регистрација</a>
-              </li>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample09" >
+            <ul class="navbar-nav mr-auto mx-md-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Почетна <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies/registration.html">Објави оглас</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                        <a class="dropdown-item" href="bintern4.html">За фирмите</a>
+                        <a class="dropdown-item" href="bintern5.html">За практикании</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registrationOrSingIn.html">Регистрација/Најава</a>
+                </li>
             </ul>
-          </div>
+
         </div>
-      </nav>
+    </nav>
       <div class="container-fluid mt-5 pt-5">
-        <div class="row align-items-center mb-3 pb-5">
-            <div class="col text-left">
-                <h1 class="font-weight-bolder">Ви треба млад<br/>супер-талент во тимот?<br/>Ние го имаме.</h1>
-                <p class=" pt-3">Ве поврзуваме со најдобрите практиканти.</p>
+        <div class="row align-items-center justify-content-center mb-3 pb-0 py-md-5">
+            <div class="col-sm-0 col-md-1 hidden-sm"></div>
+            <div class="col-sm-12 justify-content-center d-flex d-lg-none"><img id="graphic" src="./styles/images/graphic.png" alt="graphic"></div>
+            <div class="col-sm-12 col-lg text-left">
+                <h1 class="font-weight-bolder text-center text-md-left">Ви треба млад<br/>супер-талент во тимот?<br/>Ние го имаме.</h1>
+                <p class="pt-3 txt text-center text-md-left">Ве поврзуваме со најдобрите практиканти.</p>
                 <a class="btn btn1" href="#" role="button">Започни тука</a>
             </div>
-            <div class="col pr-5"><img src="./styles/images/graphic.png" alt="graphic"></div>
+            <div class="col pr-5 justify-content-end d-none d-lg-flex"><img id="graphic" src="./styles/images/graphic.png" alt="graphic"></div>
+            <div class="col-sm-0 col-md-1 hidden-sm"></div>
         </div>
+        <div class="d-none d-lg-block">
+
         <div class="row position-relative">
-             <img id="pattern" src="./styles/images/pattern.png" alt="pattern">
+             <img id="pattern" src="./styles/images/pattern.png" alt="pattern" class="d-none d-lg-flex">
         </div>
+    </div>
         
 
         <div class="pozicija">
 
         
         
-        <div class="row pt-5 mt-5">
+        <div class="row pt-2 mt-2 pt-md-5 mt-md-5">
             <div class="col text-center">
                 <h1 class="text-light">Како до супер талент?</h1>
             </div>
         </div>
-        <div class="row mt-5 pt-5 mr-3 mb-3 pb-4">
-            <div class="col text-white"><img src="./styles/images/prebaraj.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Објави оглас</h2><br>- Со кул оглас покажи зошто токму
+        <div class="row mt-0 pt-5 mt-md-5 pt-md-5 mr-3 mb-3 pb-4">
+            <div class="col-sm-12 col-md text-white mb-4 mb-md-auto text-center ml-3 ml-md-auto px-xl-4"><img src="./styles/images/prebaraj.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Објави оглас</h2><br>- Со кул оглас покажи зошто токму
                 твојата компанија е вистинско место
                 за практикантите<br/><br/>- Заштеди 2x време и трошоци со
                 нашите совети за креирање на оглас</div>
-            <div class="col text-white"><img src="./styles/images/proceni 2.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Процени</h2><br>- Издвои ги најдобрите практиканти
+            <div class="col-sm-12 col-md text-white mb-4 mb-md-auto text-center ml-3 ml-md-auto px-xl-4"><img src="./styles/images/proceni 2.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Процени</h2><br>- Издвои ги најдобрите практиканти
                 со користење на филтри во нашата
                 база од студенти<br/><br/>- Споредувај, напредно пребарувај
                 со нашиот алгоритам и покани
                 на интервју</div>
-            <div class="col text-white"><img src="./styles/images/izberi.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Успешна приказна</h2><br>- Одлично искуство проследено со
-                препорака на практиканти.<br/><br/>-Можност за сами да си го
+            <div class="col-sm-12 col-md  ml-3 ml-md-auto text-white px-xl-4"><img src="./styles/images/izberi.png" alt=""><br/><h2 class="font-weight-bolder mt-1">Успешна приказна</h2><br>- Одлично искуство проследено со
+                препорака од практиканти.<br/><br/>-Можност за сами да си го
                 изградите вашиот иден вработен.<br/><br/>- Добивање на оценка за супер
                 фирма од практикантите
                 </div>
@@ -142,8 +159,8 @@
         </div>
                 
         <div class="container-fluid">
-            <h2 class="text-white font-weight-bolder mb-5" style="font-size: 50px;">Соработици</h2>
-        <div id="blogSliki" class="px-5">
+            <h2 class="text-white font-weight-bolder mb-5" style="font-size: 50px;" id="sorabotnici">Соработици</h2>
+        <div id="blogSliki" class="p-0 px-md-5 row">
             <div class="responsive">
                 <div class="gallery">
                     <a target="_blank" href="https://inbox.com.mk/">
@@ -151,7 +168,7 @@
                             alt="Cinque Terre" width="600" height="400">
                     </a>
                     <div class="desc"><a target="_blank" href="https://inbox.com.mk/"
-                            class="btn btn-outline-primary" role="button">
+                            class="btn btn1" role="button">
                             Дознај повеќе</a>
                     </div>
                 </div>
@@ -165,7 +182,7 @@
                             alt="Forest" width="600" height="400">
                     </a>
                     <div class="desc"><a target="_blank" href=" https://krediti.com.mk"
-                            class="btn btn-outline-primary" role="button">
+                            class="btn btn1" role="button">
                             Дознај Повеќе</a>
                     </div>
                 </div>
@@ -178,7 +195,7 @@
                             style="background: #FFF; padding: 100px 0px;">
                     </a>
                     <div class="desc"><a target="_blank" href="https://javen-advertising.com/"
-                            class="btn btn-outline-primary" role="button">
+                            class="btn btn1" role="button">
                             Дознај Повеќе</a>
                     </div>
                 </div>
@@ -191,7 +208,7 @@
                             style="background: #FFF; padding: 100px 10px;" />
                     </a>
                     <div class="desc"><a target="_blank" href="https://webiart.mk/"
-                            class="btn btn-outline-primary" role="button">
+                            class="btn btn1" role="button">
                             Дознај Повеќе</a>
                     </div>
                 </div>
@@ -202,49 +219,47 @@
      
       <footer class="mt-5 pt-5">
         <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-           <img class="mt-5 pt-2" src="https://fitr.mk/wp-content/uploads/2020/05/cropped-Logo-trans1-300x92-300x92-1_c2581900b492c75f1946764b1dc84a1c.png" alt="">
+      <div class="row reverse">
+        <div class="col-sm-12 col-md-4 mb-4 mb-md-auto">
+            <h5 class="text-center text-light">Поддржано од</h5>
+           <img  class="bg-light" src="https://fitr.mk/wp-content/uploads/2020/05/cropped-Logo-trans1-300x92-300x92-1_c2581900b492c75f1946764b1dc84a1c.png" alt="">
         </div>
-        <div class="col-7 mt-5 pt-5">
+        <div class="col-sm-12 col-md-4 mb-4 mb-md-2 text-light d-flex align-items-end justify-content-center">
             <h6>©2020, Bintern®, inc.All rigths Reserved. <br/><span>Version: Beta 1.1</span></h6>
         </div>
-        <div class="col kontaktinfo text-left mr-5">
-            <a href="#" class="text-light"><i class="fas fa-phone-square-alt"></i> +389 72 642 390</a><br>
-            <a href="#" class="text-light"><i class="fas fa-envelope"></i> bintern.info@gmail.com:</a><br>
-            <a href="#" class="text-light d-block"><i class="fas fa-map-marker-alt"></i>ул.Паралово бр.6, Битола 7000</a><br>
-            
-            <div class="row justify-content-center">
-                <div class="col-12 text-center p-0 m-0">
-                    <span class="text-light mr-5 mt-0 pt-0" >Социјални Медиуми</span>
-                </div>
-                <div class="mr-5">
-            <a href="#"><i class="fab fa-facebook-square m-2 text-light fa-2x"></i></a>
-            <a href="#"><i class="fab fa-instagram-square m-2  text-light fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin m-2 text-light fa-2x"></i></a>
+        <div class="col-sm-12 col-md-4 mb-4 mb-md-auto kontaktinfo text-left d-flex align-items-end justify-content-center">
+        <div class="m-0 p-0">
+            <p class="p-0 m-0 text-light">Контакт информации:</p>
+              <a href="tel://+389 72 642 390" class="text-light"><i class="fas fa-phone-square-alt"></i> +389 72 642 390</a><br>
+            <a href="mailto://bintern.info@gmail.com" class="text-light"><i class="fas fa-envelope"></i> bintern.info@gmail.com:</a><br>
+            <a href="#" class="text-light d-block"><i class="fas fa-map-marker-alt"></i> ул.Паралово бр.6, Битола 7000</a><br>
         </div>
-        </div>
+          
         </div>
       </div>
     </div>
-    
+    <div class="row justify-content-center mx-auto">
+        <div class="col-12 text-center p-0 m-0">
+            <span class="text-light mt-0 pt-0" >Социјални Медиуми</span>
+        </div>
+    <div>
+    <a href="https://www.facebook.com/bintern12" target="_blank"><i class="fab fa-facebook-square m-2 text-light fa-2x"></i></a>
+    <a href="https://www.instagram.com/bintern.mk/"><i class="fab fa-instagram-square m-2  text-light fa-2x"></i></a>
+    <a href="https://www.linkedin.com/company/bintern/"><i class="fab fa-linkedin-square m-2 text-light fa-2x"></i></a>
+</div>
+</div>
     </footer>
 
 </div>
 
-
+<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button" style="display: inline;">
+    <i class="fas fa-arrow-up"></i>
+</a>
     
       
 
     <script src="jquery.js"></script>
-    <!-- <script src="menu.js"></script> -->
-    <script type="text/javascript">
-        // const vueApp = new Vue({
-        //     el: '#vapp',
-        //     data: {
-        //         display: 'redbox'
-        //     }
-        // })</script>
+     <script src="menu.js"></script>
 </body>
 
 </html>

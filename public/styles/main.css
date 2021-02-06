@@ -16,10 +16,8 @@ body {
 }
 /* LANDING HOME PAGE */
 .landing {
-  background-image: url("./images/Vector.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px 55px;
+  background: linear-gradient(272.61deg, #f47a61 17.29%, #f15f61 75.59%);
+  position: relative;
 }
 .landing h1 {
   font-size: 3.2rem;
@@ -30,10 +28,17 @@ svg {
   width: 100px;
   height: 100px;
   margin: 22%;
-  display: none;
-  /* display: inline-block; */
+  display: inline-block;
 }
 /* LANDING HOME PAGE LOGO*/
+.animation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999999999;
+  top: 0px;
+  background: linear-gradient(272.61deg, #f47a61 17.29%, #f15f61 75.59%);
+}
 .animation h1 {
   text-align: center;
   color: #fff;
@@ -134,7 +139,12 @@ svg {
 .pozicija {
   margin-top: 10%;
 }
-
+footer {
+  background-image: linear-gradient(200.61deg, #f47a61 17.29%, #f15f61 75.59%);
+  /* width: 100vw; */
+  margin-left: -15px;
+  margin-right: -15px;
+}
 /* Image Gallery */
 div.gallery {
   border: 1px solid #ccc;
@@ -156,6 +166,8 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 * {
@@ -167,8 +179,50 @@ div.desc {
   float: left;
   width: 24.99999%;
 }
+.clip {
+  position: absolute;
+  width: 100%;
+  height: 567px;
+  top: -1px;
+  z-index: -1;
+  clip-path: ellipse(92% 552px at 9% 2%);
+  background-color: #f7f7f7;
+}
+.pozicija {
+  margin-top: 10%;
+}
 
-<<<<<<< Updated upstream
+.clip2 {
+  position: absolute;
+  width: 100%;
+  height: 744px;
+  bottom: 62px;
+  z-index: -1;
+  clip-path: polygon(0 1%, 0 115%, 180% 95%);
+  background-color: #f7f7f7;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+@media only screen and (min-width: 1700px) {
+  #graphic {
+    width: 600px;
+  }
+  .landing h1 {
+    font-size: 4rem;
+  }
+  .clip {
+    width: 100%;
+    height: 649px;
+    top: 0px;
+    clip-path: ellipse(92% 598px at 9% 2%);
+    background-color: #f7f7f7;
+  }
+}
+
 @media only screen and (max-width: 1350px) {
   #blogSliki {
     width: 100%;
@@ -183,13 +237,38 @@ div.desc {
 }
 
 @media only screen and (max-width: 500px) {
+  iframe {
+    width: 100%;
+    min-height: 1200px;
+  }
   .responsive {
     width: 100%;
   }
+  .landing h1 {
+    font-size: 2rem;
+  }
+  .clip {
+    height: 538px;
+    top: -2px;
+    clip-path: ellipse(92% 369px at 9% 2%);
+  }
+  #graphic {
+    width: 80%;
+  }
+  .txt {
+    color: #fff;
+  }
+  .btn1 {
+    margin: 0 auto;
+  }
+  #sorabotnici {
+    font-size: 2.2rem !important;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .back-to-top {
+    bottom: 16px;
+    right: 16px;
+  }
 }
-=======
- .pozicija{
-   margin-top: 10%;
- }
-
->>>>>>> Stashed changes

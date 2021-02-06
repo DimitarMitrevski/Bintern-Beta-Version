@@ -1,439 +1,240 @@
-header{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    font-family: Century Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 106.67%;
-    /* or 15px */
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.03em;
-    
-    
-    color: #000000;
-    background-color: #f7f7f7;
-    
-    }
-    nav{
-        position: absolute;
-    width: 568.14px;
-    height: 54px;
-    right: -10%;
-    top: 60px;
-    border-spacing: 10px;
-   
-    }
-    #logoto{
-        position: absolute;
-        top:20px; 
-        left:5%;
-        transition: 0.5s;
-    }
-    #logoto:hover{
-       top:10px;
-     width:188px; 
-     height:70px;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-
- }
-    #firmite,#kontakt1,#praktikanti,#objavi,#najava{
-        transition: 0.5s;
-    
-    }
-    #firmite{
-        position: absolute;
-        width: 85px;
-        padding-bottom: 10px;
-        height: 0px;
-        left: -300px;
-        top: 0px;
-        font-family: Century Gothic;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 106.67%;
-        /* or 15px */
-        
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -0.03em;
-        
-        color: #000000;
-         text-decoration: none;
-        }
-        
-        #praktikanti{
-            position: absolute;
-            width: fit-content;
-            height: 0px;
-            left: -150px;
-            top: 0px;
-            font-family: Century Gothic;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 106.67%;
-        /* or 15px */
-        
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -0.03em;
-        
-        color: #000000;
-        text-decoration: none;
-            }
-            #objavi{
-                position: absolute;
-                width: 142.03px;
-                height: 0px;
-                left: 0px;
-                top: 0px;
-                font-family: Century Gothic;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 106.67%;
-        /* or 15px */
-        
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -0.03em;
-        
-        color: #000000;
-        text-decoration: none;
-                }
-                #najava{
-                    position: absolute;
-                    width: 142.03px;
-                    height: 0px;
-                    left: 190px;
-                    top: 0px;
-                    font-family: Century Gothic;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 14px;
-                    line-height: 106.67%;
-                    /*  or 15px */
-                    
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    letter-spacing: -0.03em;
-                    
-                    color: #000000;
-                    text-decoration: none; 
-                } 
-                #kontaktform{
-                    position: absolute;
-                    top: 20%;
-                    left: 15%;
-                    height: 1036px;
-
-                }
-                body{
-                    overflow-x: hidden;
-                    overflow-y: hidden;
-                }
-                #izlezi{
-                    display:none;
-                }
-                #firmite1{
-                    display:none;
-                }
-                
-                #praktikanti1{
-                    display:none;
-                }
-                #objavi1{
-                    display:none;
-                }
-                #najava1{
-                    display:none;
-                }
-                .img1{
-                    display: none;
-                }
-                #firmite:hover{
-                    width: 85px;
-                    padding-bottom: 10px;
-                    border-bottom: 5px solid salmon;
-                }
-                #praktikanti:hover{
-                    width: 105px;
-                    padding-bottom: 10px;
-                    border-bottom: 5px solid salmon;
-                }
-                #objavi:hover{
-                    top: -10px;
-                    padding-bottom: 20px;
-                    border-bottom: 5px solid salmon;
-                }
-                #najava:hover{
-                    top: -10px;
-                    padding-bottom: 20px;
-                    border-bottom: 5px solid salmon;
-                }
-                #kontakt1{
-                    display: none;
-                }
-                .navbar{
-                display: none;
-                }
-               
-                @media screen and (min-width: 1501px){
-                  nav{
-                      right:0;
-                  }
-                  #logoto{
-                      left:16%;
-                  }
-                }
-                @media screen and (max-width: 1020px){
-                    /* nav {
+@media screen and (min-width: 1501px) {
+  nav {
+    right: 0;
+  }
+  #logoto {
+    left: 16%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  /* nav {
                         right: -23%;
                         top: 91px;
                     } */
-                    header{
-                        height: 125px;
-                    }
-                    #logoto {
-                        position: absolute;
-                        top: -4px;
-                        left: auto;
-                        right: 40%;
-                    }
-                    #kontaktform {
-                        top: 22%;
-                        left:auto;
-                        right: -15%;
-                        height: 1036px;
-                    }
-                }
-                @media screen and (max-width: 780px){
-                   
-                    #logoto{
-                        display: none;
-                    }
-                    header{
-                        display:contents;
-                    }
-                    .navbar {
-                        position: fixed;
-                        width: 100%;
-                        display: flex;
-                        top: 0;
-                        left: 0px;
-                        height: auto;
-                        text-align: initial;
-                    }
-                   
-                    nav{
-                        display: none;
-                    }
-                
-                #izlezi{
-                    position:absolute;
-                    width:465px;
-                    left:10px;
-                    padding-bottom: 5px;
-                    border-bottom: 1px solid black;
-                    font-family: Century Gothic;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 18px;
-                    cursor: pointer;
-                    display: none;
-                }
-                #izlezi:hover{
-                    color:#FFFFFF;
-                }
-                #firmite{
-                    display: none;
-                    }
-                     #praktikanti{
-                         display: none;
-                     }   
-                     #objavi{
-                         display: none;
-                     }
-                     #najava{
-                         display: none;
-                     }
-                #firmite1{
-                    position:absolute;
-                    width:425px;
-                    top:50px;
-                    left:10px;
-                    padding-bottom: 10px;
-                    border-bottom: 1px solid black;
-                    font-family: Century Gothic;
-                    font-style: normal;
-                    font-weight: bold;
-                    color:black;
-                    text-decoration: none;
-                    font-size: 18px;
-                    cursor: pointer;
-                    }
-                    #firmite1:hover{
-                        color:#FFFFFF;
-                    }
-                    
-                    #praktikanti1{
-                        position:absolute;
-                        width:425px;
-                        top:100px;
-                        left:10px;
-                        padding-bottom: 10px;
-                        border-bottom: 1px solid black;
-                        font-family: Century Gothic;
-                        font-style: normal;
-                        font-weight: bold;
-                        color:black;
-                        text-decoration: none;
-                        font-size: 18px;
-                        cursor: pointer;
-                        }
-                        #praktikanti1:hover{
-                            color:#FFFFFF;
-                        }
-                     
-                        #objavi1{
-                            position:absolute;
-                            width:425px;
-                            top:150px;
-                            left:10px;
-                            padding-bottom: 10px;
-                            border-bottom: 1px solid black;
-                            font-family: Century Gothic;
-                            font-style: normal;
-                            font-weight: bold;
-                            color:black;
-                            text-decoration: none;
-                            font-size: 18px;
-                            cursor: pointer;
-                            }
-                            #objavi1:hover{
-                                color:#FFFFFF;
-            
-                            }
-                            #najava1{
-                                position:absolute;
-                                width:425px;
-                                top:200px;
-                                left:10px;
-                                padding-bottom: 10px;
-                                border-bottom: 1px solid black;
-                                font-family: Century Gothic;
-                                font-style: normal;
-                                font-weight: bold;
-                                color:black;
-                                text-decoration: none;
-                                font-size: 18px;
-                                cursor: pointer;
-                                }
-                                #najava1:hover{
-                                    color:#FFFFFF;
-                
-                                }
-                                #kontakt1{
-                                    position:absolute;
-                                    width:425px;
-                                    top: 245px;
-                                    left:10px;
-                                    padding-bottom: 10px;
-                                    border-bottom: 1px solid black;
-                                    font-family: Century Gothic;
-                                    font-style: normal;
-                                    font-weight: bold;
-                                    color:black;
-                                    text-decoration: none;
-                                    font-size: 18px;
-                                    cursor: pointer;
-                                    display: block;
-                                    }
-                                    #kontakt1:hover{
-                                        color:#FFFFFF;
-                    
-                                    }
-                                header{
-                                    width: 110%;
-                                    height: 80px;
-                                }
-                                #kontaktform{
-                                    position: absolute;
-                                    top: 15%;
-                                    left: 4%;
-                                    height: 1255px;
-                                    width: 93%;
+  header {
+    height: 125px;
+  }
+  #logoto {
+    position: absolute;
+    top: -4px;
+    left: auto;
+    right: 40%;
+  }
+  #kontaktform {
+    top: 22%;
+    left: auto;
+    right: -15%;
+    height: 1036px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #logoto {
+    display: none;
+  }
+  header {
+    display: contents;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0px;
+    height: auto;
+    text-align: initial;
+  }
 
-                                }
-                            }
-                            *, html {
-                                margin: 0;
-                                padding: 0;
-                              }
-                              body {
-                                background: linear-gradient(272.61deg, #F47A61 17.29%, #F15F61 75.59%);
-                                text-align: center;
-                                /* font-family: 'Comfortaa', cursive; */
-                              }
-                              svg {
-                                width: 100px;
-                                height: 100px;
-                                margin: 22%;
-                                display: inline-block;
-                              }
-                              h1 {
-                                text-align: center;
-                                color: #fff;
-                                margin: 0 0 100px;
-                                font-size: 34px;
-                                font-weight: 100;
-                                text-transform: uppercase;
-                                background-color: #e43725;
-                                padding: 20px 0;
-                              }
-                              h1 b {
-                                font-weight: 700;
-                              }
-                              .made-with-love {
-                                margin-top: 20px;
-                                padding: 10px;
-                                font-size: 10px;
-                                font-family: arial;
-                                color: #fff;
-                              }
-                              .made-with-love i {
-                                font-style: normal;
-                                color: #F50057;
-                                font-size: 14px;
-                                position: relative;
-                                top: 2px;
-                              }
-                              .made-with-love a {
-                                color: #fff;
-                                text-decoration: none;
-                              }
-                              .made-with-love a:hover {
-                                text-decoration: underline;
-                              }
-                              @media screen and (max-width: 430px){
-                                svg {
-                                    width: 159px;
-                                    height: 176px;
-                                    margin: 67% 29%;
-                                }
-                            }
-                            
+  nav {
+    display: none;
+  }
+
+  #izlezi {
+    position: absolute;
+    width: 465px;
+    left: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+  }
+  #izlezi:hover {
+    color: #ffffff;
+  }
+  #firmite {
+    display: none;
+  }
+  #praktikanti {
+    display: none;
+  }
+  #objavi {
+    display: none;
+  }
+  #najava {
+    display: none;
+  }
+  #firmite1 {
+    position: absolute;
+    width: 425px;
+    top: 50px;
+    left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #firmite1:hover {
+    color: #ffffff;
+  }
+
+  #praktikanti1 {
+    position: absolute;
+    width: 425px;
+    top: 100px;
+    left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #praktikanti1:hover {
+    color: #ffffff;
+  }
+
+  #objavi1 {
+    position: absolute;
+    width: 425px;
+    top: 150px;
+    left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #objavi1:hover {
+    color: #ffffff;
+  }
+  #najava1 {
+    position: absolute;
+    width: 425px;
+    top: 200px;
+    left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #najava1:hover {
+    color: #ffffff;
+  }
+  #kontakt1 {
+    position: absolute;
+    width: 425px;
+    top: 245px;
+    left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+  }
+  #kontakt1:hover {
+    color: #ffffff;
+  }
+  header {
+    width: 110%;
+    height: 80px;
+  }
+  #kontaktform {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    height: 1255px;
+    width: 93%;
+  }
+}
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(272.61deg, #f47a61 17.29%, #f15f61 75.59%);
+  text-align: center;
+  /* font-family: 'Comfortaa', cursive; */
+}
+svg {
+  width: 100px;
+  height: 100px;
+  margin: 22%;
+  display: inline-block;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 100px;
+  font-size: 34px;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-color: #e43725;
+  padding: 20px 0;
+}
+h1 b {
+  font-weight: 700;
+}
+.made-with-love {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #f50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 430px) {
+  svg {
+    width: 159px;
+    height: 176px;
+    margin: 67% 29%;
+  }
+}
