@@ -82,7 +82,7 @@ body{
  /* NAVBAR ------------------------------------------------------------*/
 
  /* BUTTONS--------------------------------------------------- */
- .btn{
+ .btn1{
      display: flex;
      align-items: center;
      justify-content: center;
@@ -94,9 +94,43 @@ body{
     color: #FFFFFF;
     border-color: transparent;
  }
+ 
+ .btn2{
+  align-items: center;
+  margin-bottom: 5%;
+  width: 180px;
+  height: 49px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #59C7D6;
+  border-color: #59C7D6;
+  font-weight: bold;
+
+ }
+ .btn3{
+   position: relative;
+   bottom: 10%;
+  align-items: center;
+  margin-bottom: 5%;
+  width: 180px;
+  height: 49px;
+  background: #59C7D6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:white;
+  border-color: #59C7D6;
+  font-weight: bold;
+ }
  /* BUTTONS ---------------------------------------------------*/
  #pattern{
      position:absolute;
      right: 10%;
     
+ }
+ .col1{
+   border: 1px solid gray;
+   padding: 0%
+ }
+
+ .pozicija{
+   margin-top: 10%;
  }
