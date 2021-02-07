@@ -23,6 +23,19 @@ body {
   font-size: 3.2rem;
 }
 /* LANDING HOME PAGE */
+
+/* ABOUT PAGE */
+.about-companies{
+  background: #f7f7f7 url("./images/Group\ 13.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  
+  
+}
+/* ABOUT PAGE */
+
 /* LANDING HOME PAGE LOGO */
 svg {
   width: 100px;
@@ -272,3 +285,4 @@ div.desc {
     right: 16px;
   }
 }
+
