@@ -31,7 +31,7 @@
         crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="mobilever">
    
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded">
         <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown"
@@ -72,7 +72,7 @@
     </nav>
     <div class="container-fluid mt-5 pt-5"></div>
 
-    <div class="row py-3 m-0">
+    <div class="row py-3 m-0 ">
         <div class="col-12 m-0">
         <h1 class="font-weight-bolder">Регистрирај компанија</h1>
     </div>  
@@ -80,8 +80,10 @@
 
     <div class="container-fluid">
         <div class="row ">
-            <div class="col-lg-3"></div>
-            <div class="col-md-6">
+
+            <div class="col-lg-3 d-none d-md-block"></div>
+
+            <div class="col-lg-6">
             <form>
                 <div class="row">
                     <div class="col-lg-6">
@@ -119,7 +121,7 @@
                 </div>
                 <div class="mt-2">
                     <label for="Message">Опис на фирмата:</label><br>
-                    <textarea name="form-control" id="" cols="90" rows="8"></textarea>
+                    <textarea class="w-100" name="form-control" id="" cols="90" rows="8"></textarea>
                 </div>
 
                 <div class="row">
@@ -147,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="row  justify-content-center pt-3">
+                <div class="row  justify-content-center pt-3 ">
                     <div class="col-md-4 text-center choosefile ">
                         <label class="d-block" id="element9" for="logo">Лого на фирмата</label>
                     <input onchange="javascript:  var upl = document.getElementById('element10');
@@ -167,7 +169,7 @@
                 </div>
                 </div>
 
-                <div class="row pb-3">
+                <div class="row pb-3 ">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <div class="g-recaptcha" data-theme="dark" data-sitekey="6LcUP-EUAAAAAOOBNmabH3bmpsAUmwXjbdvjhiF9"
                         data-callback="verifyCaptcha"></div>
@@ -187,7 +189,7 @@
 
               </form>
             </div>
-              <div class="col-lg-3"></div>
+              <div class="col-lg-3 d-none d-md-block"></div>
         </div>
     </div>
 
