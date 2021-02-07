@@ -289,5 +289,9 @@ div.desc {
   }
   
 }
+.choosefile{
+  border: 1px solid gray;
+  background-color: white;
+}
 
 
