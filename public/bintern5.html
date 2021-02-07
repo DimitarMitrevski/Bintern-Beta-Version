@@ -19,105 +19,96 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="bintern5.css">
+    <!-- <link rel="stylesheet" type="text/css" href="bintern5.css"> -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
-<body>
-    <div class="login-cover">
-        <div class="d-flex justify-content-center">
-            <div class="spinner-border" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-    </div>
 
-    <div id="wrapper">
-        <header>
-            <a href="index.html"><img src="bintern2.png" id="logoto" width="168px" height="60px"
-                    alt="Here was a photo"></a>
-            <nav id="horzNav">
-                <a id="firmite" href="bintern4.html">За Фирмите</a>
-                <a id="praktikanti" href="bintern5.html">За практиканти</a>
-                <a id="objavi" href="companies/registration.html">Објави оглас Бесплатно</a>
-                <a id="najava" href="registrationOrSingIn.html">Најава/Регистрација</a>
-                <a id="kontakt1" href="kontakt.html">Контактирај нѐ</a>
-            </nav>
-        </header>
 
-        <div id="vector"></div>
-        <h1 id="Dobredojdovte">Добредојдовте на Bintern!</h1>
-        <p id="para1">Ние сме онлајн платформа која ќе ве поврзе со над 5000 регистрирани<br> компании за пракса и идно
-            вработување.<br>
-            Наша визија е да ви помогнеме да најдете компанија за пракса и да<br> стекнете практични вештини и да
-            станете професионалци!
-        </p>
+    <body class="about-companies">
 
-        <footer class="animate__animated animate__zoomIn">
-            <h3 id="ajde">Ајде заедно да станеме професионалци!</h3>
-            <p id="para2">-Пронајдете пракса во компанија што ја препорачуваат.<br>
-                - Целта е да учеме во пракса и да се усовршуваме.
-                <br><br>
-                За повеќе информации следете не<br> на социјалните медиуми:
-            </p>
-            <a href="https://www.facebook.com/bintern12/"><img id="fbslika" src="facebook.png" width="40px"
-                    height="40px"></a>
-            <a href="https://www.instagram.com/bintern.mk/"><img id="instaslika" src="instagram.png" width="40px"
-                    height="40px"></a>
-            <!-- <a href="bintern3.html"><button id="registriraj" type="button">Регстрирај се!</button></a> -->
-        </footer>
-        <button type="button" class="button"><span>Регистрирај
-                се!</span></button>
-        <div class="popup"></div>
-        <div id="dialog" class="animate__animated animate__zoomIn">
-            <h3 id="nazad">X</h3>
-            <h3>Рeгистрирај се како</h3>
-            <a href="companies/registration.html"><button id="kompanija">Компанија</button></a>
-            <a href="interns/registration.html"><button id="praktikant">Практикант</button></a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-            <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown"
-                    id="logoto1" width="168px" height="60px" alt="Here was a photo"></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
-                aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded">
+            <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown" width="175" alt="Bintern logo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="navbar-collapse collapse" id="navbarsExample09" style="align-self: start;">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Почетна</a>
+    
+            <div class="navbar-collapse collapse" id="navbarsExample09" >
+                <ul class="navbar-nav mr-auto mx-md-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Почетна <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="companies/registration.html">Објави оглас Бесплатно</a>
+                        <a class="nav-link" href="companies/registration.html">Објави оглас</a>
                     </li>
-
-
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
+    
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown09">
                             <a class="dropdown-item" href="bintern4.html">За фирмите</a>
-                            <a class="dropdown-item active" href="bintern5.html">За практикании <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="bintern5.html">За практикании</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="registrationOrSingIn.html">Регистрација/Најава</a>
                     </li>
                 </ul>
-
+    
             </div>
+    
         </nav>
-    </div>
-    <script src="jquery.js"></script>
+         
+        <div class="container-fluid mt-5 pt-5">
+    
+        </div>
+    
+        <div class="container-fluid mt-4">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center font-weight-bolder">Добредојдовте на Bintern!</h1>
+                        <p class="text-center">Ние сме онлајн платформа која ќе ве поврзе со над 5000 регистрирани <br>
+                            компании за пракса и идно вработување. <br>
+                            Наша визија е да ви помогнеме да најдете компанија за пракса и да <br>
+                            стекнете практични вештини и да станете професионалци!</p>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <button class="btn1">Регистрирај се</button>
+            </div>
+    
+            <div class="row pt-5 mt-2">
+                <div class="col-12">
+                    <h3 class="font-weight-bold">Ајде заедно да креираме професионалци!</h3>
+                    <p>-Пронајдете пракса во компанија што ја препорачуваат. <br>
+                        - Целта е да учеме во пракса и да се усовршуваме.
+                        </p>
+                        <p>
+                        За повеќе информации следете не <br>
+                        на социјалните медиуми:
+                        </p>
+                    <div class="row justify-content-center px-0 mx-0">
+                    <a href="https://www.facebook.com/bintern12" target="_blank"><i class="fab fa-facebook-square m-2 text-dark fa-2x"></i></a>
+                    <a href="https://www.instagram.com/bintern.mk/"><i class="fab fa-instagram-square m-2  text-dark fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/bintern/"><i class="fab fa-linkedin m-2 text-dark fa-2x"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+          
+
+    
+    <!-- <script src="jquery.js"></script> -->
     <!-- <script>
         setTimeout(function () {
             $('.login-cover').hide();
@@ -136,9 +127,9 @@
 
         });
     </script> -->
-    <script src="jquery.js"></script>
+    <!-- <script src="jquery.js"></script>
     <script src="firebase.js"></script>
-    <script src="bintern4.js"></script>
+    <script src="bintern4.js"></script> -->
 </body>
 
 </html>
