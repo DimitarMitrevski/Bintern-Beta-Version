@@ -5,6 +5,16 @@
     <title>Bintern - За фирмите</title>
     <link rel="icon" type="image/gif/png" href="bintern12.png">
     <meta charset="UTF-8">
+    <meta property="og:url" content="https://bintern.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bintern онлајн платофрма за пракса и вработување">
+    <meta property="og:description"
+        content="Ги поврзуваме студентите и невработените со компаниите. Регистрирајте се веднаш." />
+    <meta property="og:image" content="https://bintern.com/bintern-meta.png" />
+    <meta name="description"
+        content="Онлајн платформа која ги поврзува студентите и невработените со компаниите за пракса и вработување. Ајде заедно да станеме професионалци. Регистрирајте се.">
+    <meta name="keywords"
+        content="Пракса,работа, Практиканство, вработување, rabota, praksa, vrabotuvanje, praktikanstvo">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -43,7 +53,7 @@
         <div class="navbar-collapse collapse" id="navbarsExample09">
             <ul class="navbar-nav mr-auto mx-md-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Почетна <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Почетна <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
@@ -57,7 +67,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown09">
-                        <a class="dropdown-item" href="bintern4.html">За фирмите</a>
+                        <a class="dropdown-item active" href="bintern4.html">За фирмите</a>
                         <a class="dropdown-item" href="bintern5.html">За практикании</a>
                     </div>
                 </li>
@@ -79,20 +89,23 @@
             <div class="col">
                 <h1 class="text-center font-weight-bolder h2sm">Добредојдовте на Bintern!</h1>
                 <p class="text-center">Ние сме онлајн платформа која ќе ве поврзе со студентите на<br>
-                    19 универзитети низ нашата држава. Секоја година се запишуваат по 57 000 <br> студенти во просек,
-                    токму еден од тие студенти ќе биде ваш иден вработен!</p>
+                    <strong>19 универзитети</strong> низ нашата држава. Секоја година се запишуваат по <strong>57
+                        000</strong><br> студенти во просек,
+                    токму еден од тие студенти ќе биде ваш иден вработен!
+                </p>
 
             </div>
         </div>
     </div>
-    <div class="row justify-content-center mt-3 mt-md-5 mx-0 ">
-        <button class="btn1">Регистрирај се</button>
+    <div class="row justify-content-center mt-3 mt-md-4 mx-0 ">
+        <button class="btn1" type="button" data-toggle="modal" data-target="#exampleModal">Регистрирај се</button>
     </div>
 
-    <div class="row pt-5 mt-2 px-0 mx-0">
+    <div class="row pt-5 px-0 mx-0">
         <div class="col-12">
             <h3 class="font-weight-bold">Ајде заедно да креираме професионалци!</h3>
-            <p>-Првиот месец е бесплатен! <br> - Доколку сте задоволни од услугата наредните месеци се по 10€!</p>
+            <p>-Првиот месец е бесплатен! <br> - Наредните месеци се во зависност од
+                искористените услуги.</p>
             <p> За повеќе информации следете не<br> на социјалните медиуми:</p>
             <div class="row justify-content-center p-0 m-0">
                 <a href="https://www.facebook.com/bintern12" target="_blank"><i
@@ -103,15 +116,35 @@
                         class="fab fa-linkedin m-2 text-dark fa-2x"></i></a>
             </div>
         </div>
-
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрирај се како</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <button class="btn1 mb-2"
+                                onclick="document.location.href = '/companies/registration.html'">Компанија</button>
+                            <button class="btn4"
+                                onclick="document.location.href = '/interns/registration.html'">Практикант</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
-    <!-- 
     <script src="jquery.js"></script>
-    <script src="firebase.js"></script>
-    <script src="bintern4.js"></script> -->
+
 </body>
 
 </html>

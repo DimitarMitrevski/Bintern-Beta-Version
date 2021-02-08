@@ -431,9 +431,6 @@ body{
     display:none;
 }
 #dialog {
-    position: absolute;
-    right: 35%;
-    top: 27%;
     width: 462px;
     height: 35%;
     background-color: salmon;
