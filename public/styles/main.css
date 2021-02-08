@@ -329,10 +329,15 @@ justify-content: center;
     bottom: 16px;
     right: 16px;
   }
-  /* .about-companies{
-    font-size: 0.8rem;
-  } */
+  }
+  .mobilever{
+    height: 50px;
+  }
   
+}
+.choosefile{
+  border: 1px solid gray;
+  background-color: white;
 }
 
 
