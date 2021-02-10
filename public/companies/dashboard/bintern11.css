@@ -542,6 +542,15 @@ span {
   color: #ffffff;
   text-shadow: 1px 1px 5px rgb(0 0 0 / 15%);
 }
+h2[id^="besplaten"] {
+  color: white;
+  font-size: 1.6rem;
+}
+span[id^="brojAplikanti"] {
+  color: white !important;
+  font-weight: bolder !important;
+  font-size: 19px;
+}
 #para {
   font-family: Century Gothic;
   font-style: normal;
@@ -552,18 +561,6 @@ span {
   letter-spacing: -0.03em;
   color: #ffffff;
   text-shadow: 1px 1px 5px rgb(0 0 0 / 15%);
-}
-#besplaten4 {
-  font-family: Century Gothic;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 106.67%;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #brAplikanti {

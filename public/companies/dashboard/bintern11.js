@@ -443,7 +443,7 @@ firebase.auth().onAuthStateChanged(function (user) {
             })
             $("#nazad1").click(function () {
                 document.querySelector('#vector1').style.display = 'none';
-                // location.reload();
+                location.reload();
             })
             // $('#eden').click(function () {
             //     location.reload();

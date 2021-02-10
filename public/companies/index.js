@@ -142,7 +142,7 @@ if (isChrome == true && isOpera != true && isSafari != true && isFirefox != true
                   var moiOglasi = snapshot.val().moiOglasi;
                   logo = snapshot.val().logo;
                   var kontaktTel = snapshot.val().kontaktTel;
-                  if (logo != null) {
+                  if (logo != null && logo!='') {
                     // $('.vnesi8').hide();
                     document.getElementById("logo").style.backgroundImage = "url('" + logo + "')";
                     // Get the modal
