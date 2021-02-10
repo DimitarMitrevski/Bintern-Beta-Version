@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bintern - За фирмите</title>
+    <link rel="icon" type="image/gif/png" href="bintern12.png">
+    <meta charset="UTF-8">
+    <meta property="og:url" content="https://bintern.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bintern онлајн платофрма за пракса и вработување">
+    <meta property="og:description"
+        content="Ги поврзуваме студентите и невработените со компаниите. Регистрирајте се веднаш." />
+    <meta property="og:image" content="https://bintern.com/bintern-meta.png" />
+    <meta name="description"
+        content="Онлајн платформа која ги поврзува студентите и невработените со компаниите за пракса и вработување. Ајде заедно да станеме професионалци. Регистрирајте се.">
+    <meta name="keywords"
+        content="Пракса,работа, Практиканство, вработување, rabota, praksa, vrabotuvanje, praktikanstvo">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="bintern4.css"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded">
+        <a class="navbar-brand" href="#"><img src="bintern2.png" class="animate__animated animate__backInDown"
+                width="175" alt="Bintern logo"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+            aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample09">
+            <ul class="navbar-nav mr-auto mx-md-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Почетна <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контактирај нѐ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies/registration.html">Објави оглас</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Повеќе информации</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                        <a class="dropdown-item active" href="bintern4.html">За фирмите</a>
+                        <a class="dropdown-item" href="bintern5.html">За практикании</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registrationOrSingIn.html">Регистрација/Најава</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="container-fluid userprofileabsolute">
+    
+        <div class="row justify-content-center">
+            <div class="userprofile">
+                <img class="userprofilepic" src="https://firebasestorage.googleapis.com/v0/b/fir-web-app-e3bbd.appspot.com/o/images%2FIMG_20191121_154042_998.jpg?alt=media&token=c0539669-1dda-4733-940d-3a2a1b34d591" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5 pt-5 mx-0 px-0 my-0 py-0">
+        <h3 class="font-weight-bolder">Gokhan Mercan</h3>
+    </div>
+    
+    <div class="row mx-0 px-0 my-0 py-0">
+<!-- left sidebar -->
+        <div class="col-lg-3">
+            <div class="row justify-content-center mb-3">
+                <h6>Година на студии: <br> <span><a href="#">2</a></span></h6>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <h6>Универзитет: <br> <span><a href="#">"УКЛО"</a></span></h6>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <h6>Факултет: <br> <span><a href="#">ФИКТ</a></span></h6>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <h6>Град: <br> <span><a href="#">"БИТОЛА"</a></span></h6>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <h6>Позиција: <br> <span><a href="#">ПозицијаWeb Developer (ATM)</a></span></h6>
+            </div>
+            
+        </div>
+<!-- left sidebar -->
+
+
+<!-- middle bar -->
+        <div class="col-lg-6 borderright1 midinfocolor">
+            <p class=" mx-0 px-0 my-0 py-0">
+                Здраво, јас сум Ѓокхан Мерџан роден сум во 1999г Битола, живеам Ресен и студирам за програмер. Дополнително сум на курс за "ВЕБ ДЕВЕЛОПМЕНТ", и сум насочен и заинтересиран за ИТ наука. Се надевам ние ќе си го смениме светот за полесно и поубаво.
+            </p>
+            <div class="infoborder1">
+           <div class="row pt-1">
+            <div class="col-lg-4">
+                <p class="px-0 py-0 mx-0 my-0">E-mail:</p>
+                    <a href="#">gokhan.mercan@hotmail.com</a>
+            </div>
+            <div class="col-lg-4 "></div>
+            <div class="col-lg-4 ">
+                <p class="px-0 py-0 mx-0 my-0">Contact:</p>
+                    <a href="">+389 70 994 603</a>
+            </div>
+           </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-8"><h5 class="text-left">Препораки:</h5><p class="text-left">За жал сеуште немате препораки</p></div>
+            <!-- <div class="col-lg-4"></div> -->
+            <div class="col-lg-4 mt-4"><a href="#">Побарај препорака</a></div>
+        </div>
+        </div>
+<!-- middle bar -->
+
+
+<!-- right sidebar -->
+
+        <div class="col-lg-3">
+            <div class="justify-content-center">
+            <h6 class="font-weight-bolder">Активни огласиза практиканство: <br> <span class="">11</span></h6>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="">
+                    <button class="btn btn1">Аплицирај</button>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="">
+                    <button class="btn btn1">Аплицирај</button>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="">
+                    <button class="btn btn1">Аплицирај</button>
+                </div>
+            </div>
+        </div>
+<!-- righ sidebar -->
+
+    </div>
+
+</body>
+
+</html>
